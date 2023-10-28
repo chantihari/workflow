@@ -1,0 +1,213 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-05-26 23:45:38.340580",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "select_job",
+  "category",
+  "description",
+  "rate",
+  "no_of_workers",
+  "job_start_time",
+  "estimated_hours_per_day",
+  "worker_comp_code",
+  "worker_filled",
+  "additional_addons_section",
+  "drug_screen",
+  "background_check",
+  "column_break",
+  "driving_record",
+  "shovel",
+  "extra_price_increase",
+  "bill_rate_section",
+  "base_price",
+  "per_hour",
+  "column_break_18",
+  "rate_increase",
+  "flat_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_job",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Title",
+   "options": "Item",
+   "read_only_depends_on": "eval:doc.__islocal!=1",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:doc.select_job",
+   "fetch_from": "select_job.industry",
+   "fetch_if_empty": 1,
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Industry",
+   "options": "Industry Type",
+   "read_only": 1,
+   "read_only_depends_on": "eval:doc.__islocal!=1",
+   "reqd": 1,
+   "width": "1"
+  },
+  {
+   "depends_on": "eval:doc.select_job",
+   "fetch_from": "select_job.descriptions",
+   "fetch_if_empty": 1,
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:doc.select_job",
+   "fetch_from": "select_job.rate",
+   "fetch_if_empty": 1,
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate",
+   "reqd": 1,
+   "width": "1"
+  },
+  {
+   "columns": 1,
+   "fieldname": "no_of_workers",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "No. of Workers",
+   "reqd": 1,
+   "width": "1"
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:doc.select_job",
+   "fieldname": "worker_comp_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Workers' Comp Code",
+   "read_only_depends_on": "eval:doc.__islocal!=1",
+   "width": "1"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.__islocal!=1",
+   "fieldname": "worker_filled",
+   "fieldtype": "Int",
+   "label": "Worker Filled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "additional_addons_section",
+   "fieldtype": "Section Break",
+   "label": "Add Ons"
+  },
+  {
+   "fieldname": "drug_screen",
+   "fieldtype": "Select",
+   "label": "Drug Screen"
+  },
+  {
+   "fieldname": "background_check",
+   "fieldtype": "Select",
+   "label": "Background Check"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "driving_record",
+   "fieldtype": "Select",
+   "label": "Driving Record"
+  },
+  {
+   "depends_on": "eval:doc.category=='Construction'",
+   "fieldname": "shovel",
+   "fieldtype": "Select",
+   "label": "Shovel"
+  },
+  {
+   "default": "0",
+   "fieldname": "extra_price_increase",
+   "fieldtype": "Currency",
+   "label": "Extra Per Hour Price Increase",
+   "precision": "2"
+  },
+  {
+   "fieldname": "bill_rate_section",
+   "fieldtype": "Section Break",
+   "label": "Bill Rate"
+  },
+  {
+   "fieldname": "base_price",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Base Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "per_hour",
+   "fieldtype": "Currency",
+   "label": "Total Per Hour Rate",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rate_increase",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Rate Increase",
+   "read_only": 1
+  },
+  {
+   "fieldname": "flat_rate",
+   "fieldtype": "Currency",
+   "label": "Additional Flat Rate",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "job_start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "read_only_depends_on": "eval:doc.__islocal!=1",
+   "reqd": 1,
+   "width": "1"
+  },
+  {
+   "columns": 1,
+   "fieldname": "estimated_hours_per_day",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Est. Daily Hours",
+   "precision": "2",
+   "reqd": 1,
+   "width": "1"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-17 09:30:36.699098",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Multiple Job Titles",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

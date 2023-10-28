@@ -1,0 +1,2458 @@
+:root {
+  --primary-color: #21b9e4;
+  --white: #ffffff;
+  --primary-hover-color: #0a97bfeb;
+  --label-color: #454f63;
+}
+body {
+  background: #f9fafa;
+}
+[data-route="Form/Company/Genpact Staffing"] .form-tabs-list ul li a {
+  margin: 0px 13px !important;
+}
+button:focus {
+  outline: transparent;
+}
+label {
+  color: var(--label-color) !important;
+  font-size: 14px !important;
+}
+.widget.onboarding-widget-box {
+  display: none;
+}
+[data-fieldname="multiple_job_titles"]
+  .data-row
+  [data-fieldname="job_title"][tooltip]:hover::after {
+  content: attr(tooltip);
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #dde3e3;
+  border-radius: 5px;
+  padding: 4px;
+  z-index: 999;
+}
+[data-fieldname="multiple_job_titles"] .data-row [data-fieldname="job_title"] {
+  position: relative;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url("data:image/svg+xml, <svg viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 4.00001L2.66667 5.80001L7 1.20001' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/></svg>"),
+    linear-gradient(180deg, #4ac3f8 -124.51%, var(--primary-color) 100%);
+  background-color: var(--primary-color) !important;
+}
+input[type="checkbox"]:focus {
+  box-shadow: 0 0 0 2px rgb(33 185 228 / 25%) !important;
+}
+input[type="radio"]:checked::before {
+  background-color: var(--primary-color) !important;
+}
+.form-control:focus {
+  box-shadow: 0 0 0 2px rgb(33 185 228 / 25%);
+  transition: 0.5 ease-in-out;
+}
+.unread {
+  background-color: #fff !important;
+}
+.notification-item:hover {
+  background-color: #cccccc3b !important;
+}
+.indicator-pill.green {
+  background: #e8fcf6;
+  color: #414141;
+}
+
+.indicator-pill.green::before {
+  background: #21e4ae;
+}
+
+.indicator-pill.gray {
+  background: #fff8e7 !important;
+  color: #e0a116 !important;
+}
+
+.indicator-pill.gray::before {
+  background: #e0a116 !important;
+}
+
+.layout-main-section .frappe-list .list-row .indicator-pill {
+  padding: 4px 8px;
+  border-radius: 11px;
+}
+
+.navbar {
+  background-color: white;
+  margin-right: 0 !important;
+}
+
+li.dropdown.dropdown.dropdown-help.dropdown-mobile {
+  display: none !important;
+}
+
+.footer-powered {
+  display: none !important;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary-color) !important;
+  color: var(--white);
+  transition: 0.3s ease-in-out;
+}
+.btn.btn-primary:hover {
+  background-color: var(--primary-hover-color) !important;
+  color: var(--white) !important;
+}
+[data-route="Form/Company/new-company-1"] button.btn-default:hover {
+  background-color: var(--primary-hover-color) !important;
+  color: var(--white) !important;
+}
+[data-fieldname="get_data_from_jazzhr"] button {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  margin-top: 21px;
+  margin-right: 15px;
+}
+[data-fieldname="update_employee_records"] button {
+  background-color: var(--primary-color) !important;
+  color: var(--white) !important;
+  margin-top: 21px;
+}
+[data-fieldname="get_data_from_jazzhr"] {
+  display: flex;
+  float: left;
+}
+[data-fieldname="update_employee_records"] {
+  display: flex;
+  float: left;
+}
+
+input:hover {
+  border: 1px solid var(--primary-color) !important;
+}
+
+input:active,
+input:focus-visible {
+  border: 1px solid var(--primary-color) !important;
+  outline: none !important;
+}
+input:visited {
+  border: 1px solid var(--primary-color) !important;
+}
+/* user management */
+#navbar-breadcrumbs {
+  padding-top: 5px;
+}
+#navbar-breadcrumbs li {
+  font-weight: 700;
+}
+#navbar-breadcrumbs li.disabled {
+  font-weight: normal;
+  color: #000000;
+}
+.layout-side-section a {
+  color: #78849e;
+}
+.standard-sidebar-item.selected,
+.desk-sidebar .standard-sidebar-item:hover {
+  background-color: #e8f8fc !important;
+  border-left: 2px solid var(--primary-color) !important;
+  border-radius: 0px;
+  color: #000000;
+  transition: 0.2s ease-in-out;
+}
+
+[data-page-route="Workspaces"] .layout-main .layout-side-section {
+  padding-right: 0px;
+  background: var(--white);
+  padding-left: 0;
+  min-height: 1px;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--card-shadow);
+}
+
+.desk-sidebar .standard-sidebar-section .standard-sidebar-label {
+  padding-left: 15px;
+}
+
+.layout-main-section .frappe-list .list-row-head span {
+  color: #8d9cbc;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.list-sidebar .sidebar-action a,
+.btn-primary-light,
+.notification-list-body .panel-notifications .full-log-btn {
+  color: var(--primary-color) !important;
+}
+
+.filter-icon.active use {
+  stroke: var(--primary-color);
+}
+
+.layout-main-section .frappe-list .list-row {
+  padding: 0;
+  background: var(--white);
+  border-radius: 8px;
+  margin: 7px 0;
+  height: auto;
+}
+.form-section .section-head {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--primary-color) !important;
+}
+
+#page-DocType .layout-main-section-wrapper .layout-main-section,
+[data-route="Form/Web Page/temporary-assistance-guru"]
+  .layout-main-section-wrapper
+  .layout-main-section,
+[data-route="Form/Customize Form/Customize Form"]
+  .layout-main-section-wrapper
+  .layout-main-section {
+  max-width: 100%;
+  width: 100%;
+}
+[data-route*="Form/Assign Employee"] .grid-body .attached-file {
+  width: fit-content;
+  padding: 2px;
+  margin: 1px;
+}
+[data-route*="Form/Assign Employee"] .grid-body .attached-file .ellipsis {
+  width: fit-content;
+  padding-right: 10px;
+}
+[data-route*="Form/Assign Employee"]
+  .grid-body
+  .field-area
+  [data-fieldtype="Attach"] {
+  overflow: auto;
+  margin: 2px;
+}
+[data-route*="Form/Assign Employee"] .grid-body .editable-row .form-control {
+  min-height: auto;
+  padding: 7px 8px;
+}
+[data-route*="Form/Assign Employee"]
+  .grid-body
+  .editable-row
+  select.form-control {
+  min-height: 34px;
+}
+[data-page-route="Add Timesheet"]
+  .layout-main-section-wrapper
+  .layout-main-section {
+  max-width: 100% !important;
+}
+/* user management */
+#page-User .layout-main .layout-side-section {
+  border-right: none;
+}
+.form-section.card-section {
+  padding: 20px;
+}
+
+.editable-form .user-bg,
+#page-Company .user-bg,
+.submitted-form .user-bg {
+  background: url("/assets/tag_workflow/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 640px;
+}
+.signature-field {
+  overflow: auto;
+}
+/* notification */
+.notifications-list .notification-item-tabs .notifications-category.active {
+  font-size: 14px;
+  border-bottom: 2px solid var(--primary-color);
+}
+.notifications-list .notification-item-tabs .notifications-category {
+  font-size: 14px;
+  color: #78849e;
+}
+.recent-item.notification-item .notification-body:before {
+  display: none;
+}
+.notification-list-body .recent-item.notification-item.unread {
+  background: #e8f8fc !important;
+  margin: 10px 0;
+}
+.notification-list-body .recent-item.notification-item {
+  background: #fff;
+  margin: 10px 0;
+}
+.notification-list-body .recent-item.notification-item:hover {
+  background: #f5f5f6;
+}
+/* notification */
+
+input::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+/* Table UI update  */
+.page-container {
+  background-color: #fafbfc;
+}
+.layout-main-section.frappe-card {
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+.layout-main-section .frappe-list .list-row .ellipsis a {
+  font-weight: normal;
+}
+.col-lg-2.layout-side-section {
+  display: none;
+}
+
+.icon.icon-md.sidebar-toggle-placeholder {
+  display: none;
+}
+.col.layout-main-section-wrapper,
+.col-md-12.layout-main-section-wrapper {
+  left: 11rem;
+  max-width: 86.5%;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+}
+.comment-box {
+  display: none !important;
+}
+.timeline-actions {
+  display: none !important;
+}
+.timeline-dot {
+  display: none !important;
+}
+/* Inner report Table UI update  */
+.layout-main-section .datatable .dt-cell {
+  border: none;
+}
+.layout-main-section .datatable .dt-header .dt-cell--header .dt-cell__content {
+  color: #8d9cbc;
+  font-weight: 500 !important;
+  font-size: 12px;
+}
+.layout-main-section .datatable {
+  background: transparent !important;
+}
+.layout-main-section .datatable .dt-row {
+  background: #fafbfc;
+  border-radius: 8px;
+  margin: 3px 0;
+  border-bottom: none !important;
+  /* position: static !important; */
+}
+
+#page-dashboard-view .dashboard .dashboard-graph {
+  margin-left: 8rem;
+}
+/* Inner report Table UI update  */
+
+/* Staff Company List table */
+#page-staff_company_list table thead tr th {
+  color: #8d9cbc;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 10px 5px;
+}
+#page-staff_company_list #listview {
+  width: 100%;
+  padding: 0 15px;
+}
+#page-staff_company_list table {
+  font-size: 14px !important;
+  margin: 15px 0;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 8px;
+}
+#page-staff_company_list #listdata table {
+  border-spacing: 0;
+  margin: 0;
+}
+#page-staff_company_list #listdata table tbody tr:nth-child(1) td:nth-child(1) {
+  display: none;
+}
+#page-staff_company_list #listdata table tr td {
+  background: #fafbfc;
+  font-weight: 500;
+  font-size: 14px;
+}
+#page-staff_company_list #listdata table tr td button {
+  background: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  color: var(--white);
+  font-size: 13px;
+  padding: 3px 12px;
+  margin-top: 15px;
+}
+#page-staff_company_list #industrydata h3,
+#page-staff_company_list #teamdata h3,
+#page-staff_company_list #compreview h3 {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+#page-staff_company_list #industrydata,
+#page-staff_company_list #teamdata,
+#page-staff_company_list #compreview {
+  margin-bottom: 15px;
+  max-height: 200px;
+  height: 100%;
+  overflow-y: auto;
+}
+#page-staff_company_list #listdata table tr td[colspan="3"] h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+#page-staff_company_list #listdata table tr td h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+#page-staff_company_list #listdata table tr td h3 span {
+  color: #fdd22c;
+}
+#page-staff_company_list #listdata table tr td h5,
+#page-staff_company_list #listdata table tr td h4 {
+  margin-bottom: 0px;
+  color: #454f63;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+}
+#page-staff_company_list #listdata table tr td:nth-child(3) {
+  text-align: right;
+}
+#page-staff_company_list #listdata table tr td:nth-child(3) h3 {
+  font-size: 16px;
+}
+#page-staff_company_list .card-section {
+  background: #fafbfc;
+}
+#page-staff_company_list table tbody tr td {
+  padding: 10px 5px;
+  color: #454f63;
+}
+#page-staff_company_list table tbody tr {
+  background: var(--white);
+}
+#page-staff_company_list table tbody tr td:nth-child(2) {
+  font-weight: 500;
+}
+#page-staff_company_list #myInput {
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 1px 5px;
+  max-width: 324px;
+  width: 100%;
+}
+#page-User [data-fieldname="new_password"] {
+  margin-bottom: 20px;
+}
+#page-User [data-fieldname="new_password"] #showPassword {
+  margin: 0 8px -2px 0 !important;
+}
+#page-User [data-fieldname="old_password"] {
+  margin-bottom: 20px;
+}
+#page-User [data-fieldname="old_password"] #oldPassword {
+  margin: 0 8px -2px 0 !important;
+}
+/* Staff Company List table */
+
+/* Hiring table */
+[data-route="hiring-home"] .sub-menu,
+[data-route="staff-home"] .sub-menu {
+  top: 61px !important;
+  padding-top: 50px !important;
+  z-index: 99;
+  transition: 0.5s ease !important;
+  -webkit-transition: 0.5s ease !important;
+}
+[data-route="hiring-home"] .page-head,
+[data-route="staff-home"] #page-staff-home .page-head,
+[data-route="tagadmin-page"] #page-tagadmin-page .page-head {
+  display: none !important;
+}
+[data-route="staff-home"] .home-tab .tab-content {
+  margin-top: 20px;
+}
+#page-Workspaces .page-title .title-area .title-text {
+  font-weight: 600;
+}
+/* Chat UI */
+.chat-space .chat-space-container .sender-message .message-bubble {
+  background: #54c38e !important;
+  font-size: 13px !important;
+}
+.chat-space .chat-space-container .recipient-message .message-bubble {
+  background: var(--white) !important;
+  border: 1px solid#ECECF1 !important;
+  font-size: 13px !important;
+}
+.chat-space .chat-space-container {
+  background: #fafbfc !important;
+}
+.chat-space .chat-space-container .message-time {
+  color: #8d9cbc !important;
+}
+.chat-space .chat-space-actions .type-message {
+  border-radius: 5px !important;
+  background: var(--white) !important;
+  border: 1px solid#ECECF1 !important;
+}
+.chat-space .chat-space-actions .message-send-button {
+  background: var(--primary-color) !important;
+  border-radius: 5px !important;
+}
+.chat-header .chat-profile-info {
+  display: flex !important;
+}
+.chat-list .chat-rooms-container .chat-room {
+  font-size: 13px !important;
+}
+.chat-list .chat-rooms-container .chat-room .chat-date {
+  color: #8d9cbc !important;
+}
+#page-temporary-assistance-guru .chat-app #chat-bubble {
+  margin-bottom: 35px !important;
+}
+
+/* File upload UI */
+.modal-dialog .file-upload-area {
+  min-height: 12rem;
+}
+.modal-dialog .file-upload-area div button {
+  display: none;
+}
+.modal-dialog .file-upload-area div button:nth-child(1) {
+  display: block;
+  margin: auto;
+  color: var(--primary-color);
+  font-size: 14px;
+}
+
+/* View contract start */
+[data-route="Form/Job Order"] .modal .modal-dialog {
+  max-width: 900px !important;
+}
+
+[data-route="List/Claim Order/List"] .modal .modal-dialog {
+  max-width: 950px !important;
+}
+[data-route="List/Claim Order/List"]
+  .modal
+  .modal-dialog
+  .modal-content
+  .modal-body {
+  border-radius: 12px !important;
+}
+[data-route="List/Claim Order/List"] .contract_div h3 {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+textarea {
+  border: 1px solid#ECECF1 !important;
+}
+textarea:focus-visible {
+  outline: none !important;
+  border: 1px solid var(--primary-color) !important;
+}
+.contract_div {
+  height: 600px;
+  overflow-y: auto;
+}
+.contract_div ol li {
+  margin-top: 10px;
+  padding-right: 10px;
+}
+[data-route="List/Job Order/List"] .popover-body b {
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 22px;
+}
+
+[data-route="List/Job Order/List"] .unread_job {
+  background: #e8f8fc !important;
+}
+
+/* Responsive css start */
+
+#page-Company textarea.form-control,
+textarea.form-control {
+  height: 120px !important;
+}
+
+/* Hiring Dashboard */
+.hiring-home {
+  background: url("/assets/tag_workflow/images/abstract-bg.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+.hiring-home .tittle h3 {
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+.hiring-home .tittle p {
+  color: #78849e;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.hiring-home .search-area {
+  max-width: 300px;
+  padding-left: 18px;
+  width: 100%;
+  border: 1px solid#79D5EE;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.hiring-home .search_dropdown {
+  width: 140px;
+  background: none;
+  font-size: 12px;
+  color: #333c44;
+  border: 1px solid #79d5ee !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 33.5px;
+  border-right: 0 !important;
+}
+select:focus-visible {
+  border: 1px solid#79D5EE !important;
+  outline: none;
+}
+.hiring-home .search_icon {
+  position: absolute;
+  top: 6px;
+  right: 32%;
+  z-index: 999;
+  cursor: pointer;
+}
+.hiring-home .search_field {
+  width: 420px;
+  max-width: 100%;
+  margin-left: 15px;
+}
+.hiring_dashboard_table table thead tr th {
+  color: #8d9cbc;
+  font-weight: 500;
+  font-size: 13px;
+}
+.hiring_dashboard_table table thead {
+  position: sticky;
+  top: -1px;
+  background: #fff;
+}
+.hiring_dashboard_table table tbody tr td {
+  font-size: 13px;
+  padding: 8px 14px;
+}
+.hiring_dashboard_table table tbody tr td:nth-child(3) {
+  max-width: 220px;
+}
+.hiring_dashboard_table {
+  max-height: 300px;
+  overflow: auto;
+}
+.hiring_dashboard_table table {
+  margin-top: 0;
+}
+#user-notifications_tab [data-fieldtype="Check"]:nth-child(2) .checkbox {
+  padding-left: 15px;
+}
+.hiring-home .inner-search {
+  max-width: 470px;
+  width: 100%;
+  transition: 0.8s ease-in-out;
+  position: absolute;
+  background: var(--white);
+  z-index: 999;
+}
+.awesomplete > ul {
+  z-index: 999 !important;
+}
+
+/* claim order */
+[data-route="List/Claim Order/List"] .modal-header .fill-width h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+[data-route="List/Claim Order/List"] .modal-body {
+  background: #fafbfc;
+}
+[data-route="List/Claim Order/List"] .modal-body label {
+  color: #8d9cbc !important;
+  font-size: 12px !important;
+  padding-right: 5px;
+}
+[data-route="List/Claim Order/List"] .modal-body .frappe-control {
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+[data-route="List/Claim Order/List"] .modal-body table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 7px;
+  background: var(--white);
+  border: 1px solid#ECECF1;
+  border-radius: 8px;
+  padding: 10px;
+}
+[data-route="List/Claim Order/List"] .modal-body table input {
+  border: 1px solid#ECECF1;
+  width: 55px;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+[data-route="List/Claim Order/List"] .modal-body table tbody tr th {
+  font-size: 12px;
+  color: #8d9cbc;
+  font-weight: 500;
+  padding: 5px;
+}
+[data-fieldname="html_2"] h3 {
+  font-size: 14px;
+  margin: -5px 0 0 0;
+  font-weight: 500;
+}
+[data-fieldname="html_2"] h3:before {
+  content: "\2713";
+  display: inline-block;
+  color: #1da557;
+  padding: 0 6px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: -17px;
+}
+[data-fieldname="html_3"] h3 {
+  font-size: 14px;
+  margin: -5px 0 0 0;
+  font-weight: 500;
+}
+[data-fieldname="html_3"] h3:before {
+  content: "\2713";
+  display: inline-block;
+  color: #1da557;
+  padding: 0 6px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: -17px;
+}
+[data-fieldname="claimed_html"] h3 {
+  font-size: 14px;
+  margin: -5px 0 0 0;
+  font-weight: 500;
+}
+[data-fieldname="claimed_html"] h3:before {
+  content: "\2713";
+  display: inline-block;
+  color: #1da557;
+  padding: 0 6px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: -17px;
+}
+[data-fieldname="time_remaining_for_make_edits"] p {
+  margin: -5px 0 0 0;
+}
+[data-fieldname="time_remaining_for_make_edits"] p b {
+  font-weight: 500;
+}
+[data-fieldname="time_remaining_for_make_edits"] p:before {
+  content: "\25D4";
+  display: inline-block;
+  color: #7b68ee;
+  padding: 0 6px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: -17px;
+}
+
+/* job order Hiring button */
+[data-page-route="List/Job Order/List"] .btn.btn-secondary {
+  background-color: var(--primary-color) !important;
+  color: var(--white);
+  transition: 0.3s ease-in-out;
+}
+[data-page-route="List/Job Order/List"] .btn.btn-secondary:hover {
+  background-color: var(--primary-hover-color) !important;
+  color: var(--white) !important;
+}
+/* New timeline UI */
+.new-timeline {
+  max-width: 750px;
+  width: 100%;
+  margin: auto;
+  padding-left: 0;
+}
+.new-timeline .timeline-badge {
+  background: #7b68ef !important;
+}
+.new-timeline .timeline-badge svg {
+  fill: var(--white) !important;
+}
+.new-timeline .timeline-badge svg.icon-sm {
+  --icon-stroke: var(--white);
+}
+.new-timeline .nav-pills .nav-link.active {
+  background-color: var(--primary-color) !important;
+}
+.new-timeline .activity-toggle h4 {
+  font-weight: 600;
+}
+[data-page-route="Job Order"] .msg {
+  cursor: pointer;
+  display: -webkit-flex;
+}
+[data-page-route="Job Order"] .msg:after {
+  content: "\003E";
+  display: inline-block;
+  color: #7b68ee;
+  padding: 0 6px 0 0;
+  position: absolute;
+  right: 10px;
+}
+[data-page-route="Job Order"] #div_rate,
+#div_extra {
+  position: relative;
+}
+[data-page-route="Job Order"] #div_rate > input,
+#div_extra > input {
+  padding-left: 18px;
+}
+[data-page-route="Job Order"] #div_rate:after,
+#div_extra:after {
+  display: none;
+}
+[data-route="hiring-home"] #page-hiring-home .page-head {
+  display: none;
+}
+[data-route="hiring-home"] #page-hiring-home {
+  padding: 20px 0;
+  transition: 0.5s ease-in-out;
+}
+.notification-settings {
+  display: none;
+}
+.page-title .title-area .title-text {
+  font-weight: 400;
+  font-size: 18px;
+}
+.chat-list .chat-rooms-container .chat-room .chat-profile-info .chat-name {
+  font-weight: 500 !important;
+}
+.widget-group .widget-group-head .widget-group-title {
+  font-weight: 500;
+}
+[data-route="Form/Add Timesheet/Add Timesheet"]
+  .layout-main-section-wrapper
+  .layout-main-section
+  .form-message
+  p
+  b {
+  color: #4365ad;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+}
+[data-route="Form/Add Timesheet/Add Timesheet"]
+  .layout-main-section-wrapper
+  .layout-main-section
+  .form-message
+  div {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: inherit;
+}
+[data-route="Form/Add Timesheet/Add Timesheet"]
+  .layout-main-section-wrapper
+  .layout-main-section
+  .form-message
+  p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+[data-route="Form/Add Timesheet/Add Timesheet"]
+  .layout-main-section-wrapper
+  .layout-main-section
+  .form-layout
+  .form-page
+  .row
+  .section-body
+  .form-column
+  form {
+  border: 1px solid #cccccc85;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+[data-route="Form/Add Timesheet/Add Timesheet"]
+  .layout-main-section-wrapper
+  .layout-main-section
+  .form-layout
+  .form-page
+  .row:nth-last-child(1)
+  .section-body
+  .form-column
+  form {
+  border: none;
+  padding: 0;
+  border-radius: 0px;
+}
+[data-route="Form/Add Timesheet/Add Timesheet"] .form-section .form-column h4 {
+  font-weight: 500;
+  color: var(--primary-color) !important;
+  font-size: 16px;
+  margin-bottom: 10px !important;
+}
+[data-route="Form/Add Timesheet/Add Timesheet"] .form-message {
+  background: #d3e8fcba !important;
+}
+/* New approved timsheet */
+[data-route="timesheet-approval"]
+  .layout-main-section-wrapper
+  .layout-main-section
+  .form-message
+  p
+  b {
+  color: #4365ad;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+}
+[data-route="timesheet-approval"]
+  .layout-main-section-wrapper
+  .layout-main-section
+  .form-message
+  div {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+[data-route="timesheet-approval"]
+  .layout-main-section-wrapper
+  .layout-main-section
+  .form-message
+  p {
+  margin-bottom: 0;
+  font-size: 12px;
+}
+[data-route="timesheet-approval"] .table thead th {
+  color: #8d9cbc;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 10px;
+  border-top: none;
+}
+[data-route="timesheet-approval"] .table tbody tr td {
+  font-size: 13px;
+  padding: 10px;
+  vertical-align: baseline;
+}
+[data-route="timesheet-approval"] .table {
+  margin: 0;
+}
+[data-route="List/Employee/List"] .popover .popover-body b {
+  font-weight: 400;
+}
+
+span.frappe-timestamp.mini {
+  display: none;
+}
+
+.report-footer.text-muted {
+  display: none;
+}
+
+.sort-selector {
+  display: block;
+}
+
+[data-page-route="Company"] #drug_flat,
+#drug_hour,
+#bg_flat,
+#bg_hour,
+#mvr_flat,
+#mvr_hour,
+#shovel_flat,
+#shovel_hour {
+  position: relative;
+}
+
+[data-page-route="Company"] #drug_flat > input,
+#drug_hour > input,
+#bg_flat > input,
+#bg_hour > input,
+#mvr_flat > input,
+#mvr_hour > input,
+#shovel_flat > input,
+#shovel_hour > input {
+  padding-left: 18px;
+}
+
+[data-page-route="Company"] #id_mvr_hour:after {
+  position: absolute;
+  left: 3px;
+  top: 56%;
+  font-size: 13px;
+  content: "$";
+}
+.control-value.like-disabled-input {
+  background-color: white;
+  border: 1px solid#f4f5f6;
+}
+
+input.input-with-feedback.form-control.bold,
+select.input-with-feedback.form-control.ellipsis,
+input.input-with-feedback,
+textarea.input-with-feedback.form-control,
+.attached-file.flex.justify-between.align-center,
+input#showPassword,
+input.input-with-feedback.form-control,
+.ace_content,
+.multiselect-list .form-control {
+  border: 1px solid#21b7e170;
+  background-color: white;
+}
+.multiselect-list .status-text {
+  top: 2px;
+  font-size: 14px;
+}
+[data-page-route="Item"] input#id_mvr_hour {
+  padding-left: 20px;
+}
+[data-route="staff_company_list"] table tbody tr td use.like-icon,
+[data-route="List/Job Order/List"] .liked use.like-icon {
+  stroke: #e24c4c;
+}
+[data-route="staff_company_list"] table thead tr th .icon,
+[data-route="List/Job Order/List"] .result header use.like-icon,
+[data-route="List/Sales Invoice/List"] .result header use.like-icon {
+  display: none;
+}
+.list-row-container {
+  border-bottom: none;
+}
+
+[data-page-route="Claim Order"] #emp_pay_rate:after {
+  position: absolute;
+  left: 10px;
+  top: 56%;
+  font-size: 13px;
+  content: "$";
+}
+[data-page-route="Claim Order"] input#emp_pay_rate {
+  padding-left: 20px;
+}
+[data-page-route="Assign Employee"] input#emp_pay_rate,
+[data-page-route="Item"] input#title_rate {
+  padding-left: 20px;
+}
+
+[data-route="query-report/TAG Earnings"]
+  select.input-with-feedback.form-control.ellipsis,
+[data-route="query-report/Orders"]
+  select.input-with-feedback.form-control.ellipsis,
+[data-route="query-report/Employee Timesheet Report"]
+  select.input-with-feedback.form-control.ellipsis,
+[data-route="query-report/Tag Invoice"]
+  select.input-with-feedback.form-control.ellipsis {
+  padding-top: 3px;
+}
+[data-route="query-report/Work Orders"]
+  .datatable
+  .dt-row-filter
+  .dt-filter.dt-input,
+[data-route="query-report/Sales Register1"]
+  .datatable
+  .dt-row-filter
+  .dt-filter.dt-input,
+[data-route="query-report/Orders"]
+  .datatable
+  .dt-row-filter
+  .dt-filter.dt-input {
+  padding: 0 7px;
+}
+.custom-actions {
+  display: flex !important;
+}
+.frappe-card .frappe-list header .ellipsis {
+  white-space: normal;
+  line-height: 1.2;
+  text-align: left;
+}
+.frappe-card .frappe-list .list-row-container .ellipsis {
+  text-align: left;
+}
+.chat-cross-button {
+  display: block !important;
+}
+.chat-list-icons {
+  margin-right: 30px;
+}
+select.input-with-feedback.form-control.ellipsis {
+  padding: 0 0.75rem;
+}
+[data-fieldtype="Table"] .form-grid .grid-heading-row .grid-static-col,
+[data-fieldtype="Table"] .form-grid .grid-heading-row .row-check {
+  height: auto;
+}
+[data-fieldtype="Table"]
+  .form-grid
+  .grid-heading-row
+  .grid-static-col
+  .ellipsis {
+  white-space: normal;
+}
+.modal {
+  z-index: 99999;
+}
+[data-fieldname="select_days"] .table-multiselect {
+  border: 1px solid #ebeceeb0;
+  background: transparent;
+}
+[data-fieldname="select_days"] .table-multiselect input {
+  background: transparent;
+  border-radius: 5px;
+  border: 1px solid#21b7e170;
+  padding: 6px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+[data-fieldname="select_days"] .table-multiselect .awesomplete:before {
+  content: "\2304";
+  font-size: 14px;
+  position: absolute;
+  right: 17px;
+  top: 6px;
+}
+[data-page-route="List/Employee/List"]
+  .frappe-card
+  .frappe-list
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(3) {
+  flex: 2;
+}
+[data-page-route="List/Employee/List"]
+  .frappe-card
+  .frappe-list
+  header
+  .level-left
+  .list-row-col:nth-child(3) {
+  flex: 2;
+}
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  .frappe-list
+  header
+  .level-left
+  .list-row-col:nth-child(6) {
+  text-align: left !important;
+}
+.frappe-card .list-row-container .ellipsis {
+  text-align: center;
+  white-space: unset;
+  text-overflow: inherit;
+  word-break: break-word;
+}
+
+[data-page-route="List/Contact/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(5),
+[data-page-route="List/Lead/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(6),
+[data-page-route="List/Lead/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(4),
+[data-page-route="List/Item/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(7),
+[data-page-route="List/Contact/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(5),
+[data-page-route="List/Lead/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(6),
+[data-page-route="List/Lead/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(4),
+[data-page-route="List/Item/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(7) {
+  flex: 2;
+}
+[data-page-route="List/Item/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(4),
+[data-page-route="List/Item/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(4) {
+  flex: 1.4;
+}
+
+[data-page-route="List/Job Order/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(3),
+[data-page-route="List/Job Order/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(3) {
+  flex: 1.3;
+}
+
+[data-page-route="List/Timesheet/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(4),
+[data-page-route="List/Timesheet/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(4) {
+  flex: 1.6;
+}
+
+.list-row .level-right,
+.list-row-head .level-right {
+  flex: 0.3;
+}
+[data-page-route="List/Sales Invoice/List"] .list-row .level-right,
+[data-page-route="List/Sales Invoice/List"] .list-row-head .level-right,
+[data-page-route="List/Job Order/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(1),
+[data-page-route="List/Job Order/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(8),
+[data-page-route="List/Job Order/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(9),
+[data-page-route="List/Job Order/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(1),
+[data-page-route="List/Job Order/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(8),
+[data-page-route="List/Job Order/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(9),
+[data-page-route="List/Timesheet/List"]
+  #staffing_timesheet
+  header
+  .level-left
+  .list-row-col:nth-child(1),
+[data-page-route="List/Timesheet/List"]
+  #staffing_timesheet
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(1) {
+  flex: 1.5;
+}
+
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(2),
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(2),
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(3),
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(3),
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(4),
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(4),
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(5),
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(5),
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(6),
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(6) {
+  flex: 1.5;
+}
+[data-page-route="List/Sales Invoice/List"] .list-row-head .level-left,
+[data-page-route="List/Sales Invoice/List"] .list-row .level-left {
+  min-width: 86% !important;
+}
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(5) {
+  margin-right: -2px;
+}
+
+.block-company-btn {
+  margin-right: 50px;
+}
+[data-page-route="List/Item/List"] .frappe-card .list-row-container .ellipsis,
+[data-page-route="List/Job Order/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(7) {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  word-break: unset;
+}
+[data-page-route="Add Timesheet"]
+  .form-grid
+  .grid-heading-row
+  .data-row
+  div:nth-child(3),
+[data-page-route="Add Timesheet"]
+  .form-grid
+  .grid-body
+  .data-row
+  div:nth-child(3) {
+  max-width: 13.5% !important;
+  flex: 0 0 13.5% !important;
+  height: auto;
+}
+
+[data-page-route="Timesheet"]
+  .form-grid
+  .grid-heading-row
+  .data-row
+  .sortable-handle,
+[data-page-route="Timesheet"] .form-grid .grid-body .data-row .sortable-handle,
+[data-page-route="Sales Invoice"]
+  .form-page
+  .form-section:nth-child(16)
+  .form-grid
+  .grid-heading-row
+  .data-row
+  .sortable-handle,
+[data-page-route="Sales Invoice"]
+  .form-page
+  .form-section:nth-child(16)
+  .form-grid
+  .grid-body
+  .data-row
+  .sortable-handle,
+[data-fieldname="multiple_job_titles"] .data-row .row-check,
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .grid-heading-row
+  .data-row
+  .sortable-handle,
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .grid-body
+  .data-row
+  .sortable-handle,
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  .grid-body
+  .data-row
+  .sortable-handle,
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  .grid-heading-row
+  .data-row
+  .sortable-handle,
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .grid-heading-row
+  .data-row
+  div:nth-child(1).search {
+  max-width: 4% !important;
+  flex: 0 0 4% !important;
+  height: auto;
+}
+
+[data-fieldname="multiple_job_titles"] .data-row div:nth-child(4),
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="job_category"],
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="employee_name"],
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="resume"],
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="select_job"],
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="job_start_time"],
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .hiring_no_resume
+  [data-fieldname="job_start_time"],
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .hiring_no_resume
+  [data-fieldname="remove_employee"] {
+  max-width: 14% !important;
+  flex: 0 0 14% !important;
+  height: auto;
+}
+
+[data-page-route="Timesheet"]
+  .form-grid
+  .grid-heading-row
+  .data-row
+  div.grid-static-col:nth-child(7),
+[data-page-route="Timesheet"]
+  .form-grid
+  .grid-body
+  .data-row
+  div.grid-static-col:nth-child(7),
+[data-page-route="Sales Invoice"]
+  .form-page
+  .form-section:nth-child(16)
+  .form-grid
+  .grid-heading-row
+  .data-row
+  div.grid-static-col:nth-child(7),
+[data-page-route="Sales Invoice"]
+  .form-page
+  .form-section:nth-child(16)
+  .form-grid
+  .grid-body
+  .data-row
+  div.grid-static-col:nth-child(7),
+[data-page-route="Sales Invoice"]
+  .form-page
+  .form-section:nth-child(16)
+  .form-grid
+  .grid-heading-row
+  .data-row
+  div.grid-static-col:nth-child(8),
+[data-page-route="Sales Invoice"]
+  .form-page
+  .form-section:nth-child(16)
+  .form-grid
+  .grid-body
+  .data-row
+  div.grid-static-col:nth-child(8),
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="estimated_hours_per_day"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="staff_class_code"] {
+  max-width: 10.5% !important;
+  flex: 0 0 10.5% !important;
+}
+[data-page-route="List/Timesheet/List"]
+  .page-form
+  .standard-filter-section
+  input.form-control {
+  padding: 8px;
+}
+
+[data-page-route="Add Timesheet"]
+  .form-grid
+  .grid-heading-row
+  .data-row
+  div.grid-static-col:nth-child(2),
+[data-page-route="Add Timesheet"]
+  .form-grid
+  .grid-body
+  .data-row
+  div.grid-static-col:nth-child(2) {
+  max-width: 13.3% !important;
+  flex: 0 0 13.3% !important;
+}
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="job_category"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .grid-heading-row
+  .data-row
+  div:nth-child(3).search,
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="employee"],
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="select_job"],
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="no_of_workers"],
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="category"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="employee"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .grid-heading-row
+  .data-row
+  div:nth-child(5).search {
+  max-width: none !important;
+  flex: 1 !important;
+}
+.grid-static-col.search input,
+.row-index.search input {
+  height: auto;
+}
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  .data-row
+  div:nth-last-child(1).col,
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .data-row
+  div:nth-last-child(1).col {
+  flex: 0 0 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .form-in-grid
+  [data-fieldname="employee"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  .form-in-grid
+  [data-fieldname="select_job"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  .form-in-grid
+  [data-fieldname="category"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  .form-in-grid
+  [data-fieldname="estimated_hours_per_day"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  .form-in-grid
+  [data-fieldname="no_of_workers"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  .form-in-grid
+  [data-fieldname="staff_class_code"],
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  .form-in-grid
+  form
+  > .input-max-width,
+.hiring-section
+  [data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .form-in-grid
+  form
+  > .input-max-width {
+  max-width: 100% !important;
+}
+
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="job_category"]
+  div.form-group,
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="job_category"]
+  [data-target="Item"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="employee"]
+  div.form-group,
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="employee"]
+  [data-target="Employee"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="employee_name"]
+  div.form-group,
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  [data-fieldname="employee_name"]
+  input[data-fieldname="employee_name"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="estimated_hours_per_day"]
+  div.form-group,
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="estimated_hours_per_day"]
+  input[data-fieldname="estimated_hours_per_day"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="staff_class_code"]div.form-group,
+[data-page-route="Assign Employee"]
+  [data-fieldname="multiple_job_title_details"]
+  [data-fieldname="staff_class_code"]
+  input[data-fieldname="staff_class_code"],
+[data-page-route="Assign Employee"]
+  [data-fieldname="employee_details"]
+  .grid-row-open
+  [data-fieldname="job_category"] {
+  max-width: none !important;
+}
+
+.dt-instance-1 .dt-cell {
+  flex: 1 1 0px;
+}
+.datatable .dt-scrollable {
+  width: auto !important;
+}
+.toggle_list_view ul li:nth-child(2) {
+  display: none;
+}
+[data-page-route="List/Timesheet/List"]
+  .frappe-card
+  header
+  .level-left
+  .list-row-col:nth-child(8),
+[data-page-route="List/Timesheet/List"]
+  .frappe-card
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(8),
+[data-page-route="List/Timesheet/List"]
+  #staffing_timesheet
+  header
+  .level-left
+  .list-row-col:nth-child(7),
+[data-page-route="List/Timesheet/List"]
+  #staffing_timesheet
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(7),
+[data-page-route="List/Timesheet/List"]
+  #staffing_timesheet
+  header
+  .level-left
+  .list-row-col:nth-child(6),
+[data-page-route="List/Timesheet/List"]
+  #staffing_timesheet
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(6) {
+  flex: 0.7;
+  text-align: left !important;
+}
+
+[data-page-route="List/Timesheet/List"]
+  #staffing_timesheet
+  header
+  .level-left
+  .list-row-col:nth-child(8),
+[data-page-route="List/Timesheet/List"]
+  #staffing_timesheet
+  .list-row-container
+  .level-left
+  .list-row-col:nth-child(8) {
+  flex: 1;
+}
+[data-page-route="List/Sales Invoice/List"]
+  .frappe-card
+  .frappe-list
+  .list-row-container
+  .level-item {
+  justify-content: start !important;
+}
+.employee_popup table tr th {
+  border-top: none;
+}
+.company_logo {
+  width: 100px;
+  height: 100px;
+  display: inherit;
+}
+[data-page-route="List/Job Order/List"]
+  .order-list-hiring
+  header
+  .level-left
+  .list-row-col:nth-child(5),
+[data-page-route="List/Job Order/List"]
+  .order-list-hiring
+  header
+  .level-left
+  .list-row-col:nth-child(7),
+[data-page-route="List/Job Order/List"]
+  .order-list-staffing
+  header
+  .level-left
+  .list-row-col:nth-child(5) {
+  margin-left: 10px;
+}
+[data-page-route="List/Job Order/List"]
+  .order-list-staffing
+  header
+  .level-left
+  .list-row-col:nth-child(5) {
+  margin-left: 20px;
+}
+[data-page-route="List/Job Order/List"]
+  .order-list-tag
+  header
+  .level-left
+  .list-row-col:nth-child(5) {
+  margin-left: 20px;
+}
+
+.widget {
+  padding: 15px !important;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  border: 1px solid #cccccc36 !important;
+}
+.widget.hiring_dashboard_table,
+#page-Workspaces .widget.spacer,
+#page-Workspaces .layout-main-section {
+  padding: 0px !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.widget.shortcut-widget-box .widget-title,
+.widget .widget-head .widget-title {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+[data-page-route="Add Timesheet"] .card-section .form-grid.error,
+[data-page-route="Assign Employee"] .form-grid.error {
+  border: 1px solid#EBEEF0 !important;
+}
+[data-fieldtype="Table"] .form-grid .grid-heading-row .row-index,
+[data-fieldtype="Table"] .form-grid .grid-body .row-index,
+[data-page-route="List/Timesheet/List"]
+  .layout-main-section
+  .frappe-list
+  .list-row-head
+  span.list-liked-by-me,
+[data-page-route="List/Timesheet/List"]
+  .layout-main-section
+  .frappe-list
+  .list-row-container
+  span.list-row-like,
+[data-route="List/Timesheet/List"] #navbar-breadcrumbs li:nth-child(1),
+[data-page-route="Item"] [title="Bill Rate"]:after,
+[data-page-route="Timesheet"] [data-label="Create%20Salary%20Slip"],
+[data-page-route="Item"]
+  [data-fieldtype="Table"]
+  [data-fieldname="job_site"]
+  .reqd:after,
+#page-staff_company_list .staff_list .clearfix {
+  display: none;
+}
+#datepickers-container {
+  z-index: 999999;
+}
+[data-page-route="tagadmin-page"] .layout-main-section .home {
+  padding-top: 25px;
+}
+[data-page-route="Workspaces"] .layout-main-section {
+  background: #f9fafa !important;
+}
+[data-page-route="Add Timesheet"]
+  .form-grid
+  .grid-heading-row
+  .data-row
+  .sortable-handle,
+[data-page-route="Add Timesheet"]
+  .form-grid
+  .grid-body
+  .data-row
+  .sortable-handle,
+[data-page-route="Add Timesheet"]
+  .form-grid
+  .grid-heading-row
+  .data-row
+  .row-check {
+  max-width: 3.5% !important;
+  flex: 0 0 3.5% !important;
+  height: auto;
+}
+.modal .modal-header .modal-title {
+  font-size: 18px;
+}
+.quick-info-detail div p:nth-child(1),
+[data-route="dynamic_page"] .modal-dialog table thead tr th {
+  color: #8d9cbc;
+  font-size: 13px;
+  margin-bottom: 5px;
+  font-weight: normal;
+}
+[data-route="List/Payroll Period/List"]
+  .modal-dialog
+  .form-column
+  .frappe-control {
+  width: 50%;
+  padding: 0 15px;
+  float: left;
+}
+
+[data-fieldname="logout_all_sessions"] .checkbox {
+  margin-top: 33px;
+}
+#user-__details [data-fieldtype="Check"] {
+  margin-bottom: 5px;
+}
+.company-carousel button {
+  border: none;
+  background: transparent;
+  width: auto;
+}
+.company-carousel ul li {
+  padding: 0 8px;
+}
+.company-carousel #form-tabs1 {
+  display: flex;
+  justify-content: space-around;
+}
+.company-carousel #form-tabs1 li:nth-child(1) {
+  padding-left: 20px !important;
+}
+[data-page-route="Job Order"]
+  [data-fieldname="multiple_job_titles"]
+  .editable-row
+  .form-control {
+  height: auto;
+}
+[data-page-route="Job Order"]
+  [data-fieldname="description"]
+  .input-with-feedback {
+  border: 1px solid#21b7e170 !important;
+  height: 39.8px !important;
+}
+[data-page-route="Job Order"] [data-fieldname="description"] {
+  overflow: inherit;
+}
+.company-carousel #form-tabs1 li:nth-last-child(1) {
+  padding-right: 20px !important;
+}
+[data-route="Form/Company/maruti hiring"] .company-carousel ul li,
+[data-route="Form/Company/conduent exclusive"] .company-carousel ul li {
+  padding: 0 13px;
+}
+.company-carousel .carousel-control-prev i,
+.company-carousel .carousel-control-next i {
+  color: #000000f5;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.company-carousel ul#form-tabs2 li:nth-child(1) {
+  padding-left: 30px !important;
+}
+.text-extra-muted.comment-count {
+  display: none !important;
+}
+
+span.comment-count {
+  display: none !important;
+}
+
+[data-fieldname="hiring_html"] h3 {
+  font-size: 14px;
+  margin: -5px 0 0 0;
+  font-weight: 500;
+}
+[data-fieldname="hiring_html"] h3:before {
+  content: "\2713";
+  display: inline-block;
+  color: #1da557;
+  padding: 0 6px 0 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: -17px;
+}
+
+[data-page-route="Add Timesheet"] .form-grid .grid-static-col {
+  height: auto;
+}
+
+[data-page-route="Add Timesheet"] .form-grid .static-area {
+  white-space: unset;
+  text-overflow: inherit;
+  word-break: break-word;
+}
+
+.assign_new_emp_btn {
+  position: absolute;
+  top: 32px;
+  z-index: 99;
+  left: 20rem;
+}
+.like-icon {
+  display: none;
+}
+[data-page-route="staff_company_list"] .like-icon {
+  display: block;
+}
+#company-integration_details .visible-section {
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+#company-integration_details .visible-section button.add-btn-custom-location {
+  position: absolute;
+  margin-top: 10px;
+}
+.enable_pill_branch {
+  margin-left: 36.4%;
+}
+.enable_pill_jazz {
+  margin-left: 35.4%;
+}
+.enable_pill_quick {
+  margin-left: 32.5%;
+}
+.enable_pill_staff {
+  margin-left: 25%;
+}
+.enable_pill_work {
+  margin-left: 32.4%;
+}
+.active_pill_branch {
+  margin-left: 36%;
+}
+.active_pill_jazz {
+  margin-left: 35%;
+}
+.active_pill_quick {
+  margin-left: 32.5%;
+}
+.active_pill_staff {
+  margin-left: 25%;
+}
+.active_pill_work {
+  margin-left: 32.8%;
+}
+
+.filter-section .sort-selector-button .dropdown-menu {
+  transform: translate3d(-76px, 0px, 0px) !important;
+  z-index: 9999999 !important;
+  max-height: 250px !important;
+  top: 30px !important;
+}
+[data-fieldname="location"] table thead th {
+  font-weight: 500;
+}
+[data-fieldname="location"] .table-responsive {
+  max-height: 500px;
+  margin-bottom: 5px;
+}
+[data-fieldname="location"] .table-responsive table {
+  margin: 0;
+  position: relative;
+}
+[data-fieldname="location"] .table-responsive table thead {
+  position: sticky;
+  top: -1px;
+  background: #fff;
+  z-index: 9999;
+}
+[data-fieldname="location"] .table-responsive table thead th {
+  border-bottom-width: 1px;
+}
+[data-fieldname="location"] .table-responsive table thead:after {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #f4f5f6;
+  position: absolute;
+  display: block;
+  bottom: 0;
+}
+[data-fieldname="location"] .table-responsive table thead:before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #f4f5f6;
+  position: absolute;
+  display: block;
+}
+[data-route="List/Salary Component/List"]
+  .frappe-card
+  .list-row-container
+  .list-row-col:nth-child(7) {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+[data-fieldtype="Currency"],
+[data-fieldtype="Currency"] .ellipsis div,
+[data-page-route="Job Order"] [data-fieldname="no_of_workers"],
+[data-page-route="Job Order"] [data-fieldname="estimated_hours_per_day"],
+[data-page-route="List/Job Order/List"] .result .ellipsis.text-right {
+  text-align: left !important;
+}
+#div_rate .control-input-wrapper input {
+  padding-left: 21px;
+}
+#div_rate:after {
+  left: 11px !important;
+  top: 55% !important;
+}
+
+/*---Branch Banner On Slary Slip and Payroll Entry---*/
+.banner-container {
+  display: inline-block;
+  position: relative;
+}
+#close_banner {
+  position: absolute;
+  right: 5px;
+  background: none;
+  border: none;
+  color: white;
+}
+#close_banner > span {
+  font-size: 25px;
+}
+#sign_up {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  border: black !important;
+  border-radius: 6px !important;
+}
+#more_info {
+  position: absolute;
+  bottom: 10px;
+  left: 110px;
+  box-shadow: 0px 3px #888;
+  padding: 5px 15px;
+  border: white !important;
+  border-radius: 6px !important;
+}
+
+.frappe-control.input-max-width[data-fieldname="branch_api_key_data"] {
+  padding-top: 38px;
+}
+
+.frappe-control.input-max-width[data-fieldname="quickbooks_company_id"],
+.frappe-control.input-max-width[data-fieldname="redirect_url"],
+.frappe-control.input-max-width[data-fieldname="military_veteran"] {
+  top: 12px;
+}
+.filter-section .sort-selector-button {
+  min-width: 85px;
+  margin-right: 30px;
+}
+[data-route="List/Job Site/List"] .layout-main-section .list-paging-area {
+  width: 100%;
+}
+[data-route="List/Job Site/List"] .layout-main-section .result header {
+  width: 100%;
+}
+[data-route="List/Job Site/List"]
+  .layout-main-section
+  .result
+  .list-row-container {
+  width: 32%;
+  float: left;
+  margin-right: 10px;
+}
+[data-route="List/Job Site/List"] .frappe-card .list-row-container .ellipsis {
+  display: contents;
+  font-size: 12px;
+}
+[data-route="List/Job Site/List"] .frappe-card .list-row-container .list-row {
+  justify-content: start;
+  padding: 5px 0;
+  margin: 7px 5px;
+}
+[data-route="List/Job Site/List"]
+  .frappe-card
+  .list-row-container
+  .like-action
+  .icon {
+  display: none;
+}
+
+#user-notifications_tab [data-fieldtype="Check"] {
+  float: left;
+  width: 200px;
+}
+#user-notifications_tab small {
+  color: #8d9cbc;
+  font-size: 12px;
+}
+#user-notifications_tab p {
+  color: #78849e;
+}
+#user-notifications_tab .form-section.card-section {
+  padding: 12px 10px;
+  margin: 0 10px;
+}
+[data-route="dynamic_page"] .modal-dialog table tbody tr td {
+  border-top: 1px solid #e9e9e9;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 8px 10px;
+  vertical-align: middle;
+}
+[data-route="dynamic_page"] .modal-dialog table {
+  border-collapse: separate;
+  border-spacing: 0 11px;
+}
+[data-route="dynamic_page"] .modal-dialog table tbody tr td:nth-child(1) {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-left: 1px solid #e9e9e9;
+}
+[data-route="dynamic_page"] .modal-dialog table tbody tr td:nth-child(5) {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-right: 1px solid #e9e9e9;
+}
+[data-route="dynamic_page"] .modal-dialog .work_order_div {
+  max-height: 600px;
+}
+[data-route="List/Job Site/List"] .frappe-card .list-row-container .avatar {
+  display: none;
+}
+[data-page-route="Claim Order"]
+  [data-fieldname="multiple_job_titles"]
+  .form-grid
+  .text-right {
+  text-align: left !important;
+}
+[data-route="List/Claim Order/List"] .modal-body table#modify_headcount,
+[data-route="List/Claim Order/List"] .modal-body table#select_headcount {
+  max-height: 400px;
+  overflow: auto;
+  display: block;
+  padding-top: 0;
+}
+.assign-emp-popup,
+.employee_popup table {
+  max-height: 370px;
+  overflow: auto;
+  display: block;
+  padding: 0;
+}
+.employee_popup table {
+  padding: 0 15px;
+}
+.employee_popup table thead,
+.employee_popup table tbody {
+  width: 100%;
+}
+.employee_popup table tbody {
+  width: 100%;
+}
+.employee_popup table thead {
+  position: sticky;
+  background: #fff;
+  top: 0;
+  z-index: 9;
+}
+[data-route="List/Claim Order/List"] .modal-body table#modify_headcount #header,
+[data-route="List/Claim Order/List"]
+  .modal-body
+  table#select_headcount
+  #header {
+  position: sticky;
+  background: #fff;
+  top: 0;
+  z-index: 9;
+}
+.employee_popup table thead tr th:nth-child(1),
+.employee_popup table tbody tr td:nth-child(1) {
+  width: 5%;
+}
+.employee_popup table thead tr th:nth-child(2),
+.employee_popup table tbody tr td:nth-child(2) {
+  width: 20%;
+}
+.employee_popup table thead tr th:nth-child(3),
+.employee_popup table tbody tr td:nth-child(3) {
+  width: 20%;
+}
+.employee_popup table thead tr th:nth-child(4),
+.employee_popup table tbody tr td:nth-child(4) {
+  width: 20%;
+}
+.employee_popup table thead tr th:nth-child(5),
+.employee_popup table tbody tr td:nth-child(5) {
+  width: 25%;
+}
+.employee_popup table thead tr th:nth-child(6),
+.employee_popup table tbody tr td:nth-child(6) {
+  width: 10%;
+}
+
+.assign-emp-popup tbody {
+  display: inline-table;
+  width: 100%;
+}
+
+.employee_popup table th,
+.employee_popup table td {
+  padding: 15px 5px;
+}
+
+/*------ Media query start ----*/
+@media (max-width: 1300px) {
+  /* .col.layout-main-section-wrapper,
+  .col-md-12.layout-main-section-wrapper {
+    left: 13rem !important;
+    max-width: 80% !important;
+  } */
+  .page-head .page-head-content {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  [data-page-route="List/Sales Invoice/List"]
+    .frappe-card
+    .frappe-list
+    .list-subject {
+    flex-basis: 60px;
+  }
+  [data-page-route="Employee"]
+    .editable-form
+    .layout-main-section-wrapper
+    .layout-main-section {
+    margin-top: 40px;
+  }
+  [data-page-route="Employee"] .page-head .page-head-content div:nth-child(2) {
+    flex-wrap: wrap;
+    margin: 15px 0px;
+    display: contents;
+    background: #fff;
+  }
+  [data-page-route="Employee"]
+    .layout-main-section-wrapper
+    .layout-main-section {
+    margin-top: 15px !important;
+  }
+  [data-page-route="Employee"] .page-head-content {
+    display: inline-block;
+  }
+  [data-page-route="Employee"] .container {
+    padding-bottom: 10px;
+  }
+  .navbar-light .navbar-nav .nav-item .btn-login-area {
+    text-align: right;
+    margin-right: 7px;
+  }
+  #order {
+    padding: 0;
+  }
+  [data-route="Form/Add Timesheet/Add Timesheet"]
+    .layout-main-section-wrapper
+    .layout-main-section
+    .form-message
+    div {
+    display: table;
+  }
+  [data-fieldname="update_employee_records"] button {
+    margin-top: 0;
+  }
+  #page-User .layout-main-section-wrapper .layout-main-section,
+  #page-Company .layout-main-section-wrapper .layout-main-section,
+  #page-Lead .layout-main-section-wrapper .layout-main-section,
+  #page-Timesheet .layout-main-section-wrapper .layout-main-section,
+  #page-dashboard-view .dashboard .dashboard-graph {
+    width: 100%;
+    margin-left: 0;
+  }
+  .col.layout-main-section-wrapper,
+  .col-md-12.layout-main-section-wrapper {
+    left: 1rem;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+  #page-Workspaces .page-title .title-area .title-text {
+    margin-left: 0px;
+  }
+  .page-title .title-area .indicator-pill {
+    margin: 5px 0 0 20px;
+  }
+  .modal .modal-body {
+    margin-left: 15px;
+  }
+  .new-timeline {
+    padding-left: 10px;
+  }
+  .page-title .title-area .title-text {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4e4e4e;
+  }
+  [data-fieldtype="Table"] .form-grid {
+    overflow: auto;
+  }
+  [data-fieldtype="Table"] .form-grid .grid-heading-row,
+  [data-fieldtype="Table"] .form-grid .grid-body .grid-row {
+    width: 700px;
+  }
+  [data-fieldtype="Table"]
+    .form-grid
+    .grid-body
+    .grid-row.grid-row-open
+    .form-in-grid {
+    width: 100% !important;
+    position: absolute;
+    top: 5%;
+  }
+  #page-staff_company_list table {
+    font-size: 13px !important;
+  }
+  .hiring-home .tittle h3 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  #terms-and-conditions {
+    padding: 0 20px !important;
+  }
+  [data-route="hiring-home"] #page-hiring-home .page-head {
+    display: block;
+  }
+  [data-route="hiring-home"] .page-head {
+    height: 30px !important;
+  }
+  [data-route="hiring-home"] .page-head.drop-shadow {
+    height: 60px !important;
+  }
+  .hiring-home .search-area {
+    max-width: 350px;
+    padding-left: 10px;
+  }
+  .hiring-home .search_icon {
+    display: none;
+  }
+  [data-fieldname="get_data_from_jazzhr"] button {
+    margin-top: 0px;
+  }
+  [data-page-route="List/Sales Invoice/List"] .frappe-list .result {
+    overflow: auto;
+    min-height: auto;
+  }
+  [data-page-route="List/Sales Invoice/List"] .frappe-list .result header,
+  [data-page-route="List/Sales Invoice/List"]
+    .frappe-list
+    .result
+    .list-row-container {
+    width: 800px;
+  }
+}
+
+@media (min-width: 768px) {
+  .layout-main .form-column.col-sm-12 > form > .input-max-width {
+    max-width: 100%;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 570px) and (max-width: 768px) {
+  .dropdown-notifications .notifications-list {
+    right: -230px;
+  }
+}
+
+[data-route="staff-home"] .popover {
+  z-index: 999999 !important;
+}
+
+[data-route="dynamic_page"] .popover {
+  z-index: 999999 !important;
+}

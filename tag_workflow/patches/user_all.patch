@@ -1,0 +1,940 @@
+diff --git a/frappe/core/doctype/user/user.json b/frappe/core/doctype/user/user.json
+index 6b3748f..8a067c2 100644
+--- a/frappe/core/doctype/user/user.json
++++ b/frappe/core/doctype/user/user.json
+@@ -7,17 +7,17 @@
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+-  "enabled",
+-  "section_break_3",
++  "data_1",
+   "email",
+   "first_name",
+   "middle_name",
+-  "last_name",
+-  "column_break0",
+   "full_name",
+   "username",
+   "column_break_11",
++  "last_name",
++  "mobile_no",
+   "language",
++  "enabled",
+   "time_zone",
+   "send_welcome_email",
+   "unsubscribed",
+@@ -33,14 +33,14 @@
+   "banner_image",
+   "desk_theme",
+   "column_break_26",
+-  "phone",
+   "location",
++  "phone",
+   "bio",
+   "mute_sounds",
+-  "column_break_22",
+-  "mobile_no",
+   "change_password",
++  "old_password",
+   "new_password",
++  "column_break_33",
+   "logout_all_sessions",
+   "reset_password_key",
+   "last_reset_password_key_generated_on",
+@@ -87,7 +87,117 @@
+   "api_key",
+   "generate_keys",
+   "column_break_65",
+-  "api_secret"
++  "api_secret",
++  "notifications_tab",
++  "job_order_section",
++  "html_84",
++  "column_break_85",
++  "html_86",
++  "section_break_88",
++  "job_order_creation",
++  "column_break_1000",
++  "jo_create_mail",
++  "jo_create_app",
++  "section_break_89",
++  "select_head_count",
++  "column_break_94",
++  "select_count_mail",
++  "select_count_app",
++  "section_break_96",
++  "html_98",
++  "column_break_99",
++  "approve_emp_mail",
++  "approve_emp_app",
++  "section_break_102",
++  "html_103",
++  "column_break_104",
++  "jo_modify_mail",
++  "jo_modify_app",
++  "section_break_106",
++  "html_108",
++  "column_break_109",
++  "ts_created_mail",
++  "ts_created_app",
++  "section_break_112",
++  "html_113",
++  "column_break_114",
++  "ts_send_mail",
++  "ts_send_app",
++  "section_break_117",
++  "section_break_116",
++  "column_break_119",
++  "msg_frm_hire_mail",
++  "msg_frm_hire_app",
++  "section_break_122",
++  "html_123",
++  "column_break_124",
++  "jo_claim_mail",
++  "jo_claim_app",
++  "section_break_127",
++  "html_128",
++  "column_break_129",
++  "assign_emp_mail",
++  "assign_emp_app",
++  "section_break_132",
++  "html_133",
++  "column_break_134",
++  "assign_emp_resume_mail",
++  "assign_emp_resume_app",
++  "section_break_137",
++  "html_138",
++  "column_break_139",
++  "ts_approved_mail",
++  "ts_approved_app",
++  "section_break_142",
++  "html_143",
++  "column_break_144",
++  "ts_deny_mail",
++  "ts_deny_app",
++  "section_break_147",
++  "html_148",
++  "column_break_149",
++  "inv_create_mail",
++  "inv_create_app",
++  "section_break_152",
++  "html_153",
++  "column_break_154",
++  "remove_emp_mail",
++  "remove_emp_app",
++  "section_break_157",
++  "html_158",
++  "column_break_159",
++  "replace_emp_mail",
++  "replace_emp_app",
++  "section_break_1004",
++  "html_1005",
++  "column_break_1006",
++  "msg_from_staff_mail",
++  "msg_from_staff_app",
++  "general_break",
++  "html_142",
++  "column_break_143",
++  "html_144",
++  "section_break_145",
++  "html_146",
++  "column_break_150",
++  "birthday_mail",
++  "column_break_147",
++  "data_151",
++  "section_break_149",
++  "crm_mail",
++  "crm_app",
++  "section_break_154",
++  "column_break_153",
++  "column_break_156",
++  "holiday_mail",
++  "work_anniversary_break",
++  "html_159",
++  "column_break_160",
++  "html_161",
++  "section_break_162",
++  "html_163",
++  "column_break_164",
++  "emp_anniversary_mail"
+  ],
+  "fields": [
+   {
+@@ -99,12 +209,6 @@
+    "oldfieldtype": "Check",
+    "read_only": 1
+   },
+-  {
+-   "depends_on": "enabled",
+-   "fieldname": "section_break_3",
+-   "fieldtype": "Section Break",
+-   "label": "Basic Info"
+-  },
+   {
+    "fieldname": "email",
+    "fieldtype": "Data",
+@@ -162,13 +266,6 @@
+    "label": "Unsubscribed",
+    "no_copy": 1
+   },
+-  {
+-   "fieldname": "column_break0",
+-   "fieldtype": "Column Break",
+-   "oldfieldtype": "Column Break",
+-   "print_width": "50%",
+-   "width": "50%"
+-  },
+   {
+    "fieldname": "username",
+    "fieldtype": "Data",
+@@ -232,12 +329,13 @@
+    "collapsible": 1,
+    "depends_on": "enabled",
+    "fieldname": "short_bio",
+-   "fieldtype": "Section Break",
+-   "label": "More Information"
++   "fieldtype": "Tab Break",
++   "label": "Company Info "
+   },
+   {
+    "fieldname": "gender",
+    "fieldtype": "Link",
++   "hidden": 1,
+    "label": "Gender",
+    "oldfieldname": "gender",
+    "oldfieldtype": "Select",
+@@ -247,18 +345,19 @@
+    "fieldname": "phone",
+    "fieldtype": "Data",
+    "label": "Phone",
+-   "options": "Phone"
++   "options": "Phone",
++   "unique": 1
+   },
+   {
+    "fieldname": "mobile_no",
+    "fieldtype": "Data",
+    "label": "Mobile No",
+-   "options": "Phone",
+-   "unique": 1
++   "options": "Phone"
+   },
+   {
+    "fieldname": "birth_date",
+    "fieldtype": "Date",
++   "hidden": 1,
+    "label": "Birth Date",
+    "no_copy": 1,
+    "oldfieldname": "birth_date",
+@@ -275,10 +374,6 @@
+    "fieldtype": "Attach Image",
+    "label": "Banner Image"
+   },
+-  {
+-   "fieldname": "column_break_22",
+-   "fieldtype": "Column Break"
+-  },
+   {
+    "fieldname": "interest",
+    "fieldtype": "Small Text",
+@@ -300,7 +395,7 @@
+    "collapsible": 1,
+    "depends_on": "eval:doc.enabled && (!doc.__islocal || !cint(doc.send_welcome_email))",
+    "fieldname": "change_password",
+-   "fieldtype": "Section Break",
++   "fieldtype": "Tab Break",
+    "label": "Change Password"
+   },
+   {
+@@ -592,7 +687,8 @@
+   },
+   {
+    "fieldname": "column_break_11",
+-   "fieldtype": "Column Break"
++   "fieldtype": "Column Break",
++   "hidden": 1
+   },
+   {
+    "fieldname": "column_break_26",
+@@ -615,13 +711,13 @@
+    "options": "Module Profile"
+   },
+   {
+-    "description": "Stores the datetime when the last reset password key was generated.",
+-    "fieldname": "last_reset_password_key_generated_on",
+-    "fieldtype": "Datetime",
+-    "hidden": 1,
+-    "label": "Last Reset Password Key Generated On",
+-    "read_only": 1
+-   },
++   "description": "Stores the datetime when the last reset password key was generated.",
++   "fieldname": "last_reset_password_key_generated_on",
++   "fieldtype": "Datetime",
++   "hidden": 1,
++   "label": "Last Reset Password Key Generated On",
++   "read_only": 1
++  },
+   {
+    "fieldname": "column_break_75",
+    "fieldtype": "Column Break"
+@@ -648,18 +744,637 @@
+    "label": "Auto follow documents that you Like"
+   },
+   {
+-    "default": "0",
+-    "depends_on": "eval:(doc.document_follow_notify== 1)",
+-    "fieldname": "follow_shared_documents",
+-    "fieldtype": "Check",
+-    "label": "Auto follow documents that are shared with you"
+-   },
++   "default": "0",
++   "depends_on": "eval:(doc.document_follow_notify== 1)",
++   "fieldname": "follow_shared_documents",
++   "fieldtype": "Check",
++   "label": "Auto follow documents that are shared with you"
++  },
+   {
+    "default": "0",
+    "depends_on": "eval:(doc.document_follow_notify== 1)",
+    "fieldname": "follow_assigned_documents",
+    "fieldtype": "Check",
+    "label": "Auto follow documents that are assigned to you"
++  },
++  {
++   "fieldname": "old_password",
++   "fieldtype": "Password",
++   "label": "Old Password",
++   "no_copy": 1
++  },
++  {
++   "fieldname": "column_break_33",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "data_1",
++   "fieldtype": "Section Break"
++  },
++  {
++   "fieldname": "notifications_tab",
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.session.user == doc.name)",
++   "fieldtype": "Tab Break",
++   "label": "Notifications"
++  },
++  {
++   "fieldname": "job_order_section",
++   "fieldtype": "Section Break",
++   "label": "Job Order Settings"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "jo_create_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "jo_create_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "select_count_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "select_count_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "approve_emp_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "approve_emp_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "jo_modify_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "jo_modify_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "ts_created_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "ts_created_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "ts_send_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "ts_send_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "msg_frm_hire_app",
++   "fieldtype": "Check",
++   "read_only": 1
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "msg_frm_hire_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "crm_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "crm_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "jo_claim_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "jo_claim_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "assign_emp_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "assign_emp_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "assign_emp_resume_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "assign_emp_resume_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "ts_approved_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "ts_approved_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "ts_deny_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "ts_deny_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "inv_create_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "inv_create_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "remove_emp_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "remove_emp_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "replace_emp_app",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "replace_emp_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "msg_from_staff_app",
++   "fieldtype": "Check",
++   "read_only": 1
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "msg_from_staff_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "general_break",
++   "fieldtype": "Section Break",
++   "label": "General"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "birthday_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "default": "1",
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "holiday_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "work_anniversary_break",
++   "fieldtype": "Section Break",
++   "label": "Work Anniversary"
++  },
++  {
++   "default": "0",
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "emp_anniversary_mail",
++   "fieldtype": "Check"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "job_order_creation",
++   "fieldtype": "HTML",
++   "label": "Job Order Creation",
++   "options": "<div class=\"right-section\"> \n<h5> Job Order Creation </h5>\n<p> A job order for a domain your company staffs for has been created by a hiring company </p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_85",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "section_break_89",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_84",
++   "fieldtype": "HTML",
++   "options": "<small> Notification </small>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_86",
++   "fieldtype": "HTML",
++   "options": "<div class=\"row\">\n<div class=\"col-md-6 col-xs-6\">\n<small> Email </small>\n</div>\n<div class=\"col-md-6 col-xs-6\">\n<small> In-App </small>\n</div>\n</div>\n"
++  },
++  {
++   "fieldname": "section_break_88",
++   "fieldtype": "Section Break"
++  },
++  {
++   "fieldname": "column_break_1000",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "select_head_count",
++   "fieldtype": "HTML",
++   "label": "Select Head Count",
++   "options": "<div class=\"right-section\"> \n<h5> Select Head Count </h5>\n<p> A job order your company is involved with has had the headcount selected by the hiring company </p>\n</div>"
++  },
++  {
++   "fieldname": "section_break_96",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "column_break_94",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "html_98",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Approve Employees </h5>\n<p> The employees selected for a job order have been approved by the hiring company</p>\n</div>"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "column_break_99",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "section_break_102",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "column_break_104",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "section_break_106",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "html_103",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Job Order Modified </h5>\n<p> A job order your company is involved with has been modified</p>\n</div>"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "html_108",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Timesheet Created </h5>\n<p> A job order your company is involved with has had a timesheet created </p>\n</div>"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "column_break_109",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "section_break_112",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "html_113",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Send Approval of Timesheet </h5>\n<p> A timesheet approval has been sent by the hiring company</p>\n</div>"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "section_break_116",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Message from hiring company </h5>\n<p> Notification that you have received a message from a hiring company</p>\n</div>"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "column_break_114",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "section_break_117",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "column_break_119",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "section_break_122",
++   "fieldtype": "Section Break"
++  },
++  {
++   "fieldname": "html_142",
++   "fieldtype": "HTML",
++   "options": "<small> Notification </small>"
++  },
++  {
++   "fieldname": "column_break_143",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "html_144",
++   "fieldtype": "HTML",
++   "options": "<div class=\"row\">\n<div class=\"col-md-6 col-xs-6\">\n<small> Email </small>\n</div>\n<div class=\"col-md-6 col-xs-6\">\n<small> In-App </small>\n</div>\n</div>\n"
++  },
++  {
++   "fieldname": "section_break_145",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_146",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Birthday </h5>\n<p> Notifications pertaining to user\u2019s birthdays </p>\n</div>"
++  },
++  {
++   "fieldname": "column_break_147",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "section_break_149",
++   "fieldtype": "Column Break",
++   "options": "<div class=\"right-section\"> \n<h5> CRM </h5>\n<p> Notifications pertaining to customer relationship management</p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_150",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_153",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Holiday Reminder </h5>\n<p> Notifications of upcoming Holidays</p>\n</div>"
++  },
++  {
++   "depends_on": "eval:doc.organization_type=='Staffing' && doc.__islocal!=1 && frappe.boot.tag.tag_user_info.company_type=='Staffing'",
++   "fieldname": "data_151",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> CRM </h5>\n<p> Notifications pertaining to customer relationship management</p>\n</div>"
++  },
++  {
++   "fieldname": "section_break_154",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_156",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "html_159",
++   "fieldtype": "HTML",
++   "options": "<small> Notification </small>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_160",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_161",
++   "fieldtype": "HTML",
++   "options": "<small> Email </small>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "section_break_162",
++   "fieldtype": "Section Break",
++   "options": "<small> Email </small>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_163",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Employee Anniversary </h5>\n<p> Lorem ipsum dolor sit Amet </p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Staffing' || doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Staffing' || frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_164",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_123",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Claim Job order </h5>\n<p> A job order has been claimed by a staffing company.</p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_124",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "section_break_127",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_128",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Assign Employee </h5>\n<p> Staffing has assigned an employee to an active job order. </p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_129",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "section_break_132",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_133",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Assign Employee w/ Resume Required </h5>\n<p> Staffing has assigned an employee and provided their resume </p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_134",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "section_break_137",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_138",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Timesheet Approved </h5>\n<p> A job order your company is involved with has had a timesheet approved. </p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_139",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "section_break_142",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_143",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Deny timesheet from staffing </h5>\n<p> Staffing has denied a timesheet from an active job order.</p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_144",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "section_break_147",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_148",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Invoice Created </h5>\n<p> Notification that an invoice has been created by a staffing company for an active job order. </p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_149",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "section_break_152",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_153",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Remove employee from staffing </h5>\n<p> Staffing has removed an employee from an active job order.</p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_154",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "section_break_157",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_158",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Replace employee from staffing </h5>\n<p> Staffing has replaced an employee from an active job order.</p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_159",
++   "fieldtype": "Column Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "section_break_1004",
++   "fieldtype": "Section Break"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "html_1005",
++   "fieldtype": "HTML",
++   "options": "<div class=\"right-section\"> \n<h5> Message from staffing </h5>\n<p> You have received a message from a staffing company. </p>\n</div>"
++  },
++  {
++   "depends_on": "eval:(doc.organization_type=='Hiring' || doc.organization_type=='Exclusive Hiring') && doc.__islocal!=1 && (frappe.boot.tag.tag_user_info.company_type=='Hiring' || frappe.boot.tag.tag_user_info.company_type=='Exclusive Hiring')",
++   "fieldname": "column_break_1006",
++   "fieldtype": "Column Break"
+   }
+  ],
+  "icon": "fa fa-user",
+@@ -722,7 +1437,7 @@
+    "link_fieldname": "user"
+   }
+  ],
+- "modified": "2022-09-19 16:05:46.485242",
++ "modified": "2023-03-16 00:53:12.788661",
+  "modified_by": "Administrator",
+  "module": "Core",
+  "name": "User",
+@@ -762,4 +1477,4 @@
+  "states": [],
+  "title_field": "full_name",
+  "track_changes": 1
+-}
++}
+\ No newline at end of file

@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-10-18 02:32:55.064370",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "class_code",
+  "rate",
+  "state"
+ ],
+ "fields": [
+  {
+   "fieldname": "class_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Workers' Comp Code"
+  },
+  {
+   "fieldname": "rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate",
+   "non_negative": 1,
+   "precision": "5"
+  },
+  {
+   "fieldname": "state",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "State",
+   "options": "\nAlabama\nAlaska\nArizona\nArkansas\nCalifornia\nCanal Zone\nColorado\nConnecticut\nDelaware\nDistrict of Columbia\nFlorida\nGeorgia\nGuam\nHawaii\nIdaho\nIllinois\nIndiana\nIowa\nKansas\nKentucky\nLouisiana\nMaine\nMaryland\nMassachusetts\nMichigan\nMinnesota\nMississippi\nMissouri\nMontana\nNebraska\nNevada\nNew Hampshire\nNew Jersey\nNew Mexico\nNew York\nNorth Carolina\nNorth Dakota\nOhio\nOklahoma\nOregon\nPennsylvania\nPuerto Rico\nRhode Island\nSouth Carolina\nSouth Dakota\nTennessee\nTexas\nUtah\nVermont\nVirgin Islands\nVirginia\nWashington\nWest Virginia\nWisconsin\nWyoming"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-04 00:32:50.805105",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Class Code",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,65 @@
+{
+ "actions": [],
+ "autoname": "PR.####",
+ "creation": "2022-12-01 05:56:28.505323",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "staffing_company",
+  "hiring_company",
+  "job_site",
+  "job_pay_rate",
+  "job_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "hiring_company",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Hiring Company"
+  },
+  {
+   "fieldname": "job_site",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Site"
+  },
+  {
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fetch_from": "eval:doc.employee_pay_rate",
+   "fieldname": "job_pay_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Pay Rate",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only_depends_on": "eval: frappe.boot.tag.tag_user_info.user_type == 'Staffing User'"
+  },
+  {
+   "fieldname": "job_order",
+   "fieldtype": "Data",
+   "label": "Job Order"
+  },
+  {
+   "fieldname": "staffing_company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Staffing Company",
+   "options": "Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-01-19 00:05:08.502389",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Pay Rates",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

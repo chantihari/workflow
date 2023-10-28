@@ -1,0 +1,87 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="form-message blue" style="background: #d3e8fcba none repeat scroll 0% 0%; color: black; margin-top: 10px; width: 100%;">
+			<div style="display: flex;flex-direction: inherit;" id="order_info"><p>Job Order description will be available here...</p></div>
+		</div>
+	</div>
+
+	<div class="row" id="data_head">
+		<div class="widget widget-shadow shortcut-widget-box table-responsive" style="margin-top: 10px;">
+			<table class="col-md-12 basic-table table-headers table table-hover">
+				<caption></caption>
+				<thead>
+					<tr>
+						<th style="text-align: center;width: 10%;">
+							<div class="row-index sortable-handle col col-xs-1" style="height: 0px;">
+								<input type="checkbox" class="grid-row-check pull-left" onclick="select_all(this.id)" id="_main_all">
+							</div>
+						</th>
+						<th style="text-align: center; width: 20%;">Date of Timesheet</th>
+						<th style="text-align: center; width: 25%;">Status</th>
+						<th style="text-align: center; width: 20%;">Job Order</th>
+						<th style="text-align: center; width: 25%;">Status of Work Order</th>
+						{%if (frappe.boot.tag.tag_user_info.export_ts == 1 ) { %}
+						<th style="text-align: center; width: 20%;">Exported</th>
+						{% } %}
+					</tr>
+				</thead>
+				<tbody id="data_approval">
+					<tr>
+						<td style="text-align: center; width: 10%;"></td>
+						<td style="text-align: center; width: 20%;"></td>
+						<td style="text-align: center; width: 25%;">No Data Found</td>
+						<td style="text-align: center; width: 20%;"></td>
+						<td style="text-align: center; width: 25%;"></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	<div class="row" style="display: none;" id="child_info">
+		<div class="widget widget-shadow shortcut-widget-box table-responsive" style="margin-top: 10px;max-height: 720px;">
+			<a style="text-align: end; color: #0a97bfeb;" onclick=toggle_hide()>Back</a>
+			<table class="col-md-12 basic-table table-headers table table-hover" id="child_table">
+				<caption></caption>
+				<thead>
+					<tr>
+						<th style="text-align: center;width: 5%;">
+							<div class="row-index sortable-handle col col-xs-1" style="height: 0px;">
+								<input type="checkbox" class="grid-row-check pull-left" onclick="select_all(this.id)" id="all">
+							</div>
+						</th>
+						<th style="text-align: left; width: 10%;">Job Title</th>
+						<th style="text-align: left; width: 10%;">Start Time</th>
+						<th style="text-align: left; width: 20%;">Employee Name</th>
+						<th style="text-align: center; width: 10%;">Status</th>
+						<th style="text-align: center; width: 10%;">From Time</th>
+						<th style="text-align: center; width: 10%;">To Time</th>
+						<th style="text-align: center; width: 10%;">Break From Time</th>
+						<th style="text-align: center; width: 10%;">Break To Time</th>
+						<th style="text-align: center; width: 10%;">Total Hours</th>
+						<th style="text-align: center; width: 15%;">Employee Status</th>
+						{%if (frappe.boot.tag.tag_user_info.export_ts == 1 ) { %}
+						<th style="text-align: center; width: 10%;">Exported</th>
+						{% } %}
+					</tr>
+				</thead>
+				<tbody id="child"></tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<script>
+	function toggle_hide(){
+		$("#child").empty();
+		$("#data_head").css("display", "block");
+		$("#child_info").css("display", "none");
+		$(".actions-btn-group").hide();
+		$("input:checkbox").prop("checked", false);
+		$("#main_export_ts").hide();
+		$("#print_ts").hide();
+		$("#create_invoice").show();
+		window.selected_ts_list=0;
+		window.row_selected = 0;
+	}
+</script>
+

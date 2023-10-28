@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="264" height="275" viewBox="0 0 264 275">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_3259" data-name="Rectangle 3259" width="264" height="275" rx="8" transform="translate(988 271)" fill="#f1effd" stroke="#d7d1f9" stroke-width="1"/>
+    </clipPath>
+    <filter id="Rectangle_3225" x="1.74" y="26.744" width="315.164" height="353.81" filterUnits="userSpaceOnUse">
+      <feOffset dy="50" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#21b9e4" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_3254" x="-8.26" y="180.762" width="291" height="142" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="15" result="blur-2"/>
+      <feFlood flood-color="#21b9e4" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="graphic-hiring-org" transform="translate(-988 -271)" clip-path="url(#clip-path)">
+    <g id="Group_6755" data-name="Group 6755" transform="translate(603.093 10.744)">
+      <g transform="matrix(1, 0, 0, 1, 384.91, 260.26)" filter="url(#Rectangle_3225)">
+        <rect id="Rectangle_3225-2" data-name="Rectangle 3225" width="225.164" height="258.81" rx="12" transform="translate(46.74 26.74)" fill="#fff"/>
+      </g>
+      <text id="TEKsystems" transform="translate(495.087 319.595)" fill="#2a2e43" font-size="10" font-family="Inter-SemiBold, Inter" font-weight="600"><tspan x="0" y="0">TEKsystems</tspan></text>
+      <text id="New_York_City" data-name="New York City" transform="translate(495.087 331.981)" fill="#78849e" font-size="9" font-family="Inter-Regular, Inter"><tspan x="0" y="0">New York City</tspan></text>
+      <g id="Group_6761" data-name="Group 6761" transform="translate(453.013 359.316)">
+        <text id="Alex_Costa" data-name="Alex Costa" transform="translate(0 7.94)" fill="#454f63" font-size="8" font-family="Inter-Regular, Inter"><tspan x="0" y="0">Alex Costa</tspan></text>
+        <rect id="Rectangle_3221" data-name="Rectangle 3221" width="9.039" height="9.039" rx="3" transform="translate(170.106 -0.06)" fill="#ececf1"/>
+      </g>
+      <g id="Group_6762" data-name="Group 6762" transform="translate(453.013 383.969)">
+        <text id="Saint_Bernard" data-name="Saint Bernard" transform="translate(0 8.287)" fill="#454f63" font-size="8" font-family="Inter-Regular, Inter"><tspan x="0" y="0">Saint Bernard</tspan></text>
+        <rect id="Rectangle_3222" data-name="Rectangle 3222" width="9.039" height="9.039" rx="3" transform="translate(170.106 0.287)" fill="#ececf1"/>
+      </g>
+      <g id="Group_6760" data-name="Group 6760" transform="translate(453.013 409.443)">
+        <text id="John_Matt" data-name="John Matt" transform="translate(0 6.813)" fill="#454f63" font-size="7" font-family="Inter-Regular, Inter"><tspan x="0" y="0">John Matt</tspan></text>
+        <rect id="Rectangle_3223" data-name="Rectangle 3223" width="9.039" height="9.039" rx="3" transform="translate(170.106 -0.187)" fill="#ececf1"/>
+      </g>
+      <g id="Group_6759" data-name="Group 6759" transform="translate(449.372 435.541)">
+        <rect id="Rectangle_3220" data-name="Rectangle 3220" width="189.828" height="27.94" rx="5" transform="translate(0 0)" fill="#f1effd"/>
+        <text id="Download_Resumes" data-name="Download Resumes" transform="translate(94.408 18.026)" fill="#7b68ee" font-size="9" font-family="Inter-Medium, Inter" font-weight="500"><tspan x="-42" y="0">Download Resumes</tspan></text>
+      </g>
+      <rect id="Rectangle_3217" data-name="Rectangle 3217" width="38.331" height="38.331" rx="6" transform="translate(448.904 304.257)" fill="#ececf1"/>
+      <text id="_4.81" data-name="4.81" transform="translate(636.654 319.103)" font-size="8" font-family="Inter-SemiBold, Inter" font-weight="600"><tspan x="-16" y="0">4.81</tspan></text>
+      <text id="_26_Reviews_" data-name="(26 Reviews)" transform="translate(637.907 332.256)" fill="#78849e" font-size="7" font-family="Inter-Regular, Inter"><tspan x="-43" y="0">(26 Reviews)</tspan></text>
+      <g id="Group_148" data-name="Group 148" transform="translate(608.023 309.048)">
+        <g id="Rectangle_47" data-name="Rectangle 47" transform="translate(1.125 0)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+          <rect width="13.97" height="13.148" stroke="none"/>
+          <rect x="0.5" y="0.5" width="12.97" height="12.148" fill="none"/>
+        </g>
+        <g id="Group_6152" data-name="Group 6152" transform="translate(0 2.006)">
+          <path id="Icon_feather-star" data-name="Icon feather-star" d="M7.515,3l1.4,2.827,3.12.456-2.258,2.2.533,3.107L7.515,10.121,4.725,11.588l.533-3.107L3,6.283l3.12-.456Z" transform="translate(-2.404 -2.404)" fill="#e35169"/>
+          <path id="Icon_feather-star_-_Outline" data-name="Icon feather-star - Outline" d="M7.111,2a.6.6,0,0,1,.534.332L8.9,4.878l2.811.411a.6.6,0,0,1,.33,1.016l-2.033,1.98.48,2.8a.6.6,0,0,1-.864.628L7.111,10.39,4.6,11.711a.6.6,0,0,1-.864-.628l.48-2.8L2.18,6.305a.6.6,0,0,1,.33-1.016L5.32,4.878,6.577,2.332A.6.6,0,0,1,7.111,2Zm3.236,4.294L8.42,6.012a.6.6,0,0,1-.448-.326L7.111,3.942,6.25,5.686a.6.6,0,0,1-.448.326l-1.926.282L5.269,7.651a.6.6,0,0,1,.172.527l-.329,1.917,1.722-.906a.6.6,0,0,1,.555,0l1.722.906L8.782,8.178a.6.6,0,0,1,.172-.527Z" transform="translate(-2 -2)" fill="#e35169"/>
+        </g>
+      </g>
+    </g>
+    <g id="Group_6772" data-name="Group 6772" transform="translate(31.259 -60.82)">
+      <g id="Group_6771" data-name="Group 6771" transform="translate(556.481 -64.429)">
+        <g transform="matrix(1, 0, 0, 1, 400.26, 396.25)" filter="url(#Rectangle_3254)">
+          <rect id="Rectangle_3254-2" data-name="Rectangle 3254" width="201" height="52" rx="11" transform="translate(36.74 225.76)" fill="#fff"/>
+        </g>
+        <g id="Group_6770" data-name="Group 6770" transform="translate(451.511 611.173)">
+          <g id="Group_6769" data-name="Group 6769" transform="translate(0.008 24.869)">
+            <rect id="Rectangle_3258" data-name="Rectangle 3258" width="172" height="24" rx="5" fill="rgba(33,185,228,0.09)"/>
+            <text id="Approve_Order" data-name="Approve Order" transform="translate(85.68 16.485)" fill="#21b9e4" font-size="10" font-family="Inter-Medium, Inter" font-weight="500"><tspan x="-35" y="0">Approve Order</tspan></text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

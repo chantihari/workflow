@@ -1,0 +1,30 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-12-13 20:04:31.236478",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2021-12-24 11:26:56.700548",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Work Orders",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "select name as \"Work Order ID:Link/Job Order:150\",company as \"Company Name::150\",job_title as \"Job Title::150\",per_hour as \"Wage/Hour::150\",category as \"Job Category::150\",posting_date_time as \"Start Date::150\",job_site as \"Job Site::150\",no_of_workers as \"No. of Workers::150\" from `tabJob Order`;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+ "ref_doctype": "Job Order",
+ "report_name": "Work Orders",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Staff"
+  },
+  {
+   "role": "System Manager"
+  }
+ ]
+}

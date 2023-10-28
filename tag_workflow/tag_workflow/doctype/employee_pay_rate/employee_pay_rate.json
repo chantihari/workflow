@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "autoname": "EPR.####",
+ "creation": "2022-07-28 05:13:05.252047",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "hiring_company",
+  "job_site",
+  "column_break_3",
+  "job_title",
+  "employee_pay_rate",
+  "staffing_company"
+ ],
+ "fields": [
+  {
+   "fieldname": "hiring_company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hiring Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_site",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job Site",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job Title",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fetch_from": "eval:doc.employee_pay_rate",
+   "fieldname": "employee_pay_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Employee Pay Rate",
+   "non_negative": 1,
+   "precision": "2",
+   "read_only_depends_on": "eval: frappe.boot.tag.tag_user_info.user_type == 'Staffing User'"
+  },
+  {
+   "fieldname": "staffing_company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Staffing Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-08-08 08:03:30.370332",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Employee Pay Rate",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tag Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staffing Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staffing User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

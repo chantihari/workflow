@@ -1,0 +1,15 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Energy Point Settings",
+  "enabled": 0,
+  "last_point_allocation_date": "2021-12-24",
+  "modified": "2021-12-27 11:46:31.450760",
+  "name": "Energy Point Settings",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "point_allocation_periodicity": "Weekly",
+  "review_levels": []
+ }
+]

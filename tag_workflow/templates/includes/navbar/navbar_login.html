@@ -1,0 +1,38 @@
+<!-- post login tools -->
+{% if not only_static %}
+
+	{% if frappe.session.user != 'Guest' %}
+	<ul class="list-unstyled">
+	<li class="nav-item dropdown logged-in" id="website-post-login" data-label="website-post-login" style="display: none">
+		<a href="#" class="nav-link nav-avatar" data-toggle="dropdown">
+			<span class="user-image-wrapper"></span>
+		</a>
+		<ul class="dropdown-menu dropdown-menu-right" role="menu">
+			{%- for child in post_login -%}
+			{%- if child.url -%}
+			<a class="dropdown-item" href="{{ child.url | abs_url }}"  {% if child.open_in_new_tab %} target="_blank" {% endif %} rel="noopener">
+				{{ child.label }}
+			</a>
+			{%- endif -%}
+			{%- endfor -%}
+			{%- if frappe.request.cookies.get('ctype')=='Staffing' -%}
+			<a class="dropdown-item switch-to-desk hidden" id="swtich-to" href="/app/staff-home">{{ _('Switch To Desk') }}</a>
+			{%- elif frappe.request.cookies.get('ctype')=='Hiring' -%}
+			<a class="dropdown-item switch-to-desk hidden" id="swtich-to" href="/app/hiring-home">{{ _('Switch To Desk') }}</a>
+			{%- elif frappe.request.cookies.get('ctype') == 'TAG' -%}
+			{%- else-%}
+			<a class="dropdown-item switch-to-desk hidden" id="swtich-to" href="/app">{{ _('Switch To Desk') }}</a>
+			{%-endif-%}
+		</ul>
+	</li>
+	</ul>
+	{% endif %}
+
+	{% if not hide_login %}
+	<ul class="list-unstyled">
+	<li class="nav-item">
+		<a class="nav-link btn-login-area" href="/login">{{ _("Login") }}</a>
+	</li>
+	</ul>
+	{% endif %}
+{% endif %}

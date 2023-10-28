@@ -1,0 +1,739 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-01 14:30:14.296881",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_8",
+  "time_remaining_for_make_edits",
+  "hiring_section_break",
+  "hiring_html",
+  "section_break_html1",
+  "html_2",
+  "section_break_html2",
+  "html_3",
+  "section_break_html3",
+  "claimed_html",
+  "related_actions_section",
+  "related_details",
+  "messages",
+  "timesheets",
+  "invoices",
+  "section_break_3",
+  "company",
+  "naming_series",
+  "from_date",
+  "order_status",
+  "head_count_available",
+  "job_start_time",
+  "job_order_duration",
+  "column_break_13",
+  "staff_company",
+  "posting_date_time",
+  "company_type",
+  "amended_from",
+  "estimated_hours_per_day",
+  "to_date",
+  "availability",
+  "select_days",
+  "selected_days",
+  "job_duration",
+  "job_title",
+  "cancellation_date",
+  "section_break_7",
+  "column_break_34",
+  "resumes_required",
+  "column_break_36",
+  "require_staff_to_wear_face_mask",
+  "section_break_40",
+  "job_site",
+  "select_job",
+  "category",
+  "rate",
+  "worker_comp_code",
+  "contact_name",
+  "contact_number",
+  "column_break_45",
+  "no_of_workers",
+  "worker_filled",
+  "description",
+  "contact_email",
+  "extra_notes",
+  "additional_addons_section",
+  "drug_screen",
+  "background_check",
+  "column_break_51",
+  "driving_record",
+  "shovel",
+  "extra_price_increase",
+  "bill_rate_section",
+  "base_price",
+  "per_hour",
+  "column_break_44",
+  "rate_increase",
+  "flat_rate",
+  "address_info_section",
+  "address",
+  "bid",
+  "claim",
+  "staff_org_claimed",
+  "email",
+  "phone_number",
+  "is_single_share",
+  "e_signature_for_order_request_section",
+  "e_signature_full_name",
+  "html_37",
+  "agree_to_contract",
+  "age_reqiured",
+  "view_contract",
+  "contract_add_on",
+  "apply_for_quotation_section",
+  "assign_employees",
+  "section_break_61",
+  "employee_rating",
+  "dispute_section",
+  "dispute_comment",
+  "section_break_83",
+  "is_repeat",
+  "repeat_from",
+  "repeat_from_company",
+  "column_break_87",
+  "repeat_staff_company",
+  "repeat_old_worker",
+  "is_direct",
+  "staff_company2"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "JO-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Job Order",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "resumes_required",
+   "fieldtype": "Check",
+   "label": "Resumes Required"
+  },
+  {
+   "default": "0",
+   "fieldname": "require_staff_to_wear_face_mask",
+   "fieldtype": "Check",
+   "label": "Require staff to wear face mask"
+  },
+  {
+   "depends_on": "eval:doc.job_site",
+   "fieldname": "select_job",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Job Title",
+   "options": "Item"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "job_site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Site",
+   "options": "Job Site",
+   "reqd": 1
+  },
+  {
+   "default": "1",
+   "description": "Accepted Type : Numerical Value\n",
+   "fieldname": "no_of_workers",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "No. of workers"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.__islocal!=1",
+   "fieldname": "worker_filled",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Worker Filled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_duration",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Job Duration",
+   "options": "N/A\n1 Day\n2 Day\n3 Day\n4 Day\n5 Day\n6 Day\n1 Week\n2 Week\n3 Week\n4 Week\n5 Week\n6 Week\n1 Month\n2 Month\n3 Month\n4 Month\n5 Month\n6 Month\nTemp to Hire"
+  },
+  {
+   "default": "0",
+   "fieldname": "extra_price_increase",
+   "fieldtype": "Currency",
+   "label": "Extra Per Hour Price Increase",
+   "precision": "2"
+  },
+  {
+   "fieldname": "extra_notes",
+   "fieldtype": "Small Text",
+   "label": "Job Order Notes"
+  },
+  {
+   "fieldname": "additional_addons_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Add Ons"
+  },
+  {
+   "fieldname": "drug_screen",
+   "fieldtype": "Select",
+   "label": "Drug Screen"
+  },
+  {
+   "fieldname": "background_check",
+   "fieldtype": "Select",
+   "label": "Background Check"
+  },
+  {
+   "fieldname": "driving_record",
+   "fieldtype": "Select",
+   "label": "Driving Record"
+  },
+  {
+   "depends_on": "eval:doc.category=='Construction'",
+   "fieldname": "shovel",
+   "fieldtype": "Select",
+   "label": "Shovel"
+  },
+  {
+   "fieldname": "bill_rate_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Bill Rate"
+  },
+  {
+   "default": "0",
+   "fieldname": "per_hour",
+   "fieldtype": "Currency",
+   "label": "Total Per Hour Rate",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "flat_rate",
+   "fieldtype": "Currency",
+   "label": "Additional Flat Rate",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "address_info_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Address Info"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "e_signature_for_order_request_section",
+   "fieldtype": "Section Break",
+   "label": "E Signature"
+  },
+  {
+   "fieldname": "html_37",
+   "fieldtype": "HTML",
+   "options": "<b>Note</b><br> By typing your full name below and submitting this agreement. You acknowledge and agree that your typed name represents your signed name(signature) and that you intend for this electronic signature to have the same force and effects as a manual(handwritten) signature.<br>\n"
+  },
+  {
+   "fieldname": "e_signature_full_name",
+   "fieldtype": "Data",
+   "label": "E-Signature Full Name",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "age_reqiured",
+   "fieldtype": "Check",
+   "label": "Check if age 18+ are required for this order"
+  },
+  {
+   "fieldname": "apply_for_quotation_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Employee Assignment"
+  },
+  {
+   "fieldname": "assign_employees",
+   "fieldtype": "Button",
+   "label": "Assign Employee to Order",
+   "permlevel": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "estimated_hours_per_day",
+   "fieldtype": "Float",
+   "label": "Estimated Daily Hours",
+   "precision": "2",
+   "reqd": 0,
+   "hidden": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "bid",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Bid Received"
+  },
+  {
+   "fieldname": "claim",
+   "fieldtype": "Long Text",
+   "hidden": 1,
+   "label": "Claimed By"
+  },
+  {
+   "fieldname": "staff_org_claimed",
+   "fieldtype": "Long Text",
+   "hidden": 1,
+   "label": "Staffing Org Claimed"
+  },
+  {
+   "default": "Upcoming",
+   "depends_on": "eval:doc.__islocal!=1",
+   "fieldname": "order_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Order Status",
+   "options": "\nCompleted\nOngoing\nUpcoming\nCanceled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "company_type",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "in_standard_filter": 1,
+   "label": "Company Type",
+   "options": "\nExclusive\nNon Exclusive"
+  },
+  {
+   "fieldname": "time_remaining_for_make_edits",
+   "fieldtype": "HTML",
+   "label": "Time Remaining For Make Edits",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break",
+   "label": "Basic Info"
+  },
+  {
+   "fieldname": "view_contract",
+   "fieldtype": "Button",
+   "label": "View Contract Language"
+  },
+  {
+   "fieldname": "contract_add_on",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Contract Add On"
+  },
+  {
+   "depends_on": "eval:doc.select_job",
+   "fetch_from": "select_job.industry",
+   "fetch_if_empty": 1,
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "in_standard_filter": 1,
+   "label": "Industry",
+   "options": "Industry Type"
+  },
+  {
+   "default": "Today",
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date_time",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "staff_company",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Staffing Company",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.select_job",
+   "fetch_from": "select_job.rate",
+   "fetch_if_empty": 1,
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Rate"
+  },
+  {
+   "depends_on": "eval:doc.select_job",
+   "fetch_from": "select_job.descriptions",
+   "fetch_if_empty": 1,
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Job Title Description",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_single_share",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Single Share"
+  },
+  {
+   "default": "0",
+   "description": "<p style=\"font-size: 12px;\"><span style=\"color: red;\">&#42;</span>\nAgree To Contract Is Required To Save The Order</p>",
+   "fieldname": "agree_to_contract",
+   "fieldtype": "Check",
+   "label": "Agree To Contract <span style=\"color: red;\">&#42;</span>",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dispute_section",
+   "fieldtype": "Section Break",
+   "label": "dispute"
+  },
+  {
+   "depends_on": "eval:doc.dispute_comment != undefined",
+   "fieldname": "dispute_comment",
+   "fieldtype": "Long Text",
+   "label": "Dispute Comment"
+  },
+  {
+   "fieldname": "section_break_61",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_rating",
+   "fieldtype": "Table",
+   "label": "Employee Rating",
+   "options": "Employee Rating",
+   "permlevel": 1
+  },
+  {
+   "fieldname": "job_order_duration",
+   "fieldtype": "Data",
+   "label": "Job Duration",
+   "read_only": 1
+  },
+  {
+   "fieldname": "html_2",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "related_actions_section",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Related Actions"
+  },
+  {
+   "fieldname": "related_details",
+   "fieldtype": "HTML",
+   "label": "Claims"
+  },
+  {
+   "fieldname": "messages",
+   "fieldtype": "HTML",
+   "label": "Messages"
+  },
+  {
+   "fieldname": "timesheets",
+   "fieldtype": "HTML",
+   "label": "Timesheets"
+  },
+  {
+   "fieldname": "invoices",
+   "fieldtype": "HTML",
+   "label": "Invoices"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_44",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "job_start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "reqd": 0,
+   "hidden": 1
+  },
+  {
+   "fieldname": "availability",
+   "fieldtype": "Select",
+   "label": "Availability",
+   "options": "\nEveryday\nMon-Fri\nSat & Sun\nCustom",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval:doc.availability=='Custom'",
+   "fieldname": "select_days",
+   "fieldtype": "Table MultiSelect",
+   "label": "Select Days",
+   "options": "Availability"
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break",
+   "label": "Requirements"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_html1",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "depends_on": "eval:doc.__islocal!=1",
+   "fetch_from": "job_site.contact_name",
+   "fetch_if_empty": 1,
+   "fieldname": "contact_name",
+   "fieldtype": "Data",
+   "label": "Contact Name",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.__islocal!=1",
+   "fetch_from": "job_site.contact_email",
+   "fetch_if_empty": 1,
+   "fieldname": "contact_email",
+   "fieldtype": "Data",
+   "label": "Contact Email",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.__islocal!=1",
+   "fetch_from": "job_site.phone_number",
+   "fetch_if_empty": 1,
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.availability==\"Custom\" && doc.__islocal!=1",
+   "fieldname": "selected_days",
+   "fieldtype": "Data",
+   "label": "Selected Days",
+   "read_only": 1
+  },
+  {
+   "fieldname": "base_price",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Base Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rate_increase",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Rate Increase",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_html2",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_3",
+   "fieldtype": "HTML",
+   "options": "<h3>Your company\\u2019s claim has been approved. Please assign employees.</h3>"
+  },
+  {
+   "fieldname": "section_break_83",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_repeat",
+   "fieldtype": "Check",
+   "label": "Is Repeat"
+  },
+  {
+   "fieldname": "repeat_from",
+   "fieldtype": "Data",
+   "label": "Repeat From",
+   "read_only": 1
+  },
+  {
+   "fieldname": "repeat_from_company",
+   "fieldtype": "Data",
+   "label": "Repeat From Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_87",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "repeat_staff_company",
+   "fieldtype": "Data",
+   "label": "Repeat Staff Company",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "repeat_old_worker",
+   "fieldtype": "Int",
+   "label": "Repeat Old Worker",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_direct",
+   "fieldtype": "Check",
+   "label": "Is Direct",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hiring_section_break",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "hiring_html",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "section_break_html3",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "claimed_html",
+   "fieldtype": "HTML",
+   "options": "<h3>This Job Order has reached its desired head count.</h3>"
+  },
+  {
+   "default": "0",
+   "fieldname": "head_count_available",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Head Count Available"
+  },
+  {
+   "depends_on": "eval:doc.select_job",
+   "fieldname": "worker_comp_code",
+   "fieldtype": "Data",
+   "label": "Workers' Comp Code"
+  },
+  {
+   "fieldname": "staff_company2",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Staff Company2"
+  },
+  {
+   "depends_on": "eval: doc.cancellation_date",
+   "fieldname": "cancellation_date",
+   "fieldtype": "Date",
+   "label": "Cancellation Date",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-21 14:15:51.852140",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Job Order",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "naming_series",
+ "sort_order": "ASC",
+ "states": [],
+ "track_changes": 1
+}

@@ -1,0 +1,32 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Job Category",
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2022-05-03 07:18:09.350886",
+   "default_value": null,
+   "doc_type": "Job Category",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "job_category",
+   "idx": 0,
+   "modified": "2022-05-03 07:18:09.350886",
+   "modified_by": "Administrator",
+   "name": "Job Category-job_category-label",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "label",
+   "property_type": "Data",
+   "row_name": null,
+   "value": "Job Title"
+  }
+ ],
+ "sync_on_migrate": 1
+}

@@ -1,0 +1,206 @@
+diff --git a/frappe/core/doctype/user/user.json b/frappe/core/doctype/user/user.json
+index 6b3748f..9ae805d 100644
+--- a/frappe/core/doctype/user/user.json
++++ b/frappe/core/doctype/user/user.json
+@@ -7,17 +7,17 @@
+  "doctype": "DocType",
+  "engine": "InnoDB",
+  "field_order": [
+-  "enabled",
+-  "section_break_3",
++  "data_1",
+   "email",
+   "first_name",
+   "middle_name",
+-  "last_name",
+-  "column_break0",
+   "full_name",
+   "username",
+   "column_break_11",
++  "last_name",
++  "mobile_no",
+   "language",
++  "enabled",
+   "time_zone",
+   "send_welcome_email",
+   "unsubscribed",
+@@ -33,14 +33,14 @@
+   "banner_image",
+   "desk_theme",
+   "column_break_26",
+-  "phone",
+   "location",
++  "phone",
+   "bio",
+   "mute_sounds",
+-  "column_break_22",
+-  "mobile_no",
+   "change_password",
++  "old_password",
+   "new_password",
++  "column_break_33",
+   "logout_all_sessions",
+   "reset_password_key",
+   "last_reset_password_key_generated_on",
+@@ -99,12 +99,6 @@
+    "oldfieldtype": "Check",
+    "read_only": 1
+   },
+-  {
+-   "depends_on": "enabled",
+-   "fieldname": "section_break_3",
+-   "fieldtype": "Section Break",
+-   "label": "Basic Info"
+-  },
+   {
+    "fieldname": "email",
+    "fieldtype": "Data",
+@@ -162,13 +156,6 @@
+    "label": "Unsubscribed",
+    "no_copy": 1
+   },
+-  {
+-   "fieldname": "column_break0",
+-   "fieldtype": "Column Break",
+-   "oldfieldtype": "Column Break",
+-   "print_width": "50%",
+-   "width": "50%"
+-  },
+   {
+    "fieldname": "username",
+    "fieldtype": "Data",
+@@ -232,8 +219,8 @@
+    "collapsible": 1,
+    "depends_on": "enabled",
+    "fieldname": "short_bio",
+-   "fieldtype": "Section Break",
+-   "label": "More Information"
++   "fieldtype": "Tab Break",
++   "label": "Company Info "
+   },
+   {
+    "fieldname": "gender",
+@@ -247,14 +234,14 @@
+    "fieldname": "phone",
+    "fieldtype": "Data",
+    "label": "Phone",
+-   "options": "Phone"
++   "options": "Phone",
++   "unique": 1
+   },
+   {
+    "fieldname": "mobile_no",
+    "fieldtype": "Data",
+    "label": "Mobile No",
+-   "options": "Phone",
+-   "unique": 1
++   "options": "Phone"
+   },
+   {
+    "fieldname": "birth_date",
+@@ -275,10 +262,6 @@
+    "fieldtype": "Attach Image",
+    "label": "Banner Image"
+   },
+-  {
+-   "fieldname": "column_break_22",
+-   "fieldtype": "Column Break"
+-  },
+   {
+    "fieldname": "interest",
+    "fieldtype": "Small Text",
+@@ -300,7 +283,7 @@
+    "collapsible": 1,
+    "depends_on": "eval:doc.enabled && (!doc.__islocal || !cint(doc.send_welcome_email))",
+    "fieldname": "change_password",
+-   "fieldtype": "Section Break",
++   "fieldtype": "Tab Break",
+    "label": "Change Password"
+   },
+   {
+@@ -592,7 +575,8 @@
+   },
+   {
+    "fieldname": "column_break_11",
+-   "fieldtype": "Column Break"
++   "fieldtype": "Column Break",
++   "hidden": 1
+   },
+   {
+    "fieldname": "column_break_26",
+@@ -615,13 +599,13 @@
+    "options": "Module Profile"
+   },
+   {
+-    "description": "Stores the datetime when the last reset password key was generated.",
+-    "fieldname": "last_reset_password_key_generated_on",
+-    "fieldtype": "Datetime",
+-    "hidden": 1,
+-    "label": "Last Reset Password Key Generated On",
+-    "read_only": 1
+-   },
++   "description": "Stores the datetime when the last reset password key was generated.",
++   "fieldname": "last_reset_password_key_generated_on",
++   "fieldtype": "Datetime",
++   "hidden": 1,
++   "label": "Last Reset Password Key Generated On",
++   "read_only": 1
++  },
+   {
+    "fieldname": "column_break_75",
+    "fieldtype": "Column Break"
+@@ -648,18 +632,32 @@
+    "label": "Auto follow documents that you Like"
+   },
+   {
+-    "default": "0",
+-    "depends_on": "eval:(doc.document_follow_notify== 1)",
+-    "fieldname": "follow_shared_documents",
+-    "fieldtype": "Check",
+-    "label": "Auto follow documents that are shared with you"
+-   },
++   "default": "0",
++   "depends_on": "eval:(doc.document_follow_notify== 1)",
++   "fieldname": "follow_shared_documents",
++   "fieldtype": "Check",
++   "label": "Auto follow documents that are shared with you"
++  },
+   {
+    "default": "0",
+    "depends_on": "eval:(doc.document_follow_notify== 1)",
+    "fieldname": "follow_assigned_documents",
+    "fieldtype": "Check",
+    "label": "Auto follow documents that are assigned to you"
++  },
++  {
++   "fieldname": "old_password",
++   "fieldtype": "Password",
++   "label": "Old Password",
++   "no_copy": 1
++  },
++  {
++   "fieldname": "column_break_33",
++   "fieldtype": "Column Break"
++  },
++  {
++   "fieldname": "data_1",
++   "fieldtype": "Section Break"
+   }
+  ],
+  "icon": "fa fa-user",
+@@ -722,7 +720,7 @@
+    "link_fieldname": "user"
+   }
+  ],
+- "modified": "2022-09-19 16:05:46.485242",
++ "modified": "2023-02-14 03:06:23.721128",
+  "modified_by": "Administrator",
+  "module": "Core",
+  "name": "User",
+@@ -762,4 +760,4 @@
+  "states": [],
+  "title_field": "full_name",
+  "track_changes": 1
+-}
++}
+\ No newline at end of file

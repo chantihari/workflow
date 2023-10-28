@@ -1,0 +1,42 @@
+[
+    {  
+        "docstatus": 0,
+        "email": "emp1@gmail.com",
+        "idx": 0,
+        "date_of_birth":"2000-08-02",
+        "job_categories": null,
+        "first_name":"emp1",
+        "last_name":"emp1",
+        "status": "Active"
+    },
+    {
+        "docstatus": 0,
+        "email": "emp2@gmail.com",
+        "idx": 0,
+        "date_of_birth":"2000-08-02",
+        "job_categories": null,
+        "first_name":"emp2",
+        "last_name":"emp2",
+        "status": "Active"
+    },
+    {
+        "docstatus": 0,
+        "email": "emp3@gmail.com",
+        "idx": 0,
+        "date_of_birth":"2000-08-02",
+        "job_categories": null,
+        "first_name":"emp3",
+        "last_name":"emp3",
+        "status": "Active"
+    },
+    {
+        "docstatus": 0,
+        "email": "emp4@gmail.com",
+        "idx": 0,
+        "date_of_birth":"2000-08-02",
+        "job_categories": null,
+        "first_name":"emp4",
+        "last_name":"emp4",
+        "status": "Active"
+    }
+    ]

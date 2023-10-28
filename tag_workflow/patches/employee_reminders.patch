@@ -1,0 +1,12 @@
+diff --git a/hrms/controllers/employee_reminders.py b/hrms/controllers/employee_reminders.py
+index 9d4d7f5..6c9176a 100644
+--- a/hrms/controllers/employee_reminders.py
++++ b/hrms/controllers/employee_reminders.py
+@@ -135,6 +135,7 @@ def send_birthday_reminder(recipients, reminder_text, birthday_persons, message)
+ 			message=message,
+ 		),
+ 		header=_("Birthday Reminder 🎂"),
++		delayed=False
+ 	)
+ 
+ 

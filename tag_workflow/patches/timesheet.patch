@@ -1,0 +1,47 @@
+diff --git a/erpnext/projects/doctype/timesheet/timesheet.json b/erpnext/projects/doctype/timesheet/timesheet.json
+index 0cce129..8a36234 100644
+--- a/erpnext/projects/doctype/timesheet/timesheet.json
++++ b/erpnext/projects/doctype/timesheet/timesheet.json
+@@ -35,9 +35,9 @@
+   "base_total_billable_amount",
+   "base_total_billed_amount",
+   "base_total_costing_amount",
+-  "column_break_10",
+   "total_billed_hours",
+   "total_billable_amount",
++  "column_break_10",
+   "total_billed_amount",
+   "total_costing_amount",
+   "per_billed",
+@@ -59,9 +59,9 @@
+   {
+    "fieldname": "naming_series",
+    "fieldtype": "Select",
++   "hidden": 1,
+    "label": "Series",
+    "options": "TS-.YYYY.-",
+-   "reqd": 1,
+    "set_only_once": 1
+   },
+   {
+@@ -311,10 +311,11 @@
+  "idx": 1,
+  "is_submittable": 1,
+  "links": [],
+- "modified": "2022-06-15 22:08:53.930200",
++ "modified": "2023-06-08 06:07:31.444367",
+  "modified_by": "Administrator",
+  "module": "Projects",
+  "name": "Timesheet",
++ "naming_rule": "By \"Naming Series\" field",
+  "owner": "Administrator",
+  "permissions": [
+   {
+@@ -388,5 +389,6 @@
+  ],
+  "sort_field": "modified",
+  "sort_order": "ASC",
++ "states": [],
+  "title_field": "title"
+ }
+\ No newline at end of file

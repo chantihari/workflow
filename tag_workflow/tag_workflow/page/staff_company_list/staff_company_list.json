@@ -1,0 +1,25 @@
+{
+ "content": null,
+ "creation": "2021-12-09 17:38:33.000012",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-12-10 18:00:38.068034",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "staff_company_list",
+ "owner": "Administrator",
+ "page_name": "staff_company_list",
+ "roles": [
+  {
+   "role": "Hiring Admin"
+  },
+  {
+   "role": "Hiring User"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1
+}

@@ -1,0 +1,253 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-02-01 00:19:42.931474",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "job_order",
+  "notes",
+  "hiring_organization",
+  "no_of_workers_joborder",
+  "no_of_remaining_employee",
+  "staff_claims_no",
+  "employee_pay_rate",
+  "column_break_4",
+  "staffing_organization",
+  "staffing_organization_ratings",
+  "approved_no_of_workers",
+  "staff_class_code",
+  "staff_class_code_rate",
+  "single_share",
+  "section_break_21",
+  "multiple_job_titles",
+  "section_break_18",
+  "html_4",
+  "column_break_20",
+  "e_signature",
+  "agree_to_contract",
+  "view_contract",
+  "contract_add_on",
+  "job_order_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Order",
+   "options": "Job Order",
+   "read_only_depends_on": "eval: doc.__islocal!=1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "staffing_organization",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Staffing Organization",
+   "options": "Company",
+   "read_only_depends_on": "eval: doc.__islocal!=1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "html_4",
+   "fieldtype": "HTML",
+   "options": "<b>Important Note Regarding Signature</b> By typing your full name below and submitting this agreement. You acknowledge and agree that your typed name represents your signed name(signature) and that you intend for this electronic signature to have the same force and effects as a manual(handwritten) signature.<br>\n"
+  },
+  {
+   "default": "0",
+   "fieldname": "agree_to_contract",
+   "fieldtype": "Check",
+   "label": "Agree To Contract ",
+   "read_only_depends_on": "eval: doc.__islocal!=1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "staff_claims_no",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Claim no. of Workers",
+   "read_only_depends_on": "eval: doc.approved_no_of_workers"
+  },
+  {
+   "fieldname": "e_signature",
+   "fieldtype": "Data",
+   "label": "E signature",
+   "read_only_depends_on": "eval: doc.__islocal!=1",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "approved_no_of_workers",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Selected Workers"
+  },
+  {
+   "fieldname": "no_of_workers_joborder",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Total Required Employees",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hiring_organization",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Hiring Organization"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "options": "CO-"
+  },
+  {
+   "default": "0",
+   "fieldname": "single_share",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Single Share"
+  },
+  {
+   "fieldname": "view_contract",
+   "fieldtype": "Button",
+   "label": "View Contract Language"
+  },
+  {
+   "fieldname": "contract_add_on",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Contract Add On"
+  },
+  {
+   "fieldname": "no_of_remaining_employee",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "No. of Employees Remaining"
+  },
+  {
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fieldname": "employee_pay_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Employee Pay Rate",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fieldname": "staff_class_code",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Workers' Comp Code",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fieldname": "staff_class_code_rate",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Rate",
+   "precision": "5"
+  },
+  {
+   "fieldname": "staffing_organization_ratings",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Avg. Rating",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Long Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "multiple_job_titles",
+   "fieldtype": "Table",
+   "options": "Multiple Job Title Claim"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break",
+   "label": "Job Titles"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_18",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "job_order.order_status",
+   "fieldname": "job_order_status",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Job Order Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-24 05:11:46.870443",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Claim Order",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staffing Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staffing User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

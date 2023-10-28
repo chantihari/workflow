@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-12-07 11:56:28.589743",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "html",
+  "blocked_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "blocked_from",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Blocked From"
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "HTML",
+   "hidden": 1,
+   "label": "Blocked From"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-01-23 21:48:01.584422",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Blocked Employees",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

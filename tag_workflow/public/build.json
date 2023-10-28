@@ -1,0 +1,21 @@
+{
+	"css/tag_workflow.min.css":[
+		"public/scss/custom.scss"
+	],
+	"tag-template.min.js":[
+		"public/js/template/tag.html"
+	],
+	"js/file_upload.min.js":[
+		"public/js/file_upload.js"
+	],
+	"js/file_upload-file.min.js":[
+		"public/js/new_file_uploader/FileUploader.vue",
+		"public/js/new_file_uploader/index.js"
+	],
+	"js/tagjs-min.js":[
+		"public/js/frappe/page.js",
+		"public/js/frappe/navbar.html",
+		"public/js/frappe/page.html"
+	],
+	"js/data_import_tools.min.js": "public/js/frappe/data_import/index.js"
+}

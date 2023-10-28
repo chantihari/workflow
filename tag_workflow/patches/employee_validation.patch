@@ -1,0 +1,13 @@
+diff --git a/erpnext/setup/doctype/employee/employee.py b/erpnext/setup/doctype/employee/employee.py
+index 13a6f20..9dc8bcb 100755
+--- a/erpnext/setup/doctype/employee/employee.py
++++ b/erpnext/setup/doctype/employee/employee.py
+@@ -258,7 +258,7 @@ def validate_employee_role(doc, method):
+ 	# called via User hook
+ 	if "Employee" in [d.role for d in doc.get("roles")]:
+ 		if not frappe.db.get_value("Employee", {"user_id": doc.name}):
+-			frappe.msgprint(_("Please set User ID field in an Employee record to set Employee Role"))
++			# frappe.msgprint(_("Please set User ID field in an Employee record to set Employee Role"))
+ 			doc.get("roles").remove(doc.get("roles", {"role": "Employee"})[0])
+ 
+ 

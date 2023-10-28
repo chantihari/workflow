@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-23 10:27:52.939914",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "email_recipients",
+  "recipients",
+  "additional_recipients",
+  "subject",
+  "body",
+  "date_sent"
+ ],
+ "fields": [
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_standard_filter": 1,
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "body",
+   "fieldtype": "Text Editor",
+   "label": "Body",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email_recipients",
+   "fieldtype": "Table",
+   "label": "Contact Recipients",
+   "options": "Email Recipients List"
+  },
+  {
+   "description": "Please include additional recipients in a comma-separated list.",
+   "fieldname": "additional_recipients",
+   "fieldtype": "Data",
+   "label": "Non-contact Recipients"
+  },
+  {
+   "fieldname": "recipients",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Recipients"
+  },
+  {
+   "fieldname": "date_sent",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Sent"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-04-25 10:24:12.949560",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Staffing Email",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "recipients",
+ "track_changes": 1
+}

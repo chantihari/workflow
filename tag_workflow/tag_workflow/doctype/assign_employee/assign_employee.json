@@ -1,0 +1,306 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2021-11-23 13:23:23.045988",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "job_order",
+  "no_of_employee_required",
+  "transaction_date",
+  "job_category",
+  "claims_approved",
+  "employee_pay_rate",
+  "staff_class_code",
+  "staff_class_code_rate",
+  "column_break_3",
+  "tag_status",
+  "hiring_organization",
+  "company",
+  "staffing_company_ratings",
+  "job_location",
+  "job_order_email",
+  "resume_required",
+  "section_break_6",
+  "distance_radius",
+  "show_all_employees",
+  "employee_details",
+  "replaced_employees",
+  "items",
+  "employee_removed",
+  "html_37",
+  "e_signature_full_name",
+  "digital_sign",
+  "agree_contract",
+  "amended_from",
+  "is_single_share",
+  "approve_employee_notification",
+  "view_contract",
+  "previous_worker",
+  "notification_check",
+  "job_order_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Order",
+   "options": "Job Order",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "no_of_employee_required",
+   "fieldtype": "Int",
+   "label": "Total No. Of Employee Required",
+   "read_only": 1
+  },
+  {
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hiring_organization",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Hiring Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee_details",
+   "fieldtype": "Table",
+   "label": "Employee Details",
+   "options": "Assign Employee Details",
+   "read_only_depends_on": "eval:doc.job_order_status=='Canceled'",
+   "reqd": 1
+  },
+  {
+   "default": "AE-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": "AE-"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Assign Employee",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "tag_status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nApproval Request\nApproved",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_category",
+   "fieldtype": "Data",
+   "label": "Job Title",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_location",
+   "fieldtype": "Data",
+   "label": "Job Location",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_order_email",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Job Order Email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Staffing Company",
+   "options": "Company",
+   "reqd": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "digital_sign",
+   "fieldtype": "Signature",
+   "hidden": 1,
+   "label": "Digital Sign"
+  },
+  {
+   "default": "0",
+   "fieldname": "resume_required",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Resume Required",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "depends_on": "eval: doc.resume_required == 1",
+   "description": "Agree to Contract Mention in JOB ORDER",
+   "fieldname": "agree_contract",
+   "fieldtype": "Check",
+   "label": "Agree to Contract",
+   "mandatory_depends_on": "eval: doc.resume_required == 1"
+  },
+  {
+   "depends_on": "eval: doc.resume_required == 1",
+   "fieldname": "html_37",
+   "fieldtype": "HTML",
+   "options": "<b>Important Note Regarding Signature</b> By typing your full name below and submitting this agreement. You acknowledge and agree that your typed name represents your signed name(signature) and that you intend for this electronic signature to having the same force and effects as a manual(handwritten) signature.<br>\n"
+  },
+  {
+   "depends_on": "eval: doc.resume_required == 1",
+   "fieldname": "e_signature_full_name",
+   "fieldtype": "Data",
+   "label": "E Signature Full Name",
+   "mandatory_depends_on": "eval: doc.resume_required == 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_single_share",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Is Single Share"
+  },
+  {
+   "default": "5 miles",
+   "fieldname": "distance_radius",
+   "fieldtype": "Select",
+   "label": "Distance Radius",
+   "options": "5 miles\n10 miles\n20 miles\n50 miles"
+  },
+  {
+   "fieldname": "replaced_employees",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Replaced Employee List",
+   "options": "Replaced Employee List",
+   "read_only": 1
+  },
+  {
+   "fieldname": "claims_approved",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Total Claims Approved",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "approve_employee_notification",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Approve Employee Notification"
+  },
+  {
+   "depends_on": "eval: doc.resume_required == 1",
+   "fieldname": "view_contract",
+   "fieldtype": "Button",
+   "label": "View Contract Language"
+  },
+  {
+   "default": "0",
+   "fieldname": "show_all_employees",
+   "fieldtype": "Check",
+   "label": "Show All Employees"
+  },
+  {
+   "fieldname": "previous_worker",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Previous Worker"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Items",
+   "options": "Replaced Employee",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "notification_check",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Notification Check"
+  },
+  {
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fieldname": "employee_pay_rate",
+   "fieldtype": "Currency",
+   "label": "Employee Pay Rate",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "fieldname": "employee_removed",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "label": "Employee Removed",
+   "options": "Removed Employee List"
+  },
+  {
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fieldname": "staff_class_code",
+   "fieldtype": "Data",
+   "label": "Workers' Comp Code"
+  },
+  {
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fieldname": "staff_class_code_rate",
+   "fieldtype": "Float",
+   "label": "Rate",
+   "precision": "5"
+  },
+  {
+   "fieldname": "staffing_company_ratings",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Avg. Rating"
+  },
+  {
+   "fetch_from": "job_order.order_status",
+   "fieldname": "job_order_status",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Job Order Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-08-24 08:33:52.259824",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Assign Employee",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

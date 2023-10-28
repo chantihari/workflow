@@ -1,0 +1,17 @@
+diff --git a/frappe/www/printview.html b/frappe/www/printview.html
+index 07c9356..27c5599 100644
+--- a/frappe/www/printview.html
++++ b/frappe/www/printview.html
+@@ -14,11 +14,8 @@
+ </head>
+ <body>
+ 	<div class="action-banner print-hide">
+-		<a class="p-2" onclick="window.print();">
+-			{{ _("Print") }}
+-		</a>
+ 		<a class="p-2"
+-			href="/api/method/frappe.utils.print_format.download_pdf?doctype={{doctype}}&name={{name}}&key={{key}}">
++			href="/api/method/frappe.utils.print_format.download_pdf?doctype={{doctype}}&name={{name}}&key={{key}}&format={{format}}">
+ 			{{ _('Get PDF') }}
+ 		</a>
+ 	</div>

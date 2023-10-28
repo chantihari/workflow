@@ -1,0 +1,212 @@
+{
+ "actions": [],
+ "creation": "2022-02-23 03:21:10.005404",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_order_column",
+  "job_order",
+  "total_per_hour_rate",
+  "additional_flat_rate",
+  "from_date",
+  "to_date",
+  "date",
+  "estimated_daily_hours",
+  "column_break_2",
+  "working_time",
+  "from_time",
+  "to_time",
+  "column_break_7",
+  "break_time",
+  "break_from_time",
+  "break_to_time",
+  "section_break_15",
+  "items",
+  "cancellation_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_order",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Order",
+   "options": "Job Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "options": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "from_time",
+   "fieldtype": "Time",
+   "label": "Start Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "break_from_time",
+   "fieldtype": "Time",
+   "label": "Break Start"
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_time",
+   "fieldtype": "Time",
+   "label": "End Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "break_to_time",
+   "fieldtype": "Time",
+   "label": "Break End"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "options": "Timesheet Item",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "job_order.per_hour",
+   "fieldname": "total_per_hour_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Total Per Hour Rate",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "job_order.flat_rate",
+   "fieldname": "additional_flat_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Additional Flat Rate",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "job_order.from_date",
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "From Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "job_order.to_date",
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "To Date",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "job_order.estimated_hours_per_day",
+   "fieldname": "estimated_daily_hours",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Estimated Daily Hours",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "job_order_column",
+   "fieldtype": "Heading",
+   "label": "Job Order Detail"
+  },
+  {
+   "fieldname": "working_time",
+   "fieldtype": "Heading",
+   "label": "Working Time "
+  },
+  {
+   "fieldname": "break_time",
+   "fieldtype": "Heading",
+   "label": "Break Time"
+  },
+  {
+   "fetch_from": "job_order.cancellation_date",
+   "fieldname": "cancellation_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Cancellation Date"
+  }
+ ],
+ "hide_toolbar": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-08-21 14:36:01.758285",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Add Timesheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Hiring Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Hiring User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Staffing Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Staffing User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

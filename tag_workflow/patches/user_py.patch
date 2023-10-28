@@ -1,0 +1,45 @@
+diff --git a/frappe/core/doctype/user/user.py b/frappe/core/doctype/user/user.py
+index a6cdf38..8997c0e 100644
+--- a/frappe/core/doctype/user/user.py
++++ b/frappe/core/doctype/user/user.py
+@@ -290,7 +290,7 @@ class User(Document):
+ 		if password_expired:
+ 			url = "/update-password?key=" + key + "&password_expired=true"
+ 
+-		link = get_url(url)
++		link = frappe.get_site_config().env_url+url
+ 		if send_email:
+ 			self.password_reset_mail(link)
+ 
+@@ -320,7 +320,6 @@ class User(Document):
+ 		self.send_login_mail(_("Password Reset"), "password_reset", {"link": link}, now=True)
+ 
+ 	def send_welcome_mail_to_user(self):
+-		from frappe.utils import get_url
+ 
+ 		link = self.reset_password()
+ 		subject = None
+@@ -339,13 +338,12 @@ class User(Document):
+ 			"new_user",
+ 			dict(
+ 				link=link,
+-				site_url=get_url(),
++				site_url=frappe.get_site_config().env_url,
+ 			),
+ 		)
+ 
+ 	def send_login_mail(self, subject, template, add_args, now=None):
+ 		"""send mail with login details"""
+-		from frappe.utils import get_url
+ 		from frappe.utils.user import get_user_fullname
+ 
+ 		created_by = get_user_fullname(frappe.session["user"])
+@@ -356,7 +354,7 @@ class User(Document):
+ 			"first_name": self.first_name or self.last_name or "user",
+ 			"user": self.name,
+ 			"title": subject,
+-			"login_url": get_url(),
++			"login_url": frappe.get_site_config().env_url,
+ 			"created_by": created_by,
+ 		}
+ 

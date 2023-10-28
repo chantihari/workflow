@@ -1,0 +1,19 @@
+diff --git a/frappe/public/js/frappe/request.js b/frappe/public/js/frappe/request.js
+index b4ed57d..08bda63 100644
+--- a/frappe/public/js/frappe/request.js
++++ b/frappe/public/js/frappe/request.js
+@@ -594,9 +594,11 @@ frappe.request.report_error = function (xhr, request_opts) {
+ 				primary_action: () => {
+ 					if (error_report_email) {
+ 						show_communication();
+-					} else {
+-						frappe.msgprint(__("Support Email Address Not Specified"));
+-					}
++					} 
++					// else {
++
++						// frappe.msgprint(__("Support Email Address Not Specified"));
++					// }
+ 					frappe.error_dialog.hide();
+ 				},
+ 				secondary_action_label: __("Copy error to clipboard"),

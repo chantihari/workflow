@@ -1,0 +1,28 @@
+[
+    {
+        "company": "My Test Hiring Company",
+        "estimated_hours_per_day": 3,
+        "flat_rate": 0,
+        "from_date": "2022-10-12",
+        "job_site": "10110 Westview Drive, Houston, TX, USA",
+        "no_of_workers": 30,
+        "per_hour": 50,
+        "rate": 50,
+        "select_job": "Saaf Safai",
+        "to_date": "2022-10-12",
+        "staff_company":"My Test Company",
+        "job_title": "Data Entry",
+        "status": "Submitted",
+        "status_of_work_order": "Ongoing",
+        "employee_company": "My Test Company",
+        "employee_name": "jigo p",
+        "employee_pay_rate": 0,
+        "currency":"USD",
+        "date_of_timesheet": "2022-08-16",
+        "estimated_daily_hours": 6,
+        "start_date": "2022-08-16",
+        "end_date": "2022-08-16",
+        "total_hours": 12
+        
+    }
+]

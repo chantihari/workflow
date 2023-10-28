@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title></title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<style> 
+			body {
+				font-size: 14px;
+			}
+			.header img:nth-child(2) {
+				width: 110px;
+			}
+			.btn-primary  {
+				background:#21B9E4 !important;
+				text-align: left !important;
+				border:1px solid#21B9E4 !important;
+				border-radius: 6px !important;
+			}
+			.sub-menu .tab-button {
+				padding: 10px 0;
+				color: #78849E;
+				margin: 10px 0;
+				font-size: 14px;
+				cursor: pointer;
+			}
+			.sub-menu .tab-button a {
+				color: #78849E;
+				text-decoration: none;
+			}
+			.sub-menu .tab-button .btn-link {
+				color: #78849E !important;
+				font-size: 14px;
+				text-decoration: none;
+			}
+			.sub-menu .dropdown-menu.show {
+				border: none !important;
+				padding-left: 50px !important;
+				font-size: 14px !important;
+				color: #78849E !important;
+			}
+			.sub-menu .dropdown-item {
+				color: #78849E !important;
+			}
+			.sub-menu .tab-button.active {
+				background: #E8F8FC;
+				border-left: 4px solid #37C0E6;
+				color:#2E3C54 !important;
+			}
+			.footer-admin img {
+				height: 30px;
+				margin-top: 5px;
+			}
+			.footer-admin {
+				position: fixed;
+				bottom: 0;
+			}
+			.sub-menu {
+				height: calc(100vh - 50px);
+				position: fixed;
+				top: 130px;
+				width: 220px;
+				background: #fff;
+				max-width: 220px;
+			}
+			.footer-admin .badge-danger {
+				background:#F1EFFD !important;
+				color: #7B68EE !important;
+				font-size: 12px;
+				font-weight: normal;
+			}
+			.home-tab {
+				margin-top: 90px;
+			}
+			.home-tab .nav-tabs .nav-link.active {
+				border: none;
+				border-bottom: 2px solid#37C0E6;
+				color: #000;
+			}
+			.home-tab .nav-tabs .nav-link {
+				color: #78849E;
+				font-size: 14px;
+			}
+			.home-tab .nav-tabs .nav-link .badge-danger {
+				background: #FC646B !important;
+				padding: 4px 7px;
+				border-radius: 8px;
+				margin-left: 5px;
+			}
+			.home-tab .dropdown .btn-link {
+				color: #21B9E4 !important;
+			}
+			.home-tab .bg-img {
+				background: url(abstract-bg.svg);
+				background-repeat: no-repeat;
+				background-position: right;
+				background-size: contain;
+			}
+			.search-box {
+				position: relative;
+			}
+			.search-box span {
+				position: absolute;
+				top: 6px;
+				left: 10px;
+			}
+			.search-box input {
+				width: 470px;
+				border: 2px solid#79D5EE;
+				padding-left: 30px;
+				border-radius: 8px;
+			}
+			::placeholder {
+				color: #ACBBD1;
+				font-size: 14px;
+			}
+			@media (max-width:768px) {
+				.sub-menu {
+					display: none;
+				}
+				.layout-main-section {
+					margin-left: 0rem;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-2 col-md-2">
+					<div class="row">
+						<div class="sub-menu w-100 border-top border-right" id="myDIV">
+							<div class="p-4">
+								<button type="button" class="btn btn-primary btn-block"><span class="px-2">&#x2b;</span>New Order</button>
+							</div>
+
+							<a href="/app/home">
+								<div class="tab-button custom-btn">
+									<img src="/assets/tag_workflow/images/ico-home.svg" class="pr-3 pl-5" alt="home">Home
+								</div>
+							</a>
+
+							<a href="/app/job-order">
+								<div class="tab-button custom-btn">
+									<img src="/assets/tag_workflow/images/ico-order.svg" class="pr-3 pl-5" alt="order">Orders
+								</div>
+							</a>
+
+							<a href="/app/home">
+								<div class="tab-button custom-btn">
+									<img src="/assets/tag_workflow/images/ico-messages.svg" class="pr-3 pl-5" alt="message">Messages
+								</div>
+							</a>
+
+							{% if frappe.boot.tag.tag_user_info.company_type != "Hiring" %}
+								<div class="tab-button custom-btn">
+									<ul class="nav">
+										<li>
+											<a href="#" id="btn-1" data-toggle="collapse" data-target="#submenu1" aria-expanded="false">
+												<span class="pl-3 ml-3"><img src="/assets/tag_workflow/images/ico-crm.svg" class="pr-3 pl-3" alt="crm"></span>CRM
+												<span class="pl-5"><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+											</a>
+											<ul class="inner-menu pl-5 ml-5 list-unstyled collapse" id="submenu1" role="menu" aria-labelledby="btn-1">
+												<li class="py-2 mt-2"><a href="/app/contact">Contacts</a></li>
+												<li class="py-2"><a href="/app/lead">Deals</a></li>
+												<li class="py-2"><a href="#">Emails</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+								<a href="/app/employee">
+									<div class="tab-button custom-btn">
+										<img src="/assets/tag_workflow/images/ico-employee.svg" class="pr-3 pl-5" alt="employee">Employees
+									</div>
+								</a>
+							{% endif %}
+
+							<a href="/app/home">
+								<div class="tab-button custom-btn">
+									<img src="/assets/tag_workflow/images/ico-maps.svg"class="pr-3 pl-5" alt="maps">Maps
+								</div>
+							</a>
+
+							{% if frappe.boot.tag.tag_user_info.company_type != "Hiring" %}
+								<a href="/app/home">
+									<div class="tab-button custom-btn">
+										<img src="/assets/tag_workflow/images/ico-invoice.svg" class="pr-3 pl-5" alt="reports">Reports
+									</div>
+								</a>
+							{% endif %}
+							
+							<a href="/app/sales-invoice">
+								<div class="tab-button custom-btn">
+									<img src="/assets/tag_workflow/images/ico-invoice.svg" class="pr-3 pl-5" alt="invoice">Invoice
+								</div>
+							</a>
+
+							<a href="/app/home">
+								<div class="tab-button custom-btn"> 
+									<img src="/assets/tag_workflow/images/ico-contact.svg" class="pr-3 pl-5" alt="contact-us">Contact Us
+								</div>
+							</a>
+
+							<!-- user info -->
+							<div class="row footer-admin border-top pl-4 py-4"> 
+								<div class="d-flex">
+									<div><img src="/assets/tag_workflow/images/ico-maps.jpeg" class="img-fluid px-3" alt="user-image"></div>
+									<div class="pr-3 ml-3">
+										<h5 class="mb-0"><strong>{{frappe.session.user_fullname}}</strong></h5>
+										<span class="badge badge-danger">
+											{% if frappe.session.user_fullname == "Administrator" %}
+												{{ __("Master Admin") }}
+											{% else %}
+												{{ frappe.boot.tag.tag_user_info.user_type }}
+											{% endif %}
+										</span>
+									</div>
+									<div>
+										<span class="ml-2 pr-2">
+											<i class="fa fa-angle-right" aria-hidden="true"></i>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+
+<script>
+	$(".btn.btn-primary.btn-block").click(function(){
+		let order = frappe.model.get_new_doc("Job Order");
+		frappe.set_route("form", order.doctype, order.name);
+	});
+
+	var header = document.getElementById("myDIV");
+	var btns = header.getElementsByClassName("custom-btn");
+
+	for (var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+			current[0].className = current[0].className.replace(" active", "");
+			this.className += " active";
+		});
+	}
+</script>

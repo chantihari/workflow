@@ -1,0 +1,129 @@
+<style>
+	.staff_tooltip {
+		position: relative;
+		display: inline;
+		cursor: pointer;
+	}
+
+	.tooltip {
+		position: relative;
+		background-color: #fff;
+		border: 1.5px solid #bec1c5fa;
+		display: inline-block;
+		border-radius: 7px;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	}
+	.tooltip-inner{
+		text-align: left;
+	}
+	.tooltip::before {
+		position: absolute;
+		display: block;
+		content: "";
+		border: 1.5px solid #bec1c5fa;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		width: 10px;
+		height: 10px;
+		transform: rotate(135deg);
+		top: 27%;
+		left: -5px;
+		margin-left: -0.5px;
+		background-color: #fff;
+	}
+
+	.tooltip .arrow {
+		display: none;
+	}
+
+	.tooltip .tooltip-inner {
+		color: #000;
+		background-color: #fff;
+	}
+</style>
+<div class="container form-section card-section visible-section"
+	style="width: 100%; animation: animatop 1.7s cubic-bezier(0.425, 1.14, 0.47, 1.125) forwards;    padding: 5px 20px;">
+	<div id="listdata">
+
+	</div>
+
+	<div class="staff_list">
+		<div class="row">
+			<div class="col-xs-12 col-xl-2 ">
+				<div id="company">
+
+				</div>
+			</div>
+			<div class="col-xs-12  col-xl-2 ">
+				<div id="industry">
+
+				</div>
+			</div>
+			<div class="col-xs-12 col-xl-2 ">
+				<div id="city">
+
+				</div>
+			</div>
+			<div class="col-xs-12  col-xl-2 ">
+				<div id="rating">
+
+				</div>
+			</div>
+			<div class="col-xs-12  col-xl-2 ">
+				<div id="accreditation">
+
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div id="listview" class="table-responsive px-0">
+
+				<table class="my-0" id="sorting" style="background-color: #f9f9f9;font-size: 18px;">
+					<caption>Staffing Company List</caption>
+
+					<thead>
+						<tr class="filters">
+							<th><svg class="icon  icon-sm">
+									<use class="like-icon" href="#icon-heart"></use>
+								</svg></th>
+							<th style="width:15%;" onclick="sorted(1)" id="comp_name">Company Name</th>
+							<th onclick="sorted(2)" style="width:17%;" id="addr">Industry</th>
+							<th onclick="sorted(3)"  style="width:18%;"id="city">Address</th>
+							<th onclick="sorted(4)" style="width:15%;" id="avgrate">Average Rating</th>
+							<th onclick="sorted(4)" style="width:15%;" id="accreditation">Accreditations</th>
+						</tr>
+					</thead>
+					<tbody id="myTable">
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xl-6 col-xs-6 paging-area">
+		
+	</div>
+	<div class="col-xl-6 col-xs-6">
+		<div class="dropdown float-right">
+			<button class="btn btn-default btn-radius btn-location btn-sm" onclick="locationpopup()" data-value="Custom Address" style="margin-right: 5px;">Locations</button>
+			<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Distance
+			</a>
+
+			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="min-width:110px">
+				<a class="dropdown-item" href="#" onclick="get_radius()">Clear</a>
+				<a class="dropdown-item" href="#" onclick="get_radius(5)">5 miles</a>
+				<a class="dropdown-item" href="#" onclick="get_radius(10)">10 miles</a>
+				<a class="dropdown-item" href="#" onclick="get_radius(25)">25 miles</a>
+				<a class="dropdown-item" href="#" onclick="get_radius(50)">50 miles</a>
+				<a class="dropdown-item" href="#" onclick="get_radius(100)">100 miles</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+<script src="/assets/tag_workflow/js/controllers/sortable.js"></script>

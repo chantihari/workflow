@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-09 02:14:03.679155",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_name",
+  "employee_status",
+  "employee_replaced_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "employee_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Status"
+  },
+  {
+   "fieldname": "employee_replaced_by",
+   "fieldtype": "Data",
+   "label": "Employee Replaced By"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-02-09 02:14:03.679155",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Replaced Employee List",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

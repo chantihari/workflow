@@ -1,0 +1,73 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-03-30 03:15:17.798864",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "industry_type",
+  "job_titles",
+  "bill_rate",
+  "comp_code",
+  "description",
+  "item_id"
+ ],
+ "fields": [
+  {
+   "fieldname": "industry_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job Industry",
+   "options": "Industry Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "job_titles",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Title",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bill_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Bill Rate",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comp_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Workers' Comp Code"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Long Text",
+   "hidden": 1,
+   "label": "Description"
+  },
+  {
+   "fieldname": "item_id",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Item ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-03-21 09:38:05.484953",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Industry Types Job Titles",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

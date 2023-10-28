@@ -1,0 +1,110 @@
+<style>
+	.user_list .company_list .rating span:nth-child(1) {
+		color: #FDD22C;
+		font-size: 15px;
+	}
+
+	.user_list .company_list .rating span:nth-child(2) {
+		font-weight: 600;
+	}
+
+	.user_list .company_list .rating span:nth-child(3) a {
+		font-size: 12px;
+		color: #78849E;
+	}
+
+	.user_list.order button {
+		background: #21b9e4;
+		padding: 3px 12px;
+		font-size: 13px;
+	}
+
+	.user_list .company_list h5 {
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	.user_list .custom_collapse .card {
+		border-radius: 0;
+		border-top: 1px solid #e2e6e9;
+		border-left: 0;
+		border-right: 0;
+	}
+
+	.user_list .custom_collapse .card:nth-last-child(1) {
+		border-bottom: none;
+	}
+
+	.user_list .custom_collapse .card .card-header {
+		padding: 0rem 0rem;
+		background: #fff;
+		border-bottom: 0;
+	}
+
+	.user_list .custom_collapse .card .card-header h2 {
+		font-size: 18px;
+	}
+
+	.user_list .custom_collapse .card .card-header button {
+		padding: 0.6rem 0rem;
+		font-size: 17px;
+		color: #2A2E43;
+		font-weight: bold;
+		text-decoration: none;
+		border: none;
+		background: none;
+		margin-bottom: 0;
+	}
+
+	.user_list .custom_collapse .card .card-header button span {
+		position: absolute;
+		color: #8D9CBC;
+		font-size: 18px;
+		top: 12px;
+	}
+
+	.user_list .custom_collapse .card-body {
+		padding: .4rem 1.25rem .4rem 1.6rem;
+	}
+
+	.user_list .custom_collapse .card-body .rating_tittle {
+		color: #8D9CBC;
+		font-size: 12px;
+	}
+
+	#employee {
+		display: inline-flex;
+	}
+
+	#employee span a {
+		background: #EFE3FF;
+		color: #7B41C8;
+		font-weight: 500;
+		padding: 3px 8px;
+		border-radius: 11px;
+	}
+
+	[data-route="dynamic_page"] .card-header button:not(.collapsed) .rotate-icon {
+		transform: rotate(180deg);
+		margin-top: 10px;
+	}
+
+	.main_page .user_list {
+		margin-left: 137px;
+		box-shadow: var(--card-shadow);
+	}
+
+	.certificate-btn {
+		background: #f5e8c8;
+		border-radius: 10px;
+		margin-right: 3px;
+	}
+
+	@media (max-width:768px) {
+		.main_page .user_list {
+			margin-left: 20px;
+		}
+	}
+</style>
+
+<div class="row" id="dynamic_company_data1"></div>

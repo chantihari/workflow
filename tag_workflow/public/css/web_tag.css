@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #21b9e4;
+  --white: #ffffff;
+  --primary-hover-color: #0a97bfeb;
+  --label-color: #454f63;
+}
+
+body {
+  font-size: 14px !important;
+}
+
+.web-footer {
+  display: none;
+}
+label {
+  color: #2a2e43;
+}
+.for-login .page-card .page-card-body .forgot-password-message {
+  text-align: left !important;
+  position: relative;
+}
+input:hover {
+  border: 1px solid var(--primary-color) !important;
+}
+input:active {
+  border: 1px solid var(--primary-color) !important;
+}
+input:visited {
+  border: 1px solid var(--primary-color) !important;
+}
+.for-login .page-card-head h4 {
+  font-weight: bold !important;
+  font-size: 32px !important;
+}
+input::-webkit-credentials-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+.login-image {
+  background: #e8f8fc;
+  height: calc(100vh - 80px);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.for-login,
+.for-forgot,
+.for-signup,
+.for-email-login {
+  padding: 0 !important;
+}
+.for-login .page-card,
+.for-forgot .page-card,
+.for-signup .page-card,
+.for-email-login .page-card {
+  max-width: inherit !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 !important;
+}
+.for-login .page-card form,
+.for-forgot .page-card form,
+.for-signup .page-card form,
+.for-email-login .page-card form {
+  max-width: none;
+  min-width: 342px;
+}
+.navbar-nav .nav-item {
+  border-radius: 8px;
+}
+.login-content .form-signin .btn-login {
+  width: 190px !important;
+  font-size: 14px;
+}
+#page-temporary-assistance-guru .chat-app #chat-bubble {
+  margin-bottom: 35px !important;
+}
+.btn.btn-primary {
+  background-color: #21b9e4 !important;
+}
+.btn-login-area {
+  padding: 0 !important;
+  color: #21b9e4 !important;
+  font-size: 16px !important;
+}
+
+@media (max-width: 768px) {
+   #website-post-login {
+        text-align: right!important;
+    }
+  .btn-login-area {
+    text-align: right !important;
+    margin-right: 7px !important;
+  }
+  #navbarSupportedContent ul li {
+    width: 50%;
+    text-align: center;
+    float: right;
+    margin: inherit;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .for-login .page-card {
+    background: var(--white);
+  }
+  .btn-login-area {
+    text-align: right !important;
+    margin-right: 7px !important;
+  }
+}

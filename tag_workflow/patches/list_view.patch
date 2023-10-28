@@ -1,0 +1,14 @@
+diff --git a/frappe/public/js/frappe/list/list_view.js b/frappe/public/js/frappe/list/list_view.js
+index 76c9965..5cd7140 100644
+--- a/frappe/public/js/frappe/list/list_view.js
++++ b/frappe/public/js/frappe/list/list_view.js
+@@ -570,7 +570,8 @@ frappe.views.ListView = class ListView extends frappe.views.BaseList {
+ 		this.settings.before_render && this.settings.before_render();
+ 		frappe.model.user_settings.save(this.doctype, "last_view", this.view_name);
+ 		this.save_view_user_settings({
+-			filters: this.filter_area && this.filter_area.get(),
++			// filters: this.filter_area && this.filter_area.get(),
++			filters: this.doctype=='Timesheet'?[]:this.filter_area && this.filter_area.get(),
+ 			sort_by: this.sort_selector && this.sort_selector.sort_by,
+ 			sort_order: this.sort_selector && this.sort_selector.sort_order,
+ 		});

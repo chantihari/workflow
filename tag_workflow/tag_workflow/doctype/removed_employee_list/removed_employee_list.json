@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-08-24 00:22:24.819199",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_title",
+  "start_time",
+  "employee_id",
+  "employee_name",
+  "order_status",
+  "pay_rate",
+  "removed_by_hiring",
+  "removed_by_hiring_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Id"
+  },
+  {
+   "fieldname": "order_status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order Status"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job  Title"
+  },
+  {
+   "fieldname": "pay_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Pay Rate"
+  },
+  {
+   "default": "0",
+   "fieldname": "removed_by_hiring",
+   "fieldtype": "Check",
+   "label": "Removed By Hiring",
+   "read_only": 1,
+   "hidden": 1
+  },
+  {
+   "fieldname": "removed_by_hiring_date",
+   "fieldtype": "Date",
+   "label": "Removed By Hiring date",
+   "read_only": 1,
+   "hidden": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-13 00:17:28.694879",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Removed Employee List",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,129 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<style>
+    div{
+        margin-top: 15px;
+    }
+
+    .details{
+        border-collapse: collapse;
+        width: 100%;
+        table-layout: fixed;
+        font-size: 12px !important;
+        border-radius: 6px;
+        overflow: hidden;
+    }
+
+    .main{
+        background-color: white;
+        color: black;
+    }
+
+    .details thead th, tbody td {
+        border: none;
+        padding: 6px;
+    }
+
+    .details td{
+        word-break: break-word;
+    }
+
+    .details thead th {
+        text-align: center;
+        background-color: #ddedfc;
+        color: #4365ad;
+    }
+
+    .details tbody{
+        background-color: #ddedfc; 
+        color: #4365ad;
+    }
+
+    .center{
+        text-align: center;
+    }
+
+    #child_table {
+        font-size: 12.5px !important;
+    }
+    
+    #child_table tr, td{
+        padding: 10px;
+    }
+
+    #child_table .header{
+        color: grey;
+        font-size: 13px !important;
+        padding: 10px;
+        border-collapse: collapse;
+        font-weight: bold;
+    }
+    tr {
+        page-break-inside: avoid;
+    }
+</style>
+<div class="main">
+    <div class="logo">
+        <img src="{{sitename}}/assets/tag_workflow/images/TAG-Logo.png" alt="TAG-Logo">
+    </div>
+    <div>
+        <h3 style="font-size: 16px;"><strong>Timesheets</strong></h3>
+        <table class="details">
+            <caption></caption>
+            <th></th>
+            <tbody>
+                <tr>
+                    <td><strong>Job Order<br></strong><span style="color: black;">{{job_order}}</span></td>
+                    <td><strong>Staffing Company<br></strong><span style="color: black;">{{company}}</span></td>
+                    <td><strong>Date of Timesheet<br></strong><span style="color: black;">{{date_of_ts}}</span></td>
+                    <td><strong>Job Site<br></strong><span style="color: black;">{{job_site}}</span></td>
+                </tr>
+                <tr>
+                    <td><strong>From Date<br></strong><span style="color: black;">{{from_date}}</span></td>
+                    <td><strong>To Date<br></strong><span style="color: black;">{{to_date}}</span></td>
+                    <td><strong>Job Duration<br></strong><span style="color: black;">{{job_duration}}</span></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <table class="table" id="child_table">
+            <caption></caption>
+            <th style="display: none;"></th>
+            <tbody>
+                <tr class="header">
+                    <td style="text-align: left; width: 10%;">Job Title</td>
+                    <td class = "center" style="width: 10%;">Start Time</td>
+                    <td style="text-align: left;" style="width: 20%;">Employee Name</td>
+                    <td class = "center" style="width: 10%;">Status</td>
+                    <td class = "center" style="width: 10%;">From Time</td>
+                    <td class = "center" style="width: 10%;">To Time</td>
+                    <td class = "center" style="width: 10%;">Break From Time</td>
+                    <td class = "center" style="width: 10%;">Break To Time</td>
+                    <td class = "center" style="width: 15%;">Total Hours</td>
+                    <td class = "center" style="width: 15%;">Employee Status</td>
+                    {% if export_ts==1 %}
+                    <td class = "center" style="width: 5%;">Exported</td>
+                    {% endif %}
+                </tr>
+                {% for row in emp_details %}
+                <tr>
+                    <td style = "text-align: left;">{{row['job_title']}}</td>
+                    <td class = "center">{{row['start_time']}}</td>
+                    <td style = "text-align: left; font-weight: bold;">{{row['employee_name']}}<br><small>{{row['emp_id']}}</small></td>
+                    <td class = "indicator-pill gray center">{{row['status']}}</td>
+                    <td class = "center">{{row['from_time']}}</td>
+                    <td class = "center">{{row['to_time']}}</td>
+                    <td class = "center">{{row['break_from']}}</td>
+                    <td class = "center">{{row['break_to']}}</td>
+                    <td class = "center">{{"%.2f"|format(row['total_hours'])}} hrs</td>
+                    <td class = "center">{{row['employee_status']}}</td>
+                    {% if export_ts==1 %}
+                    <td class = "center">{{row['exported']}}</td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>

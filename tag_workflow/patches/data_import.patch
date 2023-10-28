@@ -1,0 +1,57 @@
+diff --git a/frappe/core/doctype/data_import/data_import.js b/frappe/core/doctype/data_import/data_import.js
+index 7db3aa9..16ef6d6 100644
+--- a/frappe/core/doctype/data_import/data_import.js
++++ b/frappe/core/doctype/data_import/data_import.js
+@@ -182,29 +182,29 @@ frappe.ui.form.on("Data Import", {
+ 		});
+ 	},
+ 
+-	show_report_error_button(frm) {
+-		if (frm.doc.status === "Error") {
+-			frappe.db
+-				.get_list("Error Log", {
+-					filters: { method: frm.doc.name },
+-					fields: ["method", "error"],
+-					order_by: "creation desc",
+-					limit: 1,
+-				})
+-				.then((result) => {
+-					if (result.length > 0) {
+-						frm.add_custom_button("Report Error", () => {
+-							let fake_xhr = {
+-								responseText: JSON.stringify({
+-									exc: result[0].error,
+-								}),
+-							};
+-							frappe.request.report_error(fake_xhr, {});
+-						});
+-					}
+-				});
+-		}
+-	},
++	// show_report_error_button(frm) {
++	// 	if (frm.doc.status === "Error") {
++	// 		frappe.db
++	// 			.get_list("Error Log", {
++	// 				filters: { method: frm.doc.name },
++	// 				fields: ["method", "error"],
++	// 				order_by: "creation desc",
++	// 				limit: 1,
++	// 			})
++	// 			.then((result) => {
++	// 				if (result.length > 0) {
++	// 					frm.add_custom_button("Report Error", () => {
++	// 						let fake_xhr = {
++	// 							responseText: JSON.stringify({
++	// 								exc: result[0].error,
++	// 							}),
++	// 						};
++	// 						frappe.request.report_error(fake_xhr, {});
++	// 					});
++	// 				}
++	// 			});
++	// 	}
++	// },
+ 
+ 	start_import(frm) {
+ 		frm.call({

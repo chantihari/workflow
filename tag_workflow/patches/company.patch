@@ -1,0 +1,46 @@
+diff --git a/erpnext/setup/doctype/company/company.json b/erpnext/setup/doctype/company/company.json
+index f087d99..d9f637b 100644
+--- a/erpnext/setup/doctype/company/company.json
++++ b/erpnext/setup/doctype/company/company.json
+@@ -9,8 +9,11 @@
+  "document_type": "Setup",
+  "engine": "InnoDB",
+  "field_order": [
+-  "details",
+   "company_name",
++  "section_break_1",
++  "email",
++  "phone_no",
++  "details",
+   "abbr",
+   "default_currency",
+   "country",
+@@ -25,8 +28,6 @@
+   "company_info",
+   "company_logo",
+   "date_of_incorporation",
+-  "phone_no",
+-  "email",
+   "company_description",
+   "column_break1",
+   "date_of_commencement",
+@@ -694,6 +695,10 @@
+    "label": "Default Provisional Account",
+    "no_copy": 1,
+    "options": "Account"
++  },
++  {
++   "fieldname": "section_break_1",
++   "fieldtype": "Section Break"
+   }
+  ],
+  "icon": "fa fa-building",
+@@ -701,7 +706,7 @@
+  "image_field": "company_logo",
+  "is_tree": 1,
+  "links": [],
+- "modified": "2022-08-16 16:09:02.327724",
++ "modified": "2023-01-07 03:00:36.479248",
+  "modified_by": "Administrator",
+  "module": "Setup",
+  "name": "Company",

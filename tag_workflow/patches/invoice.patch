@@ -1,0 +1,77 @@
+diff --git a/erpnext/accounts/doctype/sales_invoice/sales_invoice.json b/erpnext/accounts/doctype/sales_invoice/sales_invoice.json
+index 67cd867..5e95a3d 100644
+--- a/erpnext/accounts/doctype/sales_invoice/sales_invoice.json
++++ b/erpnext/accounts/doctype/sales_invoice/sales_invoice.json
+@@ -11,16 +11,15 @@
+   "naming_series",
+   "customer",
+   "customer_name",
++  "is_pos",
+   "tax_id",
+   "company",
+   "company_tax_id",
+   "column_break1",
+   "posting_date",
++  "due_date",
+   "posting_time",
+   "set_posting_time",
+-  "due_date",
+-  "column_break_14",
+-  "is_pos",
+   "pos_profile",
+   "is_consolidated",
+   "is_return",
+@@ -106,7 +105,6 @@
+   "timesheets",
+   "section_break_104",
+   "total_billing_hours",
+-  "column_break_106",
+   "total_billing_amount",
+   "payments_tab",
+   "payments_section",
+@@ -266,6 +264,7 @@
+    "fetch_from": "customer.customer_name",
+    "fieldname": "customer_name",
+    "fieldtype": "Small Text",
++   "hidden": 1,
+    "hide_days": 1,
+    "hide_seconds": 1,
+    "in_global_search": 1,
+@@ -2036,10 +2035,6 @@
+    "label": "Connections",
+    "show_dashboard": 1
+   },
+-  {
+-   "fieldname": "column_break_14",
+-   "fieldtype": "Column Break"
+-  },
+   {
+    "fieldname": "column_break_39",
+    "fieldtype": "Column Break"
+@@ -2086,10 +2081,6 @@
+    "fieldname": "section_break_104",
+    "fieldtype": "Section Break"
+   },
+-  {
+-   "fieldname": "column_break_106",
+-   "fieldtype": "Column Break"
+-  },
+   {
+    "collapsible": 1,
+    "collapsible_depends_on": "write_off_amount",
+@@ -2124,7 +2115,7 @@
+    "link_fieldname": "consolidated_invoice"
+   }
+  ],
+- "modified": "2022-12-12 18:34:33.409895",
++ "modified": "2023-01-06 13:11:10.091613",
+  "modified_by": "Administrator",
+  "module": "Accounts",
+  "name": "Sales Invoice",
+@@ -2180,4 +2171,4 @@
+  "title_field": "title",
+  "track_changes": 1,
+  "track_seen": 1
+-}
++}
+\ No newline at end of file

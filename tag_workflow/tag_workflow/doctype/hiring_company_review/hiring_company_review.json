@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{staffing_company}-{job_order}",
+ "creation": "2021-12-27 23:49:11.725053",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "staffing_company",
+  "hiring_company",
+  "job_order",
+  "rating",
+  "comments",
+  "rating_hiring"
+ ],
+ "fields": [
+  {
+   "fieldname": "staffing_company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Staffing Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "hiring_company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Hiring Company",
+   "options": "Company",
+   "read_only": 1
+  },
+  {
+   "fieldname": "job_order",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Job Order",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Ratings"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Text",
+   "label": "Comments",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rating_hiring",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Ratings"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-01-17 08:47:15.873106",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Hiring Company Review",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

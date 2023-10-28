@@ -1,0 +1,149 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-23 13:23:54.718412",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_category",
+  "job_start_time",
+  "employee",
+  "employee_name",
+  "resume",
+  "pay_rate",
+  "company",
+  "approved",
+  "distance_radius",
+  "show_all_employees",
+  "remove_employee",
+  "estimated_hours_per_day",
+  "removed_by_hiring",
+  "removed_by_hiring_date"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee ID ",
+   "options": "Employee"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "columns": 1,
+   "fieldname": "job_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Title",
+   "options": "Item"
+  },
+  {
+   "columns": 1,
+   "fieldname": "resume",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Resume"
+  },
+  {
+   "fetch_from": "employee.company",
+   "fieldname": "company",
+   "fieldtype": "Read Only",
+   "label": "Company"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "approved",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Approved",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fieldname": "pay_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Pay Rate",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "remove_employee",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Remove Employee"
+  },
+  {
+   "columns": 1,
+   "default": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash;",
+   "fieldname": "distance_radius",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Distance Radius",
+   "options": "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash;\n5 miles\n10 miles\n20 miles\n50 miles"
+  },
+  {
+   "columns": 1,
+   "default": "1",
+   "fieldname": "show_all_employees",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Show All Employees",
+   "hidden":1
+  },
+  {
+   "columns": 1,
+   "fieldname": "job_start_time",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "estimated_hours_per_day",
+   "fieldtype": "Float",
+   "label": "Estimated Daily Hours",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "removed_by_hiring",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "Removed By hiring",
+   "read_only": 1
+  },
+  {
+   "fieldname": "removed_by_hiring_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Removed by hiring date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-09-23 01:37:10.642121",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Assign Employee Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

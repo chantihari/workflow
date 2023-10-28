@@ -1,0 +1,21 @@
+diff --git a/chat/hooks.py b/chat/hooks.py
+index 6b8d94f..5ca1299 100644
+--- a/chat/hooks.py
++++ b/chat/hooks.py
+@@ -27,11 +27,11 @@ web_include_css = ['chat.bundle.css'] if is_frappe_above_v13 else [
+ web_include_js = ['chat.bundle.js'] if is_frappe_above_v13 else [
+     '/assets/js/chat.js']
+ 
+-doc_events = {
+-        "Chat Message":{
+-                "after_insert":'chat.chat_tag_data.email_notification'
+-        }
+-}
++# doc_events = {
++#         "Chat Message":{
++#                 "after_insert":'chat.chat_tag_data.email_notification'
++#         }
++# }
+ # include custom scss in every website theme (without file extension ".scss")
+ # website_theme_scss = "chat/public/scss/website"
+ 

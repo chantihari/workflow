@@ -1,0 +1,80 @@
+[
+	{
+
+		"company_name":"Genpact Test Hiring",
+		"organization_type":"Hiring",
+		"accounts_payable_contact_name":"Genpact Test Hiring",
+		"fein":"987654321",
+		"title":"Genpact Test Hiring",
+		"accounts_payable_email":"genpact_hiring@yopmail.com",
+		"accounts_payable_phone_number":"9876543211",
+		"contact_name":"Genpect Test hiring",
+		"phone_no":"9876543211",
+		"email":"genpact_hiring@yopmail.com",
+		"enter_manually":1,
+		"address":"#42, RN Road, Los Angeles, California",
+		"state":"California",
+		"city":"",
+		"zip":"90002",
+		"default_currency":"USD",
+		"primary_language":"en",
+		"industry_type":[
+			{
+				"industry_type":"IT"
+			}
+		]
+	},
+	{
+
+		"company_name":"Genpact Test Staffing",
+		"organization_type":"Staffing",
+		"accounts_payable_contact_name":"Genpact Test Staffing",
+		"fein":"987654321",
+		"title":"Genpact Test Staffing",
+		"accounts_payable_email":"",
+		"accounts_payable_phone_number":"9876543211",
+		"contact_name":"Genpact Test Staffing",
+		"phone_no":"9876543211",
+		"email":"genpact_staffing@yopmail.com",
+		"enter_manually":1,
+		"address":"#42, RN Road, Los Angeles, California",
+		"state":"California",
+		"city":"Los Angeles",
+		"zip":"90002",
+		"default_currency":"USD",
+		"primary_language":"en",
+		"industry_type":[]
+	},
+	{
+
+		"company_name":"Genpact Test44 Staffing",
+		"organization_type":"Staffing",
+		"accounts_payable_contact_name":"Genpact Test44 Staffing",
+		"fein":"987654321",
+		"title":"Genpact Test44 Staffing",
+		"accounts_payable_email":"",
+		"accounts_payable_phone_number":"9876543211",
+		"contact_name":"Genpact Test44 Staffing",
+		"phone_no":"9876543211",
+		"email":"genpact_staffing@yopmail.com",
+		"enter_manually":1,
+		"address":"#42, RN Road, Los Angeles, California",
+		"state":"California",
+		"city":"Los Angeles",
+		"zip":"90002",
+		"default_currency":"USD",
+		"primary_language":"en",
+		"industry_type":[
+			{
+				"industry_type":"IT"
+			}
+		],
+		"accounts_receivable_rep_email":"genpact_staffing@yopmail.com",
+		"accounts_receivable_name":"Genpact Test44 Staffing",
+		"accounts_receivable_phone_number":"9876543211",
+		"cert_of_insurance":"/files/testing doc.pdf",
+		"safety_manual":"/files/testing doc.pdf",
+		"w9":"/files/testing doc.pdf"
+
+	}
+]

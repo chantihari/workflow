@@ -1,0 +1,21 @@
+diff --git a/frappe/public/js/frappe/views/workspace/workspace.js b/frappe/public/js/frappe/views/workspace/workspace.js
+index 96b3f4e..355d7c9 100644
+--- a/frappe/public/js/frappe/views/workspace/workspace.js
++++ b/frappe/public/js/frappe/views/workspace/workspace.js
+@@ -389,7 +389,7 @@ frappe.views.Workspace = class Workspace {
+ 		}
+ 
+ 		this.clear_page_actions();
+-
++		if(frappe.session.user=='Administrator'){
+ 		this.page.set_secondary_action(__("Edit"), async () => {
+ 			if (!this.editor || !this.editor.readOnly) return;
+ 			this.is_read_only = false;
+@@ -406,6 +406,7 @@ frappe.views.Workspace = class Workspace {
+ 			this.initialize_new_page();
+ 		});
+ 	}
++	}
+ 
+ 	initialize_editorjs_undo() {
+ 		this.undo = new Undo({ editor: this.editor });

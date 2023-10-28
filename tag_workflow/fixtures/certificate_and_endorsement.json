@@ -1,0 +1,87 @@
+[
+    {
+     "attribute": "WBE",
+     "certificate_types": "WBE- Women Business Enterprise",
+     "certification_name": "WBE- Women Business Enterprise",
+     "docstatus": 0,
+     "doctype": "Certificate and Endorsement",
+     "modified": "2022-11-28 05:03:01.681949",
+     "name": "WBE- Women Business Enterprise",
+     "parent": null,
+     "parentfield": null,
+     "parenttype": null
+    },
+    {
+     "attribute": "DBE",
+     "certificate_types": "DBE- Disadvantaged Business Enterprise",
+     "certification_name": "DBE- Disadvantaged Business Enterprise",
+     "docstatus": 0,
+     "doctype": "Certificate and Endorsement",
+     "modified": "2022-11-28 05:03:25.924062",
+     "name": "DBE- Disadvantaged Business Enterprise",
+     "parent": null,
+     "parentfield": null,
+     "parenttype": null
+    },
+    {
+     "attribute": "MBE",
+     "certificate_types": "MBE- Minority Business Enterprise",
+     "certification_name": "MBE- Minority Business Enterprise",
+     "docstatus": 0,
+     "doctype": "Certificate and Endorsement",
+     "modified": "2022-11-28 05:03:41.695834",
+     "name": "MBE- Minority Business Enterprise",
+     "parent": null,
+     "parentfield": null,
+     "parenttype": null
+    },
+    {
+     "attribute": "SDVOSB",
+     "certificate_types": "SDVOSB- Service Disabled Veteran Owned Small Business",
+     "certification_name": "SDVOSB- Service Disabled Veteran Owned Small Business",
+     "docstatus": 0,
+     "doctype": "Certificate and Endorsement",
+     "modified": "2022-11-28 05:03:57.975280",
+     "name": "SDVOSB- Service Disabled Veteran Owned Small Business",
+     "parent": null,
+     "parentfield": null,
+     "parenttype": null
+    },
+    {
+     "attribute": "VOSB",
+     "certificate_types": "VOSB- Veteran Owned Small Business",
+     "certification_name": "VOSB- Veteran Owned Small Business",
+     "docstatus": 0,
+     "doctype": "Certificate and Endorsement",
+     "modified": "2022-11-28 05:04:11.982101",
+     "name": "VOSB- Veteran Owned Small Business",
+     "parent": null,
+     "parentfield": null,
+     "parenttype": null
+    },
+    {
+     "attribute": "DVOSB",
+     "certificate_types": "DVOSB- Disabled Veteran Owned Small Business",
+     "certification_name": "DVOSB- Disabled Veteran Owned Small Business",
+     "docstatus": 0,
+     "doctype": "Certificate and Endorsement",
+     "modified": "2022-11-28 05:04:33.718493",
+     "name": "DVOSB- Disabled Veteran Owned Small Business",
+     "parent": null,
+     "parentfield": null,
+     "parenttype": null
+    },
+    {
+     "attribute": "WOSB",
+     "certificate_types": "WOSB- Woman Owned Small Business",
+     "certification_name": "WOSB- Woman Owned Small Business",
+     "docstatus": 0,
+     "doctype": "Certificate and Endorsement",
+     "modified": "2022-11-28 05:04:55.251147",
+     "name": "WOSB- Woman Owned Small Business",
+     "parent": null,
+     "parentfield": null,
+     "parenttype": null
+    }
+
+]

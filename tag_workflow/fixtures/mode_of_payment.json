@@ -1,0 +1,15 @@
+[
+ {
+  "accounts": [],
+  "docstatus": 0,
+  "doctype": "Mode of Payment",
+  "enabled": 1,
+  "mode_of_payment": "Cash",
+  "modified": "2021-12-28 08:02:45.452394",
+  "name": "Cash",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "type": "Cash"
+ }
+]

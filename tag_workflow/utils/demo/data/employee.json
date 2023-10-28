@@ -1,0 +1,21 @@
+[
+    {
+        "first_name":"John",
+        "last_name":"Doe",
+        "email":"JDoe@example.com",
+        "company":"Temporary Assistance Guru LLC",
+        "status":"Active",
+        "date_of_birth":"1995-04-01",
+        "contact_number":"9123567890",
+        "gender":"Male",
+        "employee_gender": "Male",
+        "ssn":"123456789",
+        "sssn":"123456789",
+        "military_veteran":0,
+        "street_address":"123 Main Street",
+        "suite_or_apartment_no":"Apt 102",
+        "city":"Whoville",
+        "state":"Florida",
+        "zip": "12345"
+    }
+]

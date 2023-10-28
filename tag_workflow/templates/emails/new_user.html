@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>Invitation</title>
+  </head>
+
+  <body style="background: #FAFBFC;font-family:sans-serif;">
+    <div class="container" style="width: 1000px; margin:auto">
+      <div class="main-div text-center" style="text-align:center;margin:auto">
+        <div class="logo py-2" style="padding:30px 0;">
+          <img
+            src="{{site_url}}/assets/tag_workflow/images/TAG-Logo.png"
+            alt="TAG-Logo"
+          />
+        </div>
+        <div
+          class="inner-div bg-white py-5"
+          style=" max-width: 700px; margin: 15px auto; width: 100%; border-radius: 13px;background: #fff; padding: 10px 40px 40px 40px;"
+        >
+          <h2 style="color: #21B9E4;font-size: 32px;font-weight:normal;">
+            Invitation
+          </h2>
+          <p
+            class="inner-text mb-0 py-3"
+            style="color: #2A2E43;font-size: 16px;padding:16px 0;"
+          >
+            {{_("Hi")}} {{ first_name }}{% if last_name %} {{ last_name}}{%
+            endif %}!
+          </p>
+          <p class="inner-text" style="font-size:16px;color: #2A2E43;">
+            You have been invited to join your organization at TAG! To complete
+            your user account set up at TAG, please click on the below link and
+            set up your password.
+          </p>
+          <a
+            href="{{ link }}"
+            rel="nofollow"
+            class="btn btn-primary btn-lg px-5 py-3 mt-5 mb-5"
+            style=" background: #21B9E4;  padding: 15px 40px; font-size: 20px; border-radius: 5px;text-decoration: none; position: relative; top: 40px;"
+            ><span style="color: white;">Go To TAG</span></a
+          >
+          <p
+            class="footer"
+            style="margin-top: 7rem;color: #78849E;  font-size: 13px;"
+          >
+            © 2023 TAG | All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

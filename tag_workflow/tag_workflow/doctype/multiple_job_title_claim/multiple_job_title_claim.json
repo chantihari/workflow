@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "creation": "2023-05-30 01:31:52.236448",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_title",
+  "industry",
+  "no_of_workers_joborder",
+  "no_of_remaining_employee",
+  "approved_no_of_workers",
+  "staff_claims_no",
+  "column_break_6",
+  "start_time",
+  "duration",
+  "employee_pay_rate",
+  "staff_class_code",
+  "staff_class_code_rate",
+  "bill_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Job Title",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "no_of_workers_joborder",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Employees Required ",
+   "read_only": 1,
+   "width": "1"
+  },
+  {
+   "columns": 1,
+   "fieldname": "no_of_remaining_employee",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Remaining Employees ",
+   "read_only": 1,
+   "width": "1"
+  },
+  {
+   "columns": 1,
+   "fieldname": "staff_claims_no",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Employees to Claim",
+   "width": "1"
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval: ![\"Hiring\", \"Exclusive Hiring\"].includes(frappe.boot.tag.tag_user_info.company_type)",
+   "fieldname": "employee_pay_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Employee Pay Rate",
+   "non_negative": 1,
+   "precision": "2",
+   "width": "1"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "approved_no_of_workers",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Selected Workers",
+   "read_only": 1,
+   "width": "1"
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval: ![\"Hiring\", \"Exclusive Hiring\"].includes(frappe.boot.tag.tag_user_info.company_type)",
+   "fieldname": "staff_class_code",
+   "fieldtype": "Data",
+   "label": "Workers' Comp Code",
+   "width": "1"
+  },
+  {
+   "depends_on": "eval: ![\"Hiring\", \"Exclusive Hiring\"].includes(frappe.boot.tag.tag_user_info.company_type)",
+   "fieldname": "staff_class_code_rate",
+   "fieldtype": "Float",
+   "label": "Rate",
+   "precision": "5"
+  },
+  {
+   "columns": 1,
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "read_only": 1,
+   "width": "1"
+  },
+  {
+   "columns": 1,
+   "fieldname": "duration",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Duration",
+   "precision": "2",
+   "read_only": 1,
+   "width": "1"
+  },
+  {
+   "fieldname": "bill_rate",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Bill rate"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "industry",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Industry",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-17 09:05:07.278098",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Multiple Job Title Claim",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

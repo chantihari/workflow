@@ -1,0 +1,28 @@
+{
+ "content": null,
+ "creation": "2022-01-06 08:16:22.960370",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2022-01-06 08:16:22.960370",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "staff-home",
+ "owner": "Administrator",
+ "page_name": "Staff Home",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Staffing Admin"
+  },
+  {
+   "role": "Staffing User"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

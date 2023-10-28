@@ -1,0 +1,167 @@
+[
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2022-12-28 09:36:28.775915",
+  "name": "User",
+  "total_fields": "6"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": "[{\"fieldname\":\"employee_name\",\"label\":\"Employee Name\"},{\"fieldname\":\"status_field\",\"label\":\"Status\"},{\"fieldname\":\"template_name\",\"label\":\"Template Name\"},{\"fieldname\":\"department\",\"label\":\"Department\"},{\"fieldname\":\"designation\",\"label\":\"Designation\"},{\"fieldname\":\"date_of_joining\",\"label\":\"Date of Joining\"}]",
+  "modified": "2023-01-03 11:52:55.238767",
+  "name": "Employee Onboarding",
+  "total_fields": "10"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": "[{\"fieldname\":\"owner_company\",\"label\":\"Owner Company\"},{\"fieldname\":\"first_name\",\"label\":\"Contact Name\"},{\"fieldname\":\"phone_number\",\"label\":\"Phone Number\"},{\"fieldname\":\"email_address\",\"label\":\"Email\"}]",
+  "modified": "2023-01-07 07:49:22.167094",
+  "name": "Contact",
+  "total_fields": "5"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": "[{\"fieldname\":\"name\",\"label\":\"ID\"},{\"fieldname\":\"job_order\",\"label\":\"Job Order\"},{\"fieldname\":\"staffing_organization\",\"label\":\"Staffing Organization\"},{\"fieldname\":\"staffing_organization_ratings\",\"label\":\"Avg. Rating\"},{\"fieldname\":\"staff_claims_no\",\"label\":\"Claim no. of Workers\"},{\"fieldname\":\"approved_no_of_workers\",\"label\":\"Selected Workers\"}]",
+  "modified": "2023-01-12 08:22:33.315150",
+  "name": "Claim Order",
+  "total_fields": "7"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": "[{\"label\":\"Company\",\"fieldname\":\"title\"},{\"type\":\"Status\",\"label\":\"Status\",\"fieldname\":\"status_field\"},{\"label\":\"Is Paid\",\"fieldname\":\"is_pos\"},{\"label\":\"Job Order\",\"fieldname\":\"job_order\"},{\"label\":\"Date\",\"fieldname\":\"posting_date\"},{\"label\":\"Total Billing Amount (Including Premium)\",\"fieldname\":\"total_billing_amount_premium\"}]",
+  "modified": "2023-03-07 00:51:15.129017",
+  "name": "Sales Invoice",
+  "total_fields": "8"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2022-12-21 03:07:14.454020",
+  "name": "Timesheet",
+  "total_fields": "10"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2022-03-09 00:56:03.240107",
+  "name": "Job Order",
+  "total_fields": "10"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2023-01-07 02:17:25.754919",
+  "name": "Lead",
+  "total_fields": "6"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2022-04-06 07:10:03.905398",
+  "name": "Contract",
+  "total_fields": "6"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2022-04-12 03:43:03.639809",
+  "name": "Item",
+  "total_fields": "8"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2022-08-30 05:53:52.620370",
+  "name": "Salary Component",
+  "total_fields": "8"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2022-12-13 04:33:04.726307",
+  "name": "Assign Employee",
+  "total_fields": "7"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2023-01-05 04:33:04.726307",
+  "name": "Hiring Company Review",
+  "total_fields": "6"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2023-01-09 04:33:04.726307",
+  "name": "Employee Onboarding Template",
+  "total_fields": "5"
+ },
+ {
+  "disable_auto_refresh": 0,
+  "disable_count": 0,
+  "disable_sidebar_stats": 0,
+  "docstatus": 0,
+  "doctype": "List View Settings",
+  "fields": null,
+  "modified": "2023-01-10 04:33:04.726307",
+  "name": "Employee",
+  "total_fields": "7"
+ }
+]

@@ -1,0 +1,26 @@
+diff --git a/erpnext/projects/doctype/timesheet_detail/timesheet_detail.json b/erpnext/projects/doctype/timesheet_detail/timesheet_detail.json
+index 90fdb83..1f79cd1 100644
+--- a/erpnext/projects/doctype/timesheet_detail/timesheet_detail.json
++++ b/erpnext/projects/doctype/timesheet_detail/timesheet_detail.json
+@@ -26,11 +26,11 @@
+   "billing_hours",
+   "section_break_11",
+   "base_billing_rate",
++  "billing_rate",
+   "base_billing_amount",
+   "base_costing_rate",
+   "base_costing_amount",
+   "column_break_14",
+-  "billing_rate",
+   "billing_amount",
+   "costing_rate",
+   "costing_amount"
+@@ -224,7 +224,7 @@
+  "idx": 1,
+  "istable": 1,
+  "links": [],
+- "modified": "2022-02-17 16:53:34.878798",
++ "modified": "2023-06-13 06:54:59.502314",
+  "modified_by": "Administrator",
+  "module": "Projects",
+  "name": "Timesheet Detail",

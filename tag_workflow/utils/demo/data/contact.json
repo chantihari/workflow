@@ -1,0 +1,12 @@
+[ 
+    {
+        "first_name": "John Doe",
+        "phone_number": "9123567890",
+        "email_address": "JDoe@example.com",
+        "owner_company":"Temporary Assistance Guru LLC",
+        "contact_address":"123 Main Street",
+        "city":"Whoville",
+        "zip":"12345",
+        "suite_or_apartment_no":"Apt 102"
+    }
+]

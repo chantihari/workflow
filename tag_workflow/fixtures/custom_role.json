@@ -1,0 +1,2902 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 02:09:48.693966",
+  "name": "ad39922474",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "GST Sales Register",
+  "roles": [
+   {
+    "parent": "ad39922474",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 02:09:22.130485",
+  "name": "518c531f9c",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "GST Purchase Register",
+  "roles": [
+   {
+    "parent": "518c531f9c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 02:09:33.940373",
+  "name": "9988233b39",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "GST Itemised Sales Register",
+  "roles": [
+   {
+    "parent": "9988233b39",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 02:10:00.441884",
+  "name": "8db7aae299",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "GST Itemised Purchase Register",
+  "roles": [
+   {
+    "parent": "8db7aae299",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-01-04 13:20:17.946124",
+  "name": "6ac663a844",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Delivery Note",
+  "report": "Eway Bill",
+  "roles": [
+   {
+    "parent": "6ac663a844",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "6ac663a844",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-01-04 13:20:17.952215",
+  "name": "6103220e28",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "E-Invoice Summary",
+  "roles": [
+   {
+    "parent": "6103220e28",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "6103220e28",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 03:19:51.488708",
+  "name": "a032272637",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Salary Slip",
+  "report": "Professional Tax Deductions",
+  "roles": [
+   {
+    "parent": "a032272637",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   },
+   {
+    "parent": "a032272637",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 03:22:23.934369",
+  "name": "003ed6830f",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Salary Slip",
+  "report": "Provident Fund Deductions",
+  "roles": [
+   {
+    "parent": "003ed6830f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   },
+   {
+    "parent": "003ed6830f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-01-04 13:20:17.977133",
+  "name": "feb6d8e5f6",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "HSN-wise-summary of outward supplies",
+  "roles": [
+   {
+    "parent": "feb6d8e5f6",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "feb6d8e5f6",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "feb6d8e5f6",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 02:08:56.331943",
+  "name": "1b97571b86",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "GSTR-1",
+  "roles": [
+   {
+    "parent": "1b97571b86",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "1b97571b86",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 02:09:04.428677",
+  "name": "a14aa35c92",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "GSTR-2",
+  "roles": [
+   {
+    "parent": "a14aa35c92",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "a14aa35c92",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-01-28 11:59:01.060457",
+  "name": "bb7b88c191",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Sales Register",
+  "roles": [
+   {
+    "parent": "bb7b88c191",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-01-28 12:00:01.929084",
+  "name": "2835a4cfb0",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "Purchase Register",
+  "roles": [
+   {
+    "parent": "2835a4cfb0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "2835a4cfb0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "2835a4cfb0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:45:13.740050",
+  "name": "fd13cef4eb",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "TDS Computation Summary",
+  "roles": [
+   {
+    "parent": "fd13cef4eb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "fd13cef4eb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "fd13cef4eb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:46:31.830182",
+  "name": "f1b78c3c36",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "TDS Payable Monthly",
+  "roles": [
+   {
+    "parent": "f1b78c3c36",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "f1b78c3c36",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "f1b78c3c36",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:47:00.283651",
+  "name": "49005ab645",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Gross Profit",
+  "roles": [
+   {
+    "parent": "49005ab645",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:49:07.951644",
+  "name": "58b8938efc",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "Billed Items To Be Received",
+  "roles": [
+   {
+    "parent": "58b8938efc",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "58b8938efc",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "58b8938efc",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   },
+   {
+    "parent": "58b8938efc",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:49:27.346772",
+  "name": "60b4304f3a",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "POS Invoice",
+  "report": "POS Register",
+  "roles": [
+   {
+    "parent": "60b4304f3a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:49:50.591931",
+  "name": "6c89880d94",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Inactive Sales Items",
+  "roles": [
+   {
+    "parent": "6c89880d94",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "6c89880d94",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:50:17.260930",
+  "name": "9f41450a39",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "Supplier Ledger Summary",
+  "roles": [
+   {
+    "parent": "9f41450a39",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:50:39.759921",
+  "name": "c85becd6f4",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "Gross and Net Profit Report",
+  "roles": [
+   {
+    "parent": "c85becd6f4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "c85becd6f4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:50:58.797704",
+  "name": "0fdd0f93c4",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "Trial Balance",
+  "roles": [
+   {
+    "parent": "0fdd0f93c4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "0fdd0f93c4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:51:31.941613",
+  "name": "91420be6d9",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Customer Ledger Summary",
+  "roles": [
+   {
+    "parent": "91420be6d9",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:51:55.156491",
+  "name": "836d8d7bed",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "Balance Sheet",
+  "roles": [
+   {
+    "parent": "836d8d7bed",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "836d8d7bed",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:52:19.918830",
+  "name": "67dd04bf47",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Account",
+  "report": "Consolidated Financial Statement",
+  "roles": [
+   {
+    "parent": "67dd04bf47",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   },
+   {
+    "parent": "67dd04bf47",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "67dd04bf47",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:52:41.258051",
+  "name": "0eceb5bbf6",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "Purchase Invoice Trends",
+  "roles": [
+   {
+    "parent": "0eceb5bbf6",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "0eceb5bbf6",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "0eceb5bbf6",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:53:00.207131",
+  "name": "9bd37bf595",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Sales Invoice Trends",
+  "roles": [
+   {
+    "parent": "9bd37bf595",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:53:33.308459",
+  "name": "919b46fcd0",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Delivered Items To Be Billed",
+  "roles": [
+   {
+    "parent": "919b46fcd0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:53:49.627792",
+  "name": "69fc2c8cd0",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "Received Items To Be Billed",
+  "roles": [
+   {
+    "parent": "69fc2c8cd0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "69fc2c8cd0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "69fc2c8cd0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:54:13.175777",
+  "name": "f51d0cc425",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Sales Payment Summary",
+  "roles": [
+   {
+    "parent": "f51d0cc425",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:54:32.697237",
+  "name": "6e2d159f99",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Sales Partners Commission",
+  "roles": [
+   {
+    "parent": "6e2d159f99",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:54:54.924318",
+  "name": "bbff67b4eb",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Accounts Receivable Summary",
+  "roles": [
+   {
+    "parent": "bbff67b4eb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:55:14.027222",
+  "name": "50be1d11db",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Journal Entry",
+  "report": "Bank Clearance Summary",
+  "roles": [
+   {
+    "parent": "50be1d11db",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "50be1d11db",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:55:37.355670",
+  "name": "9ba99db972",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Journal Entry",
+  "report": "Bank Reconciliation Statement",
+  "roles": [
+   {
+    "parent": "9ba99db972",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "9ba99db972",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:56:03.435563",
+  "name": "6cf15653cc",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Cost Center",
+  "report": "Budget Variance Report",
+  "roles": [
+   {
+    "parent": "6cf15653cc",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "6cf15653cc",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   },
+   {
+    "parent": "6cf15653cc",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:56:28.112571",
+  "name": "cca8e880c4",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "General Ledger",
+  "roles": [
+   {
+    "parent": "cca8e880c4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "cca8e880c4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "cca8e880c4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:57:02.785575",
+  "name": "1cf9659ae7",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "Item-wise Purchase Register",
+  "roles": [
+   {
+    "parent": "1cf9659ae7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "1cf9659ae7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   },
+   {
+    "parent": "1cf9659ae7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:57:14.337255",
+  "name": "5c0f683122",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Item-wise Sales Register",
+  "roles": [
+   {
+    "parent": "5c0f683122",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:58:19.292015",
+  "name": "609f339a5c",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Journal Entry",
+  "report": "Payment Period Based On Invoice Date",
+  "roles": [
+   {
+    "parent": "609f339a5c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "609f339a5c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:58:57.544470",
+  "name": "3e92f0665a",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "Profit and Loss Statement",
+  "roles": [
+   {
+    "parent": "3e92f0665a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "3e92f0665a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:59:27.476604",
+  "name": "a57c96e1b0",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "Accounts Payable Summary",
+  "roles": [
+   {
+    "parent": "a57c96e1b0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "a57c96e1b0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "a57c96e1b0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 00:59:50.005941",
+  "name": "bf4bf92882",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "Accounts Payable",
+  "roles": [
+   {
+    "parent": "bf4bf92882",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "bf4bf92882",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "bf4bf92882",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:00:07.937833",
+  "name": "566a62a7b3",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "Trial Balance for Party",
+  "roles": [
+   {
+    "parent": "566a62a7b3",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "566a62a7b3",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:00:25.056402",
+  "name": "d6c9113c05",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "Cash Flow",
+  "roles": [
+   {
+    "parent": "d6c9113c05",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "d6c9113c05",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:00:38.900564",
+  "name": "97ab14d78b",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Asset",
+  "report": "Asset Depreciation Ledger",
+  "roles": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:00:52.199693",
+  "name": "e3c4c67ec1",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Asset",
+  "report": "Asset Depreciations and Balances",
+  "roles": []
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:01:08.709011",
+  "name": "5d94b4742d",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "Profitability Analysis",
+  "roles": [
+   {
+    "parent": "5d94b4742d",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "5d94b4742d",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:04:18.016969",
+  "name": "efe3a1f97e",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Sales Analytics",
+  "roles": [
+   {
+    "parent": "efe3a1f97e",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "efe3a1f97e",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "efe3a1f97e",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:22:14.379752",
+  "name": "4c0bb97d9e",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "Trial Balance (Simple)",
+  "roles": [
+   {
+    "parent": "4c0bb97d9e",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "4c0bb97d9e",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:28:59.869086",
+  "name": "83f31c41d4",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Sales Order Analysis",
+  "roles": [
+   {
+    "parent": "83f31c41d4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "83f31c41d4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "83f31c41d4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:29:15.881428",
+  "name": "ffe2455b7e",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Opportunity",
+  "report": "Territory-wise Sales",
+  "roles": [
+   {
+    "parent": "ffe2455b7e",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:29:31.921081",
+  "name": "f50631e65d",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Item-wise Sales History",
+  "roles": [
+   {
+    "parent": "f50631e65d",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "f50631e65d",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "f50631e65d",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:30:01.187648",
+  "name": "c77488d4ff",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Customer",
+  "report": "Customer-wise Item Price",
+  "roles": [
+   {
+    "parent": "c77488d4ff",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "c77488d4ff",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "c77488d4ff",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "c77488d4ff",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Master Manager"
+   },
+   {
+    "parent": "c77488d4ff",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:31:17.737844",
+  "name": "23d11ac34f",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Territory Target Variance Based On Item Group",
+  "roles": [
+   {
+    "parent": "23d11ac34f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "23d11ac34f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "23d11ac34f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:31:37.234708",
+  "name": "81c194fd53",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Sales Partner Target Variance based on Item Group",
+  "roles": [
+   {
+    "parent": "81c194fd53",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "81c194fd53",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "81c194fd53",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:31:55.914334",
+  "name": "0550cc2482",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Sales Person Target Variance Based On Item Group",
+  "roles": [
+   {
+    "parent": "0550cc2482",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "0550cc2482",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "0550cc2482",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:32:21.582444",
+  "name": "d904a15c2f",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Sales Partner Transaction Summary",
+  "roles": [
+   {
+    "parent": "d904a15c2f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "d904a15c2f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "d904a15c2f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:33:21.229566",
+  "name": "6037ebdac6",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Pending SO Items For Purchase Request",
+  "roles": [
+   {
+    "parent": "6037ebdac6",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "6037ebdac6",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "6037ebdac6",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:33:54.098029",
+  "name": "9699c77999",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Address",
+  "report": "Address And Contacts",
+  "roles": [
+   {
+    "parent": "9699c77999",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "9699c77999",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:34:12.592217",
+  "name": "69aa5eedb0",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Customers Without Any Sales Transactions",
+  "roles": [
+   {
+    "parent": "69aa5eedb0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "69aa5eedb0",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:34:25.890044",
+  "name": "c112edd75a",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Quotation",
+  "report": "Quotation Trends",
+  "roles": [
+   {
+    "parent": "c112edd75a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "c112edd75a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance Manager"
+   },
+   {
+    "parent": "c112edd75a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:34:42.398371",
+  "name": "04fe56841d",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Sales Order Trends",
+  "roles": [
+   {
+    "parent": "04fe56841d",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "04fe56841d",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "04fe56841d",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:36:49.911581",
+  "name": "b78ee1d93f",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Customer",
+  "report": "Customer Acquisition and Loyalty",
+  "roles": [
+   {
+    "parent": "b78ee1d93f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "b78ee1d93f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Master Manager"
+   },
+   {
+    "parent": "b78ee1d93f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "b78ee1d93f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "b78ee1d93f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:37:10.567463",
+  "name": "a68dc44b71",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Customer",
+  "report": "Customer Credit Balance",
+  "roles": [
+   {
+    "parent": "a68dc44b71",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "a68dc44b71",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Master Manager"
+   },
+   {
+    "parent": "a68dc44b71",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "a68dc44b71",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "a68dc44b71",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:38:12.626231",
+  "name": "45ed2913d4",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Product Bundle",
+  "report": "Available Stock for Packing Items",
+  "roles": [
+   {
+    "parent": "45ed2913d4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "45ed2913d4",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:38:28.334076",
+  "name": "7d96b33053",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Inactive Customers",
+  "roles": [
+   {
+    "parent": "7d96b33053",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "7d96b33053",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "7d96b33053",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:38:53.329078",
+  "name": "f116354033",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Order",
+  "report": "Sales Person-wise Transaction Summary",
+  "roles": [
+   {
+    "parent": "f116354033",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "f116354033",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "f116354033",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:39:23.644885",
+  "name": "0b4143cf15",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Opportunity",
+  "report": "First Response Time for Opportunity",
+  "roles": [
+   {
+    "parent": "0b4143cf15",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:39:36.202407",
+  "name": "fc9b4478ea",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Opportunity",
+  "report": "Lost Opportunity",
+  "roles": [
+   {
+    "parent": "fc9b4478ea",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:39:52.123078",
+  "name": "31b5445615",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Lead",
+  "report": "Lead Details",
+  "roles": [
+   {
+    "parent": "31b5445615",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "31b5445615",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:40:06.574198",
+  "name": "8f3f7eee68",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Communication",
+  "report": "Lead Conversion Time",
+  "roles": [
+   {
+    "parent": "8f3f7eee68",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:40:19.251215",
+  "name": "125ecaacfb",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Lead",
+  "report": "Campaign Efficiency",
+  "roles": [
+   {
+    "parent": "125ecaacfb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "125ecaacfb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:40:42.791161",
+  "name": "d2fd7a2728",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Lead",
+  "report": "Lead Owner Efficiency",
+  "roles": [
+   {
+    "parent": "d2fd7a2728",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "d2fd7a2728",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:41:00.810862",
+  "name": "82375d8827",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Lead",
+  "report": "Prospects Engaged But Not Converted",
+  "roles": [
+   {
+    "parent": "82375d8827",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   },
+   {
+    "parent": "82375d8827",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:42:11.857688",
+  "name": "bd44fd32d3",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Employee Advance",
+  "report": "Employee Advance Summary",
+  "roles": [
+   {
+    "parent": "bd44fd32d3",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Expense Approver"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:42:38.254684",
+  "name": "8c1822af9d",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Employee",
+  "report": "Employee Analytics",
+  "roles": [
+   {
+    "parent": "8c1822af9d",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   },
+   {
+    "parent": "8c1822af9d",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:43:00.239998",
+  "name": "b6f6da7c5b",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Timesheet",
+  "report": "Employee Billing Summary",
+  "roles": [
+   {
+    "parent": "b6f6da7c5b",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   },
+   {
+    "parent": "b6f6da7c5b",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Manufacturing User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:43:15.725423",
+  "name": "92fbc54a66",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Employee",
+  "report": "Employee Birthday",
+  "roles": [
+   {
+    "parent": "92fbc54a66",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   },
+   {
+    "parent": "92fbc54a66",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:44:36.530042",
+  "name": "0192b0a653",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Employee",
+  "report": "Employee Leave Balance Summary",
+  "roles": [
+   {
+    "parent": "0192b0a653",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR Manager"
+   },
+   {
+    "parent": "0192b0a653",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   },
+   {
+    "parent": "0192b0a653",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Leave Approver"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:44:50.040583",
+  "name": "52440af425",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Daily Work Summary",
+  "report": "Daily Work Summary Replies",
+  "roles": [
+   {
+    "parent": "52440af425",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 02:52:32.977838",
+  "name": "ea204d545a",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Timesheet",
+  "report": "Project Profitability",
+  "roles": [
+   {
+    "parent": "ea204d545a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   },
+   {
+    "parent": "ea204d545a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "ea204d545a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Employee Self Service"
+   },
+   {
+    "parent": "ea204d545a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:47:26.208149",
+  "name": "bdd2217c1c",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Timesheet",
+  "report": "Project Billing Summary",
+  "roles": [
+   {
+    "parent": "bdd2217c1c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   },
+   {
+    "parent": "bdd2217c1c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Manufacturing User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:47:36.455471",
+  "name": "967002bad7",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Project",
+  "report": "Project Summary",
+  "roles": [
+   {
+    "parent": "967002bad7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Projects Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:47:48.586900",
+  "name": "f48605774c",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Project",
+  "report": "Project wise Stock Tracking",
+  "roles": [
+   {
+    "parent": "f48605774c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Projects Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:48:03.392444",
+  "name": "9b3bd778b7",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Item",
+  "report": "Stock Projected Qty",
+  "roles": [
+   {
+    "parent": "9b3bd778b7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "9b3bd778b7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "9b3bd778b7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "9b3bd778b7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "9b3bd778b7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Manufacturing User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:48:20.810044",
+  "name": "9735b0e287",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Task",
+  "report": "Delayed Tasks Summary",
+  "roles": [
+   {
+    "parent": "9735b0e287",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Projects Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:49:06.068433",
+  "name": "ba640febf8",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Timesheet",
+  "report": "Daily Timesheet Summary",
+  "roles": [
+   {
+    "parent": "ba640febf8",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   },
+   {
+    "parent": "ba640febf8",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Manufacturing User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:50:13.454571",
+  "name": "b941761431",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "COGS By Item Group",
+  "roles": [
+   {
+    "parent": "b941761431",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "b941761431",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:50:29.100334",
+  "name": "c59ba84665",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Stock Ledger Entry",
+  "report": "Incorrect Serial No Valuation",
+  "roles": [
+   {
+    "parent": "c59ba84665",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "c59ba84665",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "c59ba84665",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:51:01.605295",
+  "name": "bd4758acb7",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Stock Ledger Entry",
+  "report": "Serial No Ledger",
+  "roles": [
+   {
+    "parent": "bd4758acb7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "bd4758acb7",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:51:34.915493",
+  "name": "8213886846",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Bin",
+  "report": "Item Shortage Report",
+  "roles": [
+   {
+    "parent": "8213886846",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "8213886846",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:52:19.590291",
+  "name": "bbb931df4e",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Delivery Note",
+  "report": "Delayed Order Report",
+  "roles": [
+   {
+    "parent": "bbb931df4e",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "bbb931df4e",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "bbb931df4e",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:52:41.855559",
+  "name": "9c56233cae",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Delivery Note",
+  "report": "Delayed Item Report",
+  "roles": [
+   {
+    "parent": "9c56233cae",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "9c56233cae",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "9c56233cae",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:53:58.061658",
+  "name": "58e0c7d97c",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Delivery Note",
+  "report": "Delivery Note Trends",
+  "roles": [
+   {
+    "parent": "58e0c7d97c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "58e0c7d97c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:54:17.152423",
+  "name": "db598d3e6a",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Receipt",
+  "report": "Purchase Receipt Trends",
+  "roles": [
+   {
+    "parent": "db598d3e6a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "db598d3e6a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "db598d3e6a",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:54:35.665259",
+  "name": "5ab0f0a6e1",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Bin",
+  "report": "Item Balance (Simple)",
+  "roles": [
+   {
+    "parent": "5ab0f0a6e1",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "5ab0f0a6e1",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:54:51.942373",
+  "name": "f6e39959ac",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Stock Ledger Entry",
+  "report": "Warehouse wise Item Balance Age and Value",
+  "roles": [
+   {
+    "parent": "f6e39959ac",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "f6e39959ac",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "f6e39959ac",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:55:07.181492",
+  "name": "9fd268b87b",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Item",
+  "report": "Item Price Stock",
+  "roles": [
+   {
+    "parent": "9fd268b87b",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "9fd268b87b",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "9fd268b87b",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "9fd268b87b",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "9fd268b87b",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "9fd268b87b",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Manufacturing User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:55:31.068423",
+  "name": "0363d6ebdb",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Item",
+  "report": "Item Variant Details",
+  "roles": [
+   {
+    "parent": "0363d6ebdb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "0363d6ebdb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "0363d6ebdb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "0363d6ebdb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "0363d6ebdb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "0363d6ebdb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Item Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 01:56:35.111769",
+  "name": "9d6c0d4a5c",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Item",
+  "report": "Itemwise Recommended Reorder Level",
+  "roles": [
+   {
+    "parent": "9d6c0d4a5c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "9d6c0d4a5c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "9d6c0d4a5c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "9d6c0d4a5c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "9d6c0d4a5c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "9d6c0d4a5c",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Manufacturing User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 02:01:28.884557",
+  "name": "dd0a3c3be1",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Item",
+  "report": "Stock Ageing",
+  "roles": [
+   {
+    "parent": "dd0a3c3be1",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "dd0a3c3be1",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "dd0a3c3be1",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "dd0a3c3be1",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "dd0a3c3be1",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "dd0a3c3be1",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Manufacturing User"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 02:19:14.005231",
+  "name": "2c880c4b77",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Salary Slip",
+  "report": "Salary Payments Based On Payment Mode",
+  "roles": [
+   {
+    "parent": "2c880c4b77",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR User"
+   },
+   {
+    "parent": "2c880c4b77",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "HR Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 03:16:32.849517",
+  "name": "214f3f39eb",
+  "page": "welcome-to-erpnext",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": null,
+  "report": null,
+  "roles": [
+   {
+    "parent": "214f3f39eb",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2022-02-08 03:21:38.145146",
+  "name": "7d768c923f",
+  "page": "point-of-sale",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": null,
+  "report": null,
+  "roles": [
+   {
+    "parent": "7d768c923f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "7d768c923f",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Sales Manager"
+   }
+  ]
+ }
+]

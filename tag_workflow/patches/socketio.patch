@@ -1,0 +1,13 @@
+diff --git a/socketio.js b/socketio.js
+index 250f374..7df0b9c 100644
+--- a/socketio.js
++++ b/socketio.js
+@@ -27,7 +27,7 @@ io.use((socket, next) => {
+ 
+ 	let cookies = cookie.parse(socket.request.headers.cookie);
+ 
+-	if (!cookies.sid) {
++	if (!cookies.sid || cookies.sid=="Guest") {
+ 		next(new Error("No sid transmitted."));
+ 		return;
+ 	}

@@ -1,0 +1,49 @@
+diff --git a/frappe/public/js/frappe/views/reports/query_report.js b/frappe/public/js/frappe/views/reports/query_report.js
+index dc5e285..ec70487 100644
+--- a/frappe/public/js/frappe/views/reports/query_report.js
++++ b/frappe/public/js/frappe/views/reports/query_report.js
+@@ -150,6 +150,10 @@ frappe.views.QueryReport = class QueryReport extends frappe.views.BaseList {
+ 	}
+ 
+ 	load_report(route_options) {
++		if(frappe.route_history.length > 1){
++			window.location.reload();
++		}
++
+ 		this.page.clear_inner_toolbar();
+ 		this.route = frappe.get_route();
+ 		this.page_name = frappe.get_route_str();
+@@ -172,17 +176,17 @@ frappe.views.QueryReport = class QueryReport extends frappe.views.BaseList {
+ 	}
+ 
+ 	add_card_button_to_toolbar() {
+-		this.page.add_inner_button(__("Create Card"), () => {
+-			this.add_card_to_dashboard();
+-		});
++		// this.page.add_inner_button(__("Create Card"), () => {
++		// 	this.add_card_to_dashboard();
++		// });
+ 	}
+ 
+ 	add_chart_buttons_to_toolbar(show) {
+ 		if (show) {
+ 			this.create_chart_button && this.create_chart_button.remove();
+-			this.create_chart_button = this.page.add_button(__("Set Chart"), () => {
+-				this.open_create_chart_dialog();
+-			});
++			// this.create_chart_button = this.page.add_button(__("Set Chart"), () => {
++			// 	this.open_create_chart_dialog();
++			// });
+ 
+ 			if (this.chart_fields || this.chart_options) {
+ 				this.add_to_dashboard_button && this.add_to_dashboard_button.remove();
+@@ -1486,6 +1490,9 @@ frappe.views.QueryReport = class QueryReport extends frappe.views.BaseList {
+ 		return rows.map((row) => {
+ 			const standard_column_count = this.datatable.datamanager.getStandardColumnCount();
+ 			return row.slice(standard_column_count).map((cell, i) => {
++				if(cell.column.content=='Job Site(s)'){
++					cell.content=cell.content.replace(/<br>/g, '\r\n');
++				}
+ 				if (cell.column.fieldtype === "Duration") {
+ 					cell.content = frappe.utils.get_formatted_duration(cell.content);
+ 				}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <title>{{subject}}</title>
+  </head>
+
+  <body style="background: #FAFBFC;font-family:sans-serif;">
+    <div class="container" style="width: 1000px; margin:auto">
+      <div
+        class="main-div text-center my-2"
+        style="text-align:center;margin:auto"
+      >
+        <div class="logo py-2" style="padding:30px 0 0 0;">
+          <img
+            src="{{sitename}}/assets/tag_workflow/images/TAG-Logo.png"
+            alt="TAG-Logo"
+          />
+        </div>
+        <div
+          class="inner-div bg-white py-2"
+          style=" max-width: 700px; margin: 15px auto; width: 100%; border-radius: 13px;background: #fff; padding: 10px 40px 40px 40px;"
+        >
+          <h2 style="color: #21B9E4;font-size: 32px;font-weight:normal;">
+            {{subject}}
+          </h2>
+          <p class="inner-text " style="color: #2A2E43;font-size: 16px">
+            {{ content }}
+          </p>
+          {% if link %} {% if lead =='true' %}
+          <p>
+            <a style=" color: #21B9E4" {{link}}> View Lead </a>
+          </p>
+          {% else %}
+          <p>
+            <a style=" color: #21B9E4" {{link}}> View </a>
+          </p>
+          {% endif %} {% endif %}
+          <p
+            class="footer"
+            style="margin-top: 2rem;color: #78849E;  font-size: 13px;"
+          >
+            © 2023 TAG | All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+diff --git a/hrms/controllers/employee_reminders.py b/hrms/controllers/employee_reminders.py
+index 9d4d7f5..296aa36 100644
+--- a/hrms/controllers/employee_reminders.py
++++ b/hrms/controllers/employee_reminders.py
+@@ -63,8 +63,11 @@ def send_holidays_reminder_in_advance(employee, holidays):
+ 	frequency = frappe.db.get_single_value("HR Settings", "frequency")
+ 
+ 	email_header = _("Holidays this Month.") if frequency == "Monthly" else _("Holidays this Week.")
++
++	employee_email = frappe.db.sql(f'''select name from `tabUser` where name="{employee_email}" and holiday_mail="1" ''', as_list=1)
++
+ 	frappe.sendmail(
+-		recipients=[employee_email],
++		recipients=[employee_email[0][0]],
+ 		subject=_("Upcoming Holidays Reminder"),
+ 		template="holiday_reminder",
+ 		args=dict(
+@@ -125,8 +128,15 @@ def get_birthday_reminder_text_and_message(birthday_persons):
+ 
+ 
+ def send_birthday_reminder(recipients, reminder_text, birthday_persons, message):
++
++	if len(recipients)>1:
++		recipients_mail = frappe.db.sql(f'''select name from `tabUser` where name in {tuple(recipients)} and birthday_mail="1" ''', as_list=1)
++	else:
++		recipients_mail = frappe.db.sql(f'''select name from `tabUser` where name="{recipients[0]}" and birthday_mail="1" ''', as_list=1)
++	recipients_mail = [l[0] for l in recipients_mail]
++
+ 	frappe.sendmail(
+-		recipients=recipients,
++		recipients=recipients_mail,
+ 		subject=_("Birthday Reminder"),
+ 		template="birthday_reminder",
+ 		args=dict(
+@@ -262,8 +272,13 @@ def get_pluralized_years(years):
+ 
+ 
+ def send_work_anniversary_reminder(recipients, reminder_text, anniversary_persons, message):
++	if len(recipients)>1:
++		recipients_mail = frappe.db.sql(f'''select name from `tabUser` where name in {tuple(recipients)} and emp_anniversary_mail="1" ''', as_list=1)
++	else:
++		recipients_mail = frappe.db.sql(f'''select name from `tabUser` where name="{recipients[0]}" and emp_anniversary_mail="1" ''', as_list=1)
++	recipients_mail = [l[0] for l in recipients_mail]
+ 	frappe.sendmail(
+-		recipients=recipients,
++		recipients=recipients_mail,
+ 		subject=_("Work Anniversary Reminder"),
+ 		template="anniversary_reminder",
+ 		args=dict(

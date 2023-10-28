@@ -1,0 +1,28 @@
+{
+ "content": null,
+ "creation": "2023-01-07 07:57:27.373262",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2023-01-07 07:57:54.888583",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "tagadmin-page",
+ "owner": "Administrator",
+ "page_name": "tagadmin-page",
+ "roles": [
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Tag Admin"
+  },
+  {
+   "role": "Tag User"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0
+}

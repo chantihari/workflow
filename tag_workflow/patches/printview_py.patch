@@ -1,0 +1,12 @@
+diff --git a/frappe/www/printview.py b/frappe/www/printview.py
+index faf6a02..c565771 100644
+--- a/frappe/www/printview.py
++++ b/frappe/www/printview.py
+@@ -69,6 +69,7 @@ def get_context(context):
+ 		"doctype": frappe.form_dict.doctype,
+ 		"name": frappe.form_dict.name,
+ 		"key": frappe.form_dict.get("key"),
++		"format": print_format.name
+ 	}
+ 
+ 

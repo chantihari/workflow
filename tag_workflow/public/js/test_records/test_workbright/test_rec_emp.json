@@ -1,0 +1,33 @@
+[
+	{
+		"first_name":"Test",
+		"last_name":"Emp1",
+        "employee_name": "Test Emp1",
+        "email":"test_emp1@yopmail.com",
+        "staffing_company":"Test Staffing1",
+        "contact_number":"+19034709848",
+        "date_of_birth":"",
+        "gender":"Male",
+        "ssn":"123456789",
+        "search_on_maps":0,
+        "enter_manually":1,
+        "street_address":"2204 Pickens Way",
+		"state":"Texas",
+		"city":"Longview",
+		"zip":"75601"
+	},
+	{
+		"first_name":"Test",
+		"last_name":"Emp2",
+        "employee_name": "Test Emp2",
+        "email":"test_emp2@yopmail.com",
+        "staffing_company":"Test Staffing2",
+        "contact_number":"+19034709848",
+        "date_of_birth":"",
+        "gender":"Female",
+        "ssn":"123456789",
+        "search_on_maps":1,
+        "enter_manually":0,
+        "complete_address":"2204 Pickens Way, Longview, Texas-75601, US"
+	}
+]

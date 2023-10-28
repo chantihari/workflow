@@ -1,0 +1,68 @@
+diff --git a/hrms/hr/doctype/employee_onboarding/employee_onboarding.json b/hrms/hr/doctype/employee_onboarding/employee_onboarding.json
+index 1d2ea0c6..1104a9e3 100644
+--- a/hrms/hr/doctype/employee_onboarding/employee_onboarding.json
++++ b/hrms/hr/doctype/employee_onboarding/employee_onboarding.json
+@@ -8,24 +8,24 @@
+  "field_order": [
+   "job_applicant",
+   "job_offer",
+-  "employee_onboarding_template",
++  "employee_name",
++  "employee",
++  "date_of_joining",
++  "boarding_status",
++  "notify_users_by_email",
+   "column_break_7",
++  "employee_onboarding_template",
+   "company",
+-  "boarding_status",
+-  "project",
+-  "details_section",
+-  "employee",
+-  "employee_name",
+   "department",
+   "designation",
+   "employee_grade",
++  "project",
++  "boarding_begins_on",
++  "details_section",
+   "holiday_list",
+   "column_break_13",
+-  "date_of_joining",
+-  "boarding_begins_on",
+   "table_for_activity",
+   "activities",
+-  "notify_users_by_email",
+   "amended_from"
+  ],
+  "fields": [
+@@ -62,8 +62,7 @@
+    "fieldname": "date_of_joining",
+    "fieldtype": "Date",
+    "in_list_view": 1,
+-   "label": "Date of Joining",
+-   "reqd": 1
++   "label": "Date of Joining"
+   },
+   {
+    "allow_on_submit": 1,
+@@ -162,8 +161,8 @@
+   {
+    "fieldname": "boarding_begins_on",
+    "fieldtype": "Date",
+-   "label": "Onboarding Begins On",
+-   "reqd": 1
++   "hidden": 1,
++   "label": "Onboarding Begins On"
+   },
+   {
+    "fieldname": "holiday_list",
+@@ -174,7 +173,7 @@
+  ],
+  "is_submittable": 1,
+  "links": [],
+- "modified": "2022-01-29 12:33:57.120384",
++ "modified": "2023-01-13 00:48:04.691999",
+  "modified_by": "Administrator",
+  "module": "HR",
+  "name": "Employee Onboarding",

@@ -1,0 +1,17 @@
+[
+ {
+  "api_key": "",
+  "app_id": null,
+  "client_id": "",
+  "client_secret": "",
+  "docstatus": 0,
+  "doctype": "Google Settings",
+  "enable": 0,
+  "google_drive_picker_enabled": 0,
+  "modified": "2022-01-04 02:40:39.892949",
+  "name": "Google Settings",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

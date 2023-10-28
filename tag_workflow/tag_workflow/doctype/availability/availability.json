@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-02-03 23:45:04.490760",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "days"
+ ],
+ "fields": [
+  {
+   "fieldname": "days",
+   "fieldtype": "Link",
+   "label": "Days",
+   "options": "Days"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-02-04 06:14:59.632352",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Availability",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

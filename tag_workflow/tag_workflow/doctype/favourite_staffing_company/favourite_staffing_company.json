@@ -1,0 +1,30 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-13 01:16:45.890322",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "favourite_staffing_company"
+ ],
+ "fields": [
+  {
+   "fieldname": "favourite_staffing_company",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Favourite Staffing Company"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-10-04 07:22:27.453874",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Favourite Staffing Company",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

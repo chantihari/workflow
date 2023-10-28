@@ -1,0 +1,25 @@
+[
+ {
+  "allow_against_multiple_purchase_orders": 0,
+  "allow_multiple_items": 1,
+  "cust_master_name": "Customer Name",
+  "customer_group": null,
+  "dn_required": null,
+  "docstatus": 0,
+  "doctype": "Selling Settings",
+  "editable_bundle_item_rates": 0,
+  "editable_price_list_rate": 0,
+  "enable_discount_accounting": 0,
+  "hide_tax_id": 0,
+  "maintain_same_rate_action": null,
+  "maintain_same_sales_rate": 0,
+  "modified": "2023-07-11 05:54:23.201812",
+  "name": "Selling Settings",
+  "role_to_override_stop_action": null,
+  "sales_update_frequency": "Each Transaction",
+  "selling_price_list": "Standard Selling",
+  "so_required": null,
+  "territory": null,
+  "validate_selling_price": 0
+ }
+]

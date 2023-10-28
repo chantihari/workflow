@@ -1,0 +1,38 @@
+diff --git a/frappe/utils/xlsxutils.py b/frappe/utils/xlsxutils.py
+index fc4ef33..d3ffb87 100644
+--- a/frappe/utils/xlsxutils.py
++++ b/frappe/utils/xlsxutils.py
+@@ -6,7 +6,7 @@ from io import BytesIO
+ import openpyxl
+ import xlrd
+ from openpyxl import load_workbook
+-from openpyxl.styles import Font
++from openpyxl.styles import Font, Alignment
+ from openpyxl.utils import get_column_letter
+ 
+ import frappe
+@@ -30,9 +30,12 @@ def make_xlsx(data, sheet_name, wb=None, column_widths=None):
+ 	row1 = ws.row_dimensions[1]
+ 	row1.font = Font(name="Calibri", bold=True)
+ 
+-	for row in data:
++	for i, row in enumerate(data):
+ 		clean_row = []
+ 		for item in row:
++			if isinstance(item, str) and "<br>" in item:
++				item=item.replace("<br>", chr(10))
++
+ 			if isinstance(item, str) and (sheet_name not in ["Data Import Template", "Data Export"]):
+ 				value = handle_html(item)
+ 			else:
+@@ -43,7 +46,9 @@ def make_xlsx(data, sheet_name, wb=None, column_widths=None):
+ 				value = ILLEGAL_CHARACTERS_RE.sub("", value)
+ 
+ 			clean_row.append(value)
+-
++		if i>0:
++			row2 = ws.row_dimensions[i+1]
++			row2.alignment = Alignment(wrap_text=True)
+ 		ws.append(clean_row)
+ 
+ 	xlsx_file = BytesIO()

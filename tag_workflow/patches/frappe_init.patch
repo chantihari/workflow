@@ -1,0 +1,22 @@
+diff --git a/frappe/__init__.py b/frappe/__init__.py
+index 8011b8a..51afca7 100644
+--- a/frappe/__init__.py
++++ b/frappe/__init__.py
+@@ -2001,7 +2001,7 @@ def get_print(
+ 	:param style: Print Format style.
+ 	:param as_pdf: Return as PDF. Default False.
+ 	:param password: Password to encrypt the pdf with. Default None"""
+-	from frappe.utils.pdf import get_pdf
++	from tag_workflow.utils.whitelisted import get_pdf
+ 	from frappe.website.serve import get_response_content
+ 
+ 	local.form_dict.doctype = doctype
+@@ -2020,7 +2020,7 @@ def get_print(
+ 		html = get_response_content("printview")
+ 
+ 	if as_pdf:
+-		return get_pdf(html, options=pdf_options, output=output)
++		return get_pdf(html, options=pdf_options, output=output, doc=[doctype, name])
+ 	else:
+ 		return html
+ 

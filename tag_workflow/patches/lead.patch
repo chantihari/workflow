@@ -1,0 +1,82 @@
+diff --git a/erpnext/crm/doctype/lead/lead.json b/erpnext/crm/doctype/lead/lead.json
+index 8f8a086d99..14a87a43b2 100644
+--- a/erpnext/crm/doctype/lead/lead.json
++++ b/erpnext/crm/doctype/lead/lead.json
+@@ -14,19 +14,19 @@
+   "first_name",
+   "middle_name",
+   "last_name",
+-  "column_break_1",
+   "lead_name",
+   "job_title",
++  "company_name",
+   "gender",
+   "source",
+   "col_break123",
++  "email_id",
+   "lead_owner",
+   "status",
+   "customer",
+   "type",
+   "request_type",
+   "contact_info_tab",
+-  "email_id",
+   "website",
+   "column_break_20",
+   "mobile_no",
+@@ -35,7 +35,6 @@
+   "phone",
+   "phone_ext",
+   "organization_section",
+-  "company_name",
+   "no_of_employees",
+   "column_break_28",
+   "annual_revenue",
+@@ -68,13 +67,13 @@
+   "disabled",
+   "unsubscribed",
+   "blog_subscriber",
+-  "activities_tab",
+-  "open_activities_html",
+-  "all_activities_section",
+-  "all_activities_html",
+   "notes_tab",
+   "notes_html",
+   "notes",
++  "activities_tab",
++  "all_activities_section",
++  "open_activities_html",
++  "all_activities_html",
+   "dashboard_tab"
+  ],
+  "fields": [
+@@ -120,8 +119,7 @@
+   },
+   {
+    "fieldname": "col_break123",
+-   "fieldtype": "Column Break",
+-   "width": "50%"
++   "fieldtype": "Column Break"
+   },
+   {
+    "default": "__user",
+@@ -383,10 +381,6 @@
+    "fieldtype": "Section Break",
+    "label": "Additional Information"
+   },
+-  {
+-   "fieldname": "column_break_1",
+-   "fieldtype": "Column Break"
+-  },
+   {
+    "fieldname": "qualified_by",
+    "fieldtype": "Link",
+@@ -514,7 +508,7 @@
+  "idx": 5,
+  "image_field": "image",
+  "links": [],
+- "modified": "2022-10-13 12:42:04.277879",
++ "modified": "2023-01-07 03:20:55.944874",
+  "modified_by": "Administrator",
+  "module": "CRM",
+  "name": "Lead",

@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SCC.####",
+ "creation": "2022-10-07 01:23:44.000613",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_industry",
+  "job_title",
+  "column_break_3",
+  "staffing_company",
+  "class_codes_section",
+  "class_codes"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_industry",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Industry",
+   "options": "Industry Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Title",
+   "options": "Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "staffing_company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Staffing Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class_codes_section",
+   "fieldtype": "Section Break",
+   "label": "Workers' Comp Code"
+  },
+  {
+   "fieldname": "class_codes",
+   "fieldtype": "Table",
+   "label": "Workers' Comp Code",
+   "options": "Class Code"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-09 00:37:19.865296",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Staffing Comp Code",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staffing Admin",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Staffing User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Tag Admin",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "job_industry",
+ "track_changes": 1
+}

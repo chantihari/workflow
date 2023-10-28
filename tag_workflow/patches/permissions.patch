@@ -1,0 +1,44 @@
+diff --git a/frappe/permissions.py b/frappe/permissions.py
+index d734f79..db80d53 100644
+--- a/frappe/permissions.py
++++ b/frappe/permissions.py
+@@ -105,9 +105,15 @@ def has_permission(
+ 	meta = frappe.get_meta(doctype)
+ 
+ 	if doc:
++		check = True
+ 		if isinstance(doc, str):
+ 			doc = frappe.get_doc(meta.name, doc)
+-		perm = get_doc_permissions(doc, user=user, ptype=ptype).get(ptype)
++		if doc.doctype=='Company':
++			company_type = frappe.db.get_value('Company', {'name':doc.name}, ['organization_type'])
++			user_type = frappe.db.get_value('User', {'name':frappe.session.user}, ['organization_type'])
++			if company_type=='Hiring' and user_type=='Staffing':
++				check = False
++		perm = get_doc_permissions(doc, user=user, ptype=ptype).get(ptype) if check else True
+ 		if not perm:
+ 			push_perm_check_log(
+ 				_("User {0} does not have access to this document").format(frappe.bold(user))
+@@ -274,6 +280,10 @@ def has_user_permission(doc, user=None):
+ 	from frappe.core.doctype.user_permission.user_permission import get_user_permissions
+ 
+ 	user_permissions = get_user_permissions(user)
++	user_type = frappe.db.get_value('User', {'name':frappe.session.user}, ['organization_type'])
++	if not user_permissions or (doc.doctype=='Company' and doc.is_new() and user_type=='Staffing' and doc.organization_type=='Exclusive Hiring'):
++		# no user permission rules specified for this doctype
++		return True
+ 
+ 	if not user_permissions:
+ 		# no user permission rules specified for this doctype
+@@ -348,10 +358,8 @@ def has_user_permission(doc, user=None):
+ 				return False
+ 
+ 		return True
+-
+-	if not check_user_permission_on_link_fields(doc):
++	if doctype not in ['Assign Employee', 'Timesheet'] and not check_user_permission_on_link_fields(doc):
+ 		return False
+-
+ 	for d in doc.get_all_children():
+ 		if not check_user_permission_on_link_fields(d):
+ 			return False

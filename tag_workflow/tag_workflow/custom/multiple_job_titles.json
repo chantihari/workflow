@@ -1,0 +1,35 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Multiple Job Titles",
+ "links": [],
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2023-05-30 05:09:28.352429",
+   "default_value": null,
+   "doc_type": "Multiple Job Titles",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "description",
+   "idx": 0,
+   "is_system_generated": 0,
+   "modified": "2023-05-30 05:09:28.352429",
+   "modified_by": "Administrator",
+   "module": null,
+   "name": "Multiple Job Titles-description-columns",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "columns",
+   "property_type": "Int",
+   "row_name": null,
+   "value": null
+  }
+ ],
+ "sync_on_migrate": 1
+}

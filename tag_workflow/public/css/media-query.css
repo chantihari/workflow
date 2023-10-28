@@ -1,0 +1,436 @@
+@media (min-width: 1920px) {
+  [data-route="List/Claim Order/List"] .modal .modal-dialog {
+    max-width: -webkit-fit-content !important;
+    max-width: fit-content !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .indicator-pill.green:before,
+  .indicator-pill.gray:before {
+    display: none;
+  }
+}
+
+@media (max-width: 1320px) and (min-width: 1200px) {
+  .col.layout-main-section-wrapper,
+  .col-md-12.layout-main-section-wrapper {
+    left: 12rem;
+    max-width: 84.5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  [data-route="List/Employee Onboarding/List"]
+    .layout-main-section
+    .frappe-list
+    .list-row
+    .indicator-pill {
+    padding: 4px;
+    height: auto;
+  }
+  [data-page-route="List/Job Order/List"]
+    .frappe-card
+    .list-row-container
+    .level-left
+    .list-row-col:nth-child(1),
+  [data-page-route="List/Job Order/List"]
+    .frappe-card
+    header
+    .level-left
+    .list-row-col:nth-child(1) {
+    flex: initial;
+  }
+  [data-page-route="List/Job Order/List"]
+    .frappe-card
+    .list-row-container
+    .level-left
+    .list-row-col:nth-child(6),
+  [data-page-route="List/Job Order/List"]
+    .frappe-card
+    header
+    .level-left
+    .list-row-col:nth-child(6) {
+    margin-right: 1px;
+    flex: 1.3;
+  }
+  .layout-main-section .frappe-list .result {
+    overflow: auto !important;
+    min-height: auto !important;
+  }
+  #page-staff_company_list .staff_list table thead tr th:nth-last-child(1),
+  #page-staff_company_list .staff_list table tbody tr td:nth-last-child(1) {
+    width: 20%;
+  }
+  .company_setting_list .dropdown-menu ul {
+    flex-flow: column;
+  }
+  .layout-main-section .frappe-list .list-row .indicator-pill {
+    padding: 4px 1px;
+    border-radius: 11px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .col.layout-main-section-wrapper,
+  .col-md-12.layout-main-section-wrapper {
+    left: 0rem !important;
+    max-width: 100% !important;
+    padding: 15px;
+    width: 100%;
+  }
+  .custom-slide {
+    margin-top: 0;
+  }
+  #page-staff_company_list .staff_list table {
+    width: 905px;
+  }
+}
+
+@media (max-width: 768px) {
+  .enable_pill_jazz,
+  .enable_pill_quick,
+  .enable_pill_work,
+  .enable_pill_staff {
+    margin-left: 2%;
+  }
+  #user-notifications_tab [data-fieldtype="Check"]:nth-child(2) .checkbox {
+    padding-left: 0px;
+  }
+  #user-notifications_tab [data-fieldtype="Check"] {
+    width: 150px;
+  }
+  .active_pill_jazz,
+  .active_pill_quick,
+  .active_pill_work,
+  .active_pill_staff {
+    margin-left: 2%;
+  }
+  [data-route="List/Job Site/List"] .layout-main-section .result header {
+    width: auto !important;
+  }
+  .company-carousel ul li {
+    padding: 0 5px 0 20px;
+  }
+  .company-carousel ul li:nth-child(1) {
+    padding-left: 25px !important;
+  }
+  [data-route="List/Payroll Period/List"]
+    .modal-dialog
+    .form-column
+    .frappe-control {
+    width: 100% !important;
+    padding: 0 !important;
+    float: none;
+  }
+  #website-post-login {
+    text-align: right !important;
+  }
+  .search-bar input::placeholder {
+    color: transparent !important;
+  }
+  .form-tabs li a {
+    margin: 0 10px !important;
+  }
+  .page-head .page-head-content {
+    margin-top: -10px;
+  }
+  .custom-slide {
+    background: #fff;
+  }
+  .form-grid-container .form-grid {
+    min-width: auto;
+  }
+  #page-staff_company_list .page-head-content {
+    height: 0px;
+  }
+  [data-page-route="Job Order"] .page-head {
+    height: 165px;
+  }
+  [data-route="Workspaces/My Activities"] .sub-menu,
+  [data-route="staff-home"] .sub-menu {
+    top: 30px !important;
+  }
+  .page-hiring-home .hiring_dashboard_table table {
+    width: 1000px;
+  }
+  .header-alignment {
+    align-items: start !important;
+  }
+  .page-head {
+    padding-bottom: 50px;
+  }
+  .sub-menu {
+    top: 105px !important;
+  }
+
+  .search-bar input::-webkit-input-placeholder {
+    opacity: 0;
+  }
+  .custom-location {
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    flex-shrink: inherit;
+  }
+  .custom-location button {
+    margin-top: 10px;
+  }
+  #page-timesheet-approval #data_head .widget {
+    padding: 0;
+  }
+  #page-timesheet-approval #data_head .widget table {
+    width: 650px;
+  }
+  [data-page-route="Add Timesheet"]
+    [data-fieldtype="Table"]
+    .form-grid
+    .grid-heading-row,
+  [data-page-route="Add Timesheet"]
+    [data-fieldtype="Table"]
+    .form-grid
+    .grid-body
+    .grid-row {
+    width: 1100px !important;
+  }
+  [data-route="Form/Add Timesheet/Add Timesheet"]
+    .layout-main-section-wrapper
+    .layout-main-section
+    .form-message
+    p,
+  [data-route="timesheet-approval"]
+    .layout-main-section-wrapper
+    .layout-main-section
+    .form-message
+    p {
+    font-size: 13px;
+    margin: 15px;
+    min-width: 85px;
+  }
+  [data-page-route="List/Timesheet/List"]
+    .frappe-card
+    .list-row-container
+    .level-left
+    .list-row-col:nth-child(4),
+  [data-page-route="List/Timesheet/List"]
+    .frappe-card
+    header
+    .level-left
+    .list-row-col:nth-child(4) {
+    flex: 1.4;
+  }
+  .flex-item .page-icon-group {
+    display: flex !important;
+  }
+  .add-btn .hidden-xs {
+    display: inline-block !important;
+  }
+  .layout-main-section .frappe-list .list-row .indicator-pill {
+    padding: 4px 4px;
+    height: auto;
+  }
+  .btn.btn-sm {
+    background-color: var(--fg-color);
+  }
+  .hidden-xs {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center;
+  }
+  .hide {
+    display: none !important;
+  }
+
+  .layout-main-section .frappe-list .result .list-row-head,
+  .layout-main-section .frappe-list .result .list-row-container {
+    width: 1000px;
+  }
+  .list-row .select-like {
+    padding: 15px 7px 15px 15px;
+  }
+  .frappe-card .list-row-container .level-left .list-row-col:nth-child(4),
+  .frappe-card header .level-left .list-row-col:nth-child(4) {
+    flex: 1.4;
+  }
+
+  .list-row-head .level-right,
+  .list-row .level-right {
+    flex: 0.4;
+  }
+  .form-grid .grid-heading-row .data-row .sortable-handle,
+  .form-grid .grid-body .data-row .sortable-handle {
+    padding: 10px 5px;
+  }
+  .form-section.card-section {
+    padding: 10px;
+  }
+  .social-icon {
+    justify-content: center;
+  }
+  [data-page-route="List/Sales Invoice/List"]
+    .frappe-card
+    .frappe-list.list-subject {
+    flex-basis: 60px;
+  }
+  [data-page-route="Employee"]
+    .editable-form
+    .layout-main-section-wrapper
+    .layout-main-section {
+    margin-top: 40px;
+  }
+  [data-page-route="Employee"] .page-head .page-head-content div:nth-child(2) {
+    flex-wrap: wrap;
+    margin: 15px 0px;
+    display: contents;
+    background: #fff;
+    float: left;
+  }
+  [data-page-route="Employee"] .page-head .page-head-content div:nth-child(3) {
+    margin: 5px 0px;
+  }
+  [data-page-route="Employee"]
+    .layout-main-section-wrapper
+    .layout-main-section {
+    margin-top: 15px !important;
+  }
+  [data-page-route="Employee"] .page-head-content {
+    display: inline-block;
+  }
+  [data-page-route="Employee"] .container {
+    padding-bottom: 10px;
+  }
+  .navbar-light .navbar-nav .nav-item .btn-login-area {
+    text-align: right;
+    margin-right: 7px;
+  }
+  #order {
+    padding: 0;
+  }
+  [data-route="Form/Add Timesheet/Add Timesheet"]
+    .layout-main-section-wrapper
+    .layout-main-section
+    .form-message
+    div,
+  [data-route="timesheet-approval"]
+    .layout-main-section-wrapper
+    .layout-main-section
+    .form-message
+    div {
+    justify-content: flex-start;
+  }
+  [data-fieldname="update_employee_records"] button {
+    margin-top: 0;
+  }
+  #page-User .layout-main-section-wrapper .layout-main-section,
+  #page-Company .layout-main-section-wrapper .layout-main-section,
+  #page-Lead .layout-main-section-wrapper .layout-main-section,
+  #page-Timesheet .layout-main-section-wrapper .layout-main-section,
+  #page-dashboard-view .dashboard .dashboard-graph {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #page-Workspaces .page-title .title-area .title-text {
+    margin-left: 0px;
+  }
+  .page-title .title-area .indicator-pill {
+    margin: 20px 0 0 20px;
+  }
+  .modal .modal-body {
+    margin-left: 15px;
+  }
+  .new-timeline {
+    padding-left: 10px;
+  }
+  .page-title .title-area .title-text {
+    padding-left: 30px !important;
+    padding-top: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #4e4e4e;
+  }
+  [data-fieldtype="Table"] .form-grid {
+    overflow: auto;
+  }
+  [data-fieldtype="Table"] .form-grid .grid-heading-row,
+  [data-fieldtype="Table"] .form-grid .grid-body .grid-row {
+    width: 700px;
+  }
+  [data-fieldtype="Table"]
+    .form-grid
+    .grid-body
+    .grid-row.grid-row-open
+    .form-in-grid {
+    width: 100% !important;
+    position: absolute;
+    top: 5%;
+  }
+  #page-staff_company_list table {
+    font-size: 13px !important;
+  }
+  .hiring-home .tittle h3 {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  #terms-and-conditions {
+    padding: 0 20px !important;
+  }
+  [data-route="Workspaces/My Activities"] #page-Workspaces .page-head {
+    display: block;
+  }
+  [data-route="Workspaces/My Activities"] .page-head {
+    height: 30px !important;
+  }
+  [data-route="Workspaces/My Activities"] .page-head.drop-shadow {
+    height: 60px !important;
+  }
+  .hiring-home .search-area {
+    max-width: 350px;
+    padding-left: 10px;
+  }
+  .hiring-home .search_icon {
+    display: none;
+  }
+  [data-fieldname="get_data_from_jazzhr"] button {
+    margin-top: 0px;
+  }
+  [data-page-route="List/Sales Invoice/List"] .frappe-list .result {
+    overflow: auto;
+    min-height: auto;
+  }
+  [data-page-route="List/Sales Invoice/List"] .frappe-list .result header,
+  [data-page-route="List/Sales Invoice/List"]
+    .frappe-list
+    .result
+    .list-row-container {
+    width: 800px;
+  }
+  .hiring-home .search_field {
+    width: auto !important;
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .layout-main .form-column.col-sm-12 > form > .input-max-width {
+    max-width: 100%;
+    padding-right: 0px;
+  }
+}
+
+@media (min-width: 570px) and (max-width: 768px) {
+  .dropdown-notifications .notifications-list {
+    right: -230px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1330px) {
+  .page-title .title-area .title-text {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  #user-notifications_tab [data-fieldtype="Check"] {
+    width: 110px;
+  }
+}

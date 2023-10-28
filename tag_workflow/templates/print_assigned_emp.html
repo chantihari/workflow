@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <style>
+        div{
+            margin-top: 15px;
+        }
+
+        table{
+            padding: 5px;
+            border-collapse: collapse;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        body{
+            background-color: white;
+            color: black;
+            margin: 1.5cm;
+            font-size: 12.5px;
+        }
+
+        thead th,tbody td {
+            border: none;
+            padding: 6px;
+        }
+
+        td{
+            word-break: break-word;
+        }
+
+        thead th {
+            background-color: #ddedfc; color: #4365ad;
+        }
+
+        .details{
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .details > tbody{
+            background-color: #ddedfc; 
+            color: #4365ad;
+        }
+
+    </style>
+    <body>
+        <div>
+            <div class="logo">
+				<img src="{{sitename}}/assets/tag_workflow/images/TAG-Logo.png" alt="TAG-Logo">
+			</div>
+            <div>
+                <h3>Assigned Employees</h3>
+                <table class="details">
+                    <caption></caption>
+                    <th></th>
+                    <tbody>
+                        <tr>
+                            <td><strong>Order ID: </strong><span style="color: black;">{{job_order}}</span></td>
+                            <td><strong>Printed On: </strong><span style="color: black;">{{print_date}}</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Job Location: </strong><span style="color: black;">{{job_site}}</span></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <caption></caption>
+                    <thead>
+                        <tr>
+                        <th style="padding-left: 50px; text-align: left;">Job Title</th>
+                        <th style="text-align: left;">Employee Name</th>
+                        <th style="text-align: center;">Job Start Time</th>
+                        <th style="text-align: center;">Marked As</th>
+                        {% if company_type =='hiring' %}<th style="padding-left:20px; text-align: left;">Staffing Company</th>{% endif %}
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in emp_data %}
+                        <tr>
+                            {%- set status = [] -%}
+                            {%- if row.no_show and row.no_show|length > 1 -%}{{ status.append('No Show') or ''}}{%- endif -%}
+                            {%- if row.non_satisfactory and row.non_satisfactory|length > 1 -%}{{ status.append('Non Satisfactory') or ''}}{%- endif -%}
+                            {%- if row.dnr and row.dnr|length > 1 -%}{{ status.append('DNR') or ''}}{%- endif -%}
+                            {%- if row.replaced and row.replaced|length > 1 -%}{{ status.append('Replaced') or ''}}{%- endif -%}
+                            <td style="padding-left:50px;">{{row['job_title']}}</td>
+                            <td>{{row['employee']}}</td>
+                            <td style="text-align: center;">{{row['job_start_time']}}</td>
+                            <td style="text-align: center;">{{status|join(', ')}}</td>
+                            {% if company_type =='hiring' %}<td style="padding-left: 20px;">{{row['staff_company']}}</td>{% endif %}
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "content": null,
+    "creation": "2023-01-05 07:11:21.072512",
+    "docstatus": 0,
+    "doctype": "Page",
+    "idx": 0,
+    "modified": "2023-01-05 07:11:21.072512",
+    "modified_by": "Administrator",
+    "module": "Tag Workflow",
+    "name": "hiring-home",
+    "owner": "Administrator",
+    "page_name": "hiring-home",
+    "roles": [
+     {
+      "role": "System Manager"
+     },
+     {
+      "role": "Hiring Admin"
+     },
+     {
+      "role": "Hiring User"
+     }
+    ],
+    "script": null,
+    "standard": "Yes",
+    "style": null,
+    "system_page": 0
+   }

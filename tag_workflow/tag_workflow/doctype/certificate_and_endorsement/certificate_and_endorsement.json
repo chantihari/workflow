@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-11-16 11:40:09.619719",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "certificate_types",
+  "attribute"
+ ],
+ "fields": [
+  {
+   "fieldname": "certificate_types",
+   "fieldtype": "Data",
+   "label": "Certificate types"
+  },
+  {
+   "fieldname": "attribute",
+   "fieldtype": "Data",
+   "label": "Attribute"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-11-22 08:07:35.900757",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Certificate and Endorsement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,46 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-12-29 01:28:08.627687",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "job_site",
+  "bill_rate",
+  "comp_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "job_site",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Site",
+   "options": "Job Site",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bill_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Bill Rate"
+  },
+  {
+   "fieldname": "comp_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comp Code"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-12-29 02:14:27.580623",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Job Sites",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

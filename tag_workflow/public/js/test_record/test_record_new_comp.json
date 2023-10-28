@@ -1,0 +1,22 @@
+[
+	{
+
+		"company_name":"Genpact Staff Comp Test",
+		"organization_type":"Staffing",
+		"accounts_payable_contact_name":"Genpact Staff Comp Test",
+		"fein":"9876543210",
+		"title":"Genpact Staff Comp5",
+		"accounts_payable_email":"genpact_staff_comp_test@yopmail.com",
+		"accounts_payable_phone_number":"9876543210",
+		"contact_name":"Genpect staff Comp Test",
+		"phone_no":"9876543210",
+		"email":"genpact_staff_comp_test@yopmail.com",
+		"enter_manually":1,
+		"address":"#42, RN Road, Los Angeles, California",
+		"state":"California",
+		"city":"Los Angeles",
+		"zip":"90002",
+		"default_currency":"USD",
+		"primary_language":"en"
+	}
+]

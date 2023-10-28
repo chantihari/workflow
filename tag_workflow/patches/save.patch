@@ -1,0 +1,30 @@
+diff --git a/frappe/public/js/frappe/form/save.js b/frappe/public/js/frappe/form/save.js
+index f01eef5..758d3be 100644
+--- a/frappe/public/js/frappe/form/save.js
++++ b/frappe/public/js/frappe/form/save.js
+@@ -14,21 +14,24 @@ frappe.ui.form.save = function (frm, action, callback, btn) {
+ 	}[toTitle(action)];
+ 
+ 	var freeze_message = working_label ? __(working_label) : "";
+-
++	var savingAlert;
+ 	var save = function () {
+ 		remove_empty_rows();
+ 
+ 		$(frm.wrapper).addClass("validated-form");
+ 		if ((action !== "Save" || frm.is_dirty()) && check_mandatory()) {
++			savingAlert = frappe.show_alert({ message: __("Saving document..."), indicator: "blue" },50);
+ 			_call({
+ 				method: "frappe.desk.form.save.savedocs",
+ 				args: { doc: frm.doc, action: action },
+ 				callback: function (r) {
+ 					$(document).trigger("save", [frm.doc]);
+ 					callback(r);
++					savingAlert.hide();
+ 				},
+ 				error: function (r) {
+ 					callback(r);
++					savingAlert.hide();
+ 				},
+ 				btn: btn,
+ 				freeze_message: freeze_message,

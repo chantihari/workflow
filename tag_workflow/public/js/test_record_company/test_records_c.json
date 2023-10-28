@@ -1,0 +1,52 @@
+[
+	{
+
+		"company_name":"vibhu_hiring",
+		"organization_type":"Hiring",
+		"accounts_payable_contact_name":"vibhu_hiring",
+		"fein":"987654321",
+		"title":"vibhu_hiring",
+		"accounts_payable_email":"vibhu_hiring@yopmail.com",
+		"accounts_payable_phone_number":"9876543211",
+		"contact_name":"vibhu_hiring",
+		"phone_no":"9876543211",
+		"email":"vibhu_hiring@yopmail.com",
+		"enter_manually":1,
+		"address":"#42, RN Road, Los Angeles, California",
+		"state":"California",
+		"city":"Los Angeles",
+		"zip":"90002",
+		"default_currency":"USD",
+		"primary_language":"en",
+		"industry_type":[
+			{
+				"industry_type":"IT"
+			}
+		]
+	},
+	{
+
+		"company_name":"vibhu_staffing",
+		"organization_type":"Staffing",
+		"accounts_payable_contact_name":"vibhu_staffing",
+		"fein":"987654321",
+		"title":"vibhu_staffing",
+		"accounts_payable_email":"gevibhu_hiring@yopmail.com",
+		"accounts_payable_phone_number":"9876543211",
+		"contact_name":"vibhu_staffing",
+		"phone_no":"9876543211",
+		"email":"vibhu_staffing@yopmail.com",
+		"enter_manually":1,
+		"address":"#42, RN Road, Los Angeles, California",
+		"state":"California",
+		"city":"Los Angeles",
+		"zip":"90002",
+		"default_currency":"USD",
+		"primary_language":"en",
+		"industry_type":[
+			{
+				"industry_type":"IT"
+			}
+		]
+	}
+]

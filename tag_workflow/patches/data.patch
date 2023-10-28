@@ -1,0 +1,43 @@
+diff --git a/frappe/public/js/frappe/form/controls/data.js b/frappe/public/js/frappe/form/controls/data.js
+index 5917a85..0315c9b 100644
+--- a/frappe/public/js/frappe/form/controls/data.js
++++ b/frappe/public/js/frappe/form/controls/data.js
+@@ -165,6 +165,12 @@ frappe.ui.form.ControlData = class ControlData extends frappe.ui.form.ControlInp
+ 			if (this.change) this.change(e);
+ 			else {
+ 				let value = this.get_input_value();
++				if(e.type == "change" && (this.df.fieldtype == "Text" || this.df.fieldtype == "Data" || this.df.fieldtype == "Small Text") && this.doctype){
++					if(/[+<>^?#/\\]/.test(value)){
++						value=value.replace(/[+<>^?#/\\]/g, '');
++					}
++				}
++
+ 				this.parse_validate_and_set_in_model(value, e);
+ 			}
+ 		};
+@@ -247,7 +253,7 @@ frappe.ui.form.ControlData = class ControlData extends frappe.ui.form.ControlInp
+ 	set_formatted_input(value) {
+ 		this.$input && this.$input.val(this.format_for_input(value));
+ 	}
+-	get_input_value() {
++	get_input_value() {	
+ 		return this.$input ? this.$input.val() : undefined;
+ 	}
+ 	format_for_input(val) {
+@@ -257,6 +263,16 @@ frappe.ui.form.ControlData = class ControlData extends frappe.ui.form.ControlInp
+ 		if (!v) {
+ 			return "";
+ 		}
++		let value = v;
++		if((this.df.fieldtype == "Text" || this.df.fieldtype == "Data" || this.df.fieldtype == "Small Text") && this.doctype){
++			if(/[+<>^?#/\\]/.test(value)){
++				frappe.msgprint({
++					title: __('Error'),
++					message: __('/ \\ ^ < > + ? # special characters are not allowed. They will be removed automatically.'),
++				});
++				return value.replace(/[+<>^?#/\\]/g, '');
++			}
++		}
+ 		if (this.df.is_filter) {
+ 			return v;
+ 		}

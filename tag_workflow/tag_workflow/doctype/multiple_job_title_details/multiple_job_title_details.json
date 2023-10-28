@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-06-16 05:07:23.128000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "select_job",
+  "category",
+  "job_start_time",
+  "estimated_hours_per_day",
+  "no_of_workers",
+  "approved_workers",
+  "employee_pay_rate",
+  "staff_class_code",
+  "staff_class_code_rate",
+  "bill_rate"
+ ],
+ "fields": [
+  {
+   "fieldname": "select_job",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Job Title",
+   "options": "Item",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "select_job.industry",
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Industry",
+   "options": "Industry Type",
+   "read_only": 1,
+   "read_only_depends_on": "eval:doc.__islocal!=1"
+  },
+  {
+   "columns": 1,
+   "fieldname": "no_of_workers",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Employee Required",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fieldname": "employee_pay_rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Employee Pay Rate",
+   "non_negative": 1,
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "estimated_hours_per_day",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Duration",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "job_start_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Start Time",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fieldname": "staff_class_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Workers' Comp Code"
+  },
+  {
+   "columns": 1,
+   "depends_on": "eval:frappe.boot.tag.tag_user_info.company_type!='Exclusive Hiring' && frappe.boot.tag.tag_user_info.company_type!='Hiring'",
+   "fieldname": "staff_class_code_rate",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Rate",
+   "precision": "5"
+  },
+  {
+   "fieldname": "bill_rate",
+   "fieldtype": "Float",
+   "label": "Bill Rate"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "approved_workers",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Claims Approved",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-07-17 09:37:44.621352",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Multiple Job Title Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

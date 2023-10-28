@@ -1,0 +1,19 @@
+[
+ {
+  "country": "United States",
+  "current_fiscal_year": "2022-2023",
+  "default_company": "TAG",
+  "default_currency": "USD",
+  "default_distance_unit": null,
+  "disable_in_words": 0,
+  "disable_rounded_total": 1,
+  "docstatus": 0,
+  "doctype": "Global Defaults",
+  "hide_currency_symbol": "No",
+  "modified": "2022-02-23 11:10:12.600209",
+  "name": "Global Defaults",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null
+ }
+]

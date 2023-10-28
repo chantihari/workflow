@@ -1,0 +1,200 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"card\",\"data\":{\"card_name\":\"Link\",\"col\":4}},{\"type\":\"card\",\"data\":{\"card_name\":\"Workers Comp\",\"col\":4}}]",
+ "creation": "2023-05-09 08:13:02.152406",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "idx": 0,
+ "label": "Reports",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Workers Comp",
+   "link_count": 2,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Workers Comp Detail",
+   "link_count": 0,
+   "link_to": "Workers Comp Detail",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Workers Comp Summary",
+   "link_count": 0,
+   "link_to": "Workers Comp Summary",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Link",
+   "link_count": 13,
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Billing Summary Report",
+   "link_count": 0,
+   "link_to": "Billing Summary Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Billing Detail Report",
+   "link_count": 0,
+   "link_to": "Billing Detail Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Billing Report by Job Site",
+   "link_count": 0,
+   "link_to": "Billing Report by Job Site",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Employee Invoice",
+   "link_count": 0,
+   "link_to": "Employee Invoice",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Employee Timesheet Report",
+   "link_count": 0,
+   "link_to": "Employee Timesheet Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Hourly Report",
+   "link_count": 0,
+   "link_to": "Hourly Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Orders",
+   "link_count": 0,
+   "link_to": "Orders",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Sales Register",
+   "link_count": 0,
+   "link_to": "Sales Register1",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Tag Earnings",
+   "link_count": 0,
+   "link_to": "TAG Earnings",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Tag Invoice",
+   "link_count": 0,
+   "link_to": "Tag Invoice",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Unsatisfactory Employees",
+   "link_count": 0,
+   "link_to": "Unsatisfactory Employees",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Work Orders",
+   "link_count": 0,
+   "link_to": "Work Orders",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Employment History",
+   "link_count": 0,
+   "link_to": "Employment History",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 1,
+   "label": "Employee Status Report",
+   "link_count": 0,
+   "link_to": "Employee Status Report",
+   "link_type": "Report",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2023-05-10 03:33:07.891500",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Reports",
+ "parent_page": "Customization",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 41.0,
+ "shortcuts": [],
+ "title": "Reports"
+}

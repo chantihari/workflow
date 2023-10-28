@@ -1,0 +1,344 @@
+<!DOCTYPE html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Home</title>
+	<style>
+		body {
+			font-size: 14px;
+		}
+
+		.header img:nth-child(2) {
+			width: 110px;
+		}
+
+		.btn-primary {
+			background: #21B9E4 !important;
+			text-align: left !important;
+			border: 1px solid#21B9E4 !important;
+			border-radius: 6px !important;
+		}
+
+		.sub-menu .tab-button {
+			padding: 10px 0;
+			color: #78849E;
+			margin: 10px 0;
+			font-size: 14px;
+			cursor: pointer;
+		}
+
+		.sub-menu .tab-button a {
+			color: #78849E;
+			text-decoration: none;
+		}
+
+		.sub-menu .tab-button .btn-link {
+			color: #78849E !important;
+			font-size: 14px;
+			text-decoration: none;
+		}
+
+		.sub-menu .dropdown-menu.show {
+			border: none !important;
+			padding-left: 50px !important;
+			font-size: 14px !important;
+			color: #78849E !important;
+		}
+
+		.sub-menu .dropdown-item {
+			color: #78849E !important;
+		}
+
+		.sub-menu .tab-button.active {
+			background: #E8F8FC;
+			color: #2E3C54 !important;
+		}
+
+		.footer-admin img {
+			height: 30px;
+			margin-top: 5px;
+		}
+
+		.sub-menu {
+			height: calc(100vh - 235px);
+		}
+
+		.footer-admin .badge-danger {
+			background: #F1EFFD !important;
+			color: #7B68EE !important;
+			font-size: 12px;
+			font-weight: normal;
+		}
+
+		.home-tab {
+			margin-top: 5px !important;
+		}
+
+		.home-tab .nav-tabs .nav-link.active {
+			border: none;
+			border-bottom: 2px solid#37C0E6;
+			color: #000;
+		}
+
+		.home-tab .nav-tabs .nav-link {
+			color: #78849E;
+			font-size: 14px;
+		}
+
+		.home-tab .nav-tabs .nav-link .badge-danger {
+			background: #FC646B !important;
+			padding: 4px 7px;
+			border-radius: 8px;
+			margin-left: 5px;
+		}
+
+		.home-tab .dropdown .btn-link {
+			color: #21B9E4 !important;
+		}
+
+		.home-tab .bg-img {
+			background: url(abstract-bg.svg);
+			background-repeat: no-repeat;
+			background-position: right;
+			background-size: contain;
+		}
+
+		.search-box {
+			position: relative;
+		}
+
+		.search-box span {
+			position: absolute;
+			top: 6px;
+			left: 10px;
+		}
+
+		.search-box input {
+			width: 100%;
+			padding-left: 30px;
+			border-radius: 8px;
+		}
+
+		.search-box span i {
+			position: relative;
+			z-index: 99;
+			color: #928f8f;
+		}
+
+		::placeholder {
+			color: #ACBBD1;
+			font-size: 14px;
+		}
+
+		.sub-menu .tab-button .icon:hover {
+			fill: red;
+		}
+
+		.map-section {
+			background: #FAFBFC;
+		}
+
+		.map-section .exclusive {
+			background: #FFE880;
+			color: #2A2E43;
+			font-weight: normal;
+			font-size: 12px;
+		}
+
+		.map-section .admin {
+			background: #EEF5FF;
+			color: #3D6EB4;
+			font-weight: normal;
+			font-size: 12px;
+			margin-left: 5px;
+		}
+
+		.map-section small {
+			font-size: 12px;
+		}
+
+		.order-btn {
+			border-radius: 6px !important;
+		}
+
+		.map-section .construction {
+			background: #FFF3EB;
+			color: #F47721;
+			font-weight: normal;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-12 col-md-12">
+				<div class="row home-tab">
+					<div class="tab-content w-100" id="myTabContent">
+						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+							<div class="px-4 px-md-2 pb-4 pt-0 d-flex flex-wrap">
+								<div class="col-xl-6 col-lg-6">
+									<div class="search-box w-100">
+										<span>
+											<i class="fa fa-search" aria-hidden="true"></i>
+										</span>
+										<input class="form-control my-0 py-1" type="text"
+											placeholder="Search for “Job Title”" aria-label="Search" id="my-input"
+											onkeyup="filterOrder()">
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-6 px-1 pt-3 pt-sm-0 px-sm-3">
+									<div class="d-flex flex-wrap ">
+										<div class="dropdown">
+											<label class="text-secondary">
+												Categories:
+											</label>
+											<button class="btn btn-link dropdown-toggle " type="button"
+												id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false"
+												data-cat="btn-cat">
+												All
+											</button>
+											<div class="dropdown-menu category" aria-labelledby="dropdownMenuButton"
+												id="category">
+											</div>
+										</div>
+										<div class="dropdown ml-0 ml-sm-3">
+											<label class="text-secondary">
+												Order By:
+											</label>
+											<button class="btn btn-link dropdown-toggle btn-ord" type="button"
+												id="dropdownMenuButton " data-toggle="dropdown" aria-expanded="false"
+												data-ord="btn-ord">
+												All
+											</button>
+											<div class="dropdown-menu order-by" aria-labelledby="dropdownMenuButton"
+												id="order-by">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="d-flex flex-wrap px-3 map-section">
+								<div class="col-xl-6 col-lg-12 col-md-12 pl-md-0" id="order"></div>
+								<div class="col-xl-6 col-lg-12 col-md-12">
+									<div id="maps" class="mt-4 mt-sm-0"
+										style="height:450px;border-radius: var(--border-radius-md);"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+					<div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="widget-group ">
+			<div class="widget-group-head">
+				<div class="widget-group-title">Shortcuts</div>
+				<div class="widget-group-control"></div>
+			</div>
+			<div class="widget-group-body grid-col-3">
+				<div class="widget widget-shadow shortcut-widget-box" data-widget-name="a85252dcd0"
+					onclick=redirect_doc("job-order")>
+					<div class="widget-head">
+						<div>
+							<div class="widget-title ellipsis" name="home-job-order">Job Orders</div>
+							<div class="widget-subtitle"></div>
+						</div>
+						<div class="widget-control"></div>
+					</div>
+					<div class="widget-body"></div>
+					<div class="widget-footer"></div>
+				</div>
+				<div class="widget widget-shadow shortcut-widget-box" data-widget-name="a98f4b28cd"
+					onclick=redirect_doc("job-site")>
+					<div class="widget-head">
+						<div>
+							<div class="widget-title ellipsis">Job Sites</div>
+							<div class="widget-subtitle"></div>
+						</div>
+						<div class="widget-control"></div>
+					</div>
+					<div class="widget-body"></div>
+					<div class="widget-footer"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="widget-group">
+			<div class="widget-group-head">
+				<div class="widget-group-title">My Activities</div>
+				<div class="widget-group-control"></div>
+			</div>
+			<div class="widget-group-body grid-col-3">
+				<div class="widget links-widget-box" data-widget-name="6ff65e433e">
+					<div class="widget-head">
+						<div>
+							<div class="widget-title ellipsis">
+								<svg class="icon icon-sm">
+									<use class="" href="#icon-file"></use>
+								</svg>
+								<span>Operations (Settings)</span>
+							</div>
+							<div class="widget-subtitle"></div>
+						</div>
+						<div class="widget-control"></div>
+					</div>
+					<div class="widget-body">
+						<a href="/app/user" class="link-item ellipsis" type="Link">
+							<span class="indicator-pill no-margin gray"></span>
+							<span class="link-content ellipsis">Company Users</span>
+						</a>
+						<a href="#" class="link-item ellipsis" type="Link" onclick=redirect_doc("company")>
+							<span class="indicator-pill no-margin gray"></span>
+							<span class="link-content ellipsis">Affiliate Companies</span>
+						</a>
+						<a href="/app/contract" class="link-item ellipsis" type="Link">
+							<span class="indicator-pill no-margin gray"></span>
+							<span class="link-content ellipsis">Contract</span>
+						</a>
+					</div>
+					<div class="widget-footer"></div>
+				</div>
+				<div class="widget links-widget-box" data-widget-name="c8b579fdd9">
+					<div class="widget-head">
+						<div>
+							<div class="widget-title ellipsis">
+								<svg class="icon icon-sm">
+									<use class="" href="#icon-file"></use>
+								</svg>
+								<span>Job Order Resources</span>
+							</div>
+							<div class="widget-subtitle"></div>
+						</div>
+						<div class="widget-control"></div>
+					</div>
+					<div class="widget-body">
+						<a href="#" onclick=redirect_doc("job-site") class="link-item ellipsis" type="Link">
+							<span class="indicator-pill no-margin gray"></span>
+							<span class="link-content ellipsis">Job Sites</span>
+						</a>
+						<a href="/app/job-order" class="link-item ellipsis" type="Link">
+							<span class="indicator-pill no-margin gray"></span>
+							<span class="link-content ellipsis">Job Orders</span>
+						</a>
+						<a href="/app/timesheet" class="link-item ellipsis" type="Link">
+							<span class="indicator-pill no-margin gray"></span>
+							<span class="link-content ellipsis">Timesheets</span>
+						</a>
+						<a href="/app/sales-invoice" class="link-item ellipsis" type="Link">
+							<span class="indicator-pill no-margin gray"></span>
+							<span class="link-content ellipsis">Invoices</span>
+						</a>
+					</div>
+					<div class="widget-footer"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

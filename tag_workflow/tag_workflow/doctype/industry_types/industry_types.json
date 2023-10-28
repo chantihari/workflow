@@ -1,0 +1,32 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-29 15:49:48.689640",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "industry_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "industry_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Industry ",
+   "options": "Industry Type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-11-15 07:28:47.224973",
+ "modified_by": "Administrator",
+ "module": "Tag Workflow",
+ "name": "Industry Types",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
