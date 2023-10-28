@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/erpuser/frappe-benchv14/apps/tag_workflow
+file_exists_behavior: OVERWRITE
+hooks:
+  AfterInstall:
+    - location: scripts/after_install.sh
+      timeout: 3600
+      runas: root
